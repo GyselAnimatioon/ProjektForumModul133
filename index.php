@@ -10,7 +10,7 @@
         tan($arg)
         echo "hiii";
         abs($number)
-        base64_decode($data)
+        base64_decode($data)zh
         ?>
     </body>
 </html>
