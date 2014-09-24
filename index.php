@@ -29,6 +29,10 @@
             <div class="clear"></div>
         </div>
         
+        <div class="bod">
+            <p>Inhalt</p>
+        </div>
+        
         <footer>
             &copy; Timothe Laborie, Fabian Gysel, Basil Lade 2014
         </footer>
