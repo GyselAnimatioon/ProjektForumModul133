@@ -2,11 +2,12 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>ProjektArbeit</title>
+        <title>Forum</title>
+        <!-- Stylesheet für Titel -->
+        <link type="text/css" rel="Stylesheet" href="css/head.css">
     </head>
     <body>
-        <?php
-            echo "Start.";
-        ?>
+        <!--Titel-->
+        <h1 class="title">Willkommen bei F0rum</h1>
     </body>
 </html>
