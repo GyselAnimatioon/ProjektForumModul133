@@ -7,7 +7,10 @@
     <body>
         <?php
         echo "hi";
+        tan($arg)
         echo "hiii";
+        abs($number)
+        base64_decode($data)
         ?>
     </body>
 </html>
