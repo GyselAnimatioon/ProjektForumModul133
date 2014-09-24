@@ -1,8 +1,15 @@
 <!DOCTYPE html>
+
+<?php
+
+
+
+?>
+
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Forum</title>
+        <title>F0rum</title>
         <!-- Stylesheet für Titel -->
         <link type="text/css" rel="Stylesheet" href="css/head.css">
     </head>
@@ -21,5 +28,9 @@
             </div>
             <div class="clear"></div>
         </div>
+        
+        <footer>
+            &copy; Timothe Laborie, Fabian Gysel, Basil Lade 2014
+        </footer>
     </body>
 </html>
