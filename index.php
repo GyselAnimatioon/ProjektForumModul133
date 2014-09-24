@@ -6,7 +6,7 @@
     </head>
     <body>
         <?php
-            echo "Start";
+            echo "Start.";
         ?>
     </body>
 </html>
