@@ -32,7 +32,17 @@
         </div>
         
         <div class="body">
-            <p>Inhalt</p>
+            <div class="body_box">
+                <h3 class="box_title">
+                    Forum gestartet!
+                    <img src="img/daumen_hoch.png">
+                    <img src="img/daumen_runter.png">
+                    <div class="clear"></div>
+                </h3>
+                <p class="box_text">
+                    Das F0rum wurde eröffnet!! juhu xD
+                </p>
+            </div>
         </div>
         
         <footer>

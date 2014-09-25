@@ -9,5 +9,26 @@ and open the template in the editor.
 */
 
 .body {
-    
+    margin: 2% 25%;
+    /*border: 1px solid black;*/
+}
+
+.body .body_box {
+    border: 1px solid black;
+    padding: 1%;
+    background-color: lightgreen;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.box_title {
+    border-bottom: 1px solid gray;
+}
+
+.body_box img {
+    height: 8%;
+    width: 8%;
+    float: right;
+    margin-bottom: 2%;
+    margin-right: 2%;
 }
