@@ -58,6 +58,20 @@
                     Es wurde eine Dokumentation für dieses Forum erstellt und auf dies kann man nun zugreifen <a href="projekt_texte/doku.html"><input type="button" value="Dokumentation"></a>
                 </p>
             </div>
+            
+            <div class="body_box">
+                <h3 class="box_title">
+                    <div class="daumen">
+                        F0rum Regeln
+                        <img src="img/daumen_hoch.png">56'921'221
+                        <img src="img/daumen_runter.png">3'212
+                    </div>
+                    <div class="clear"></div>
+                </h3>
+                <p class="box_text">
+                    Es wurde Regeln für dieses Forum erstellt und auf dies kann man nun zugreifen <a href="projekt_texte/commit_rules.html"><input type="button" value="Reglen"></a>
+                </p>
+            </div>
         </div>
 
         <footer>
