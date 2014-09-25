@@ -43,6 +43,18 @@
                     Das F0rum wurde eröffnet!! juhu xD
                 </p>
             </div>
+            
+            <div class="body_box">
+                <h3 class="box_title">
+                    F0rum Dokumentation
+                    <img src="img/daumen_hoch.png">
+                    <img src="img/daumen_runter.png">
+                    <div class="clear"></div>
+                </h3>
+                <p class="box_text">
+                    Es wurde eine Dokumentation für dieses Forum erstellt und auf dies kann man nun zugreifen <a href="Doku/doku.html"><input type="button" value="Dokumentation"></a>
+                </p>
+            </div>
         </div>
         
         <footer>
