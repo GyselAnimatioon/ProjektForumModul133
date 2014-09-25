@@ -14,6 +14,8 @@
         <link type="text/css" rel="Stylesheet" href="css/head.css">
         <!-- Stylesheet für Body -->
         <link type="text/css" rel="Stylesheet" href="css/body.css">
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <!--Titel-->
