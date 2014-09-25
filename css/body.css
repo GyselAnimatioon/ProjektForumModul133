@@ -18,7 +18,7 @@ and open the template in the editor.
     padding: 1%;
     background-color: lightgreen;
     border-radius: 5px;
-    width: 30%;
+    width: 50%;
     margin: 1%;
 }
 
@@ -26,10 +26,13 @@ and open the template in the editor.
     border-bottom: 1px solid gray;
 }
 
-.body_box img {
-    height: 8%;
-    width: 8%;
+.daumen {
     float: right;
     margin-bottom: 2%;
     margin-right: 2%;
+}
+
+.body_box div.daumen img{
+    height: 5%;
+    width: 5%;
 }

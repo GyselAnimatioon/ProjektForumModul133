@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 
 <?php
-
-
-
 ?>
 
 <html>
@@ -15,7 +12,7 @@
         <!-- Stylesheet für Body -->
         <link type="text/css" rel="Stylesheet" href="css/body.css">
         <!-- Google Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Nixie+One|PT+Mono|Monoton|Varela+Round' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <!--Titel-->
@@ -32,25 +29,29 @@
             </div>
             <div class="clear"></div>
         </div>
-        
+
         <div class="body">
             <div class="body_box">
                 <h3 class="box_title">
-                    Forum gestartet!
-                    <img src="img/daumen_hoch.png">
-                    <img src="img/daumen_runter.png">
+                    <div class="daumen">
+                        Forum gestartet!
+                        <img src="img/daumen_hoch.png">3'921
+                        <img src="img/daumen_runter.png">12
+                    </div>
                     <div class="clear"></div>
                 </h3>
                 <p class="box_text">
                     Das F0rum wurde eröffnet!! juhu xD
                 </p>
             </div>
-            
+
             <div class="body_box">
                 <h3 class="box_title">
-                    F0rum Dokumentation
-                    <img src="img/daumen_hoch.png">
-                    <img src="img/daumen_runter.png">
+                    <div class="daumen">
+                        F0rum Dokumentation
+                        <img src="img/daumen_hoch.png">56
+                        <img src="img/daumen_runter.png">3
+                    </div>
                     <div class="clear"></div>
                 </h3>
                 <p class="box_text">
@@ -58,7 +59,7 @@
                 </p>
             </div>
         </div>
-        
+
         <footer>
             &copy; Timothe Laborie, Fabian Gysel, Basil Lade 2014
         </footer>
