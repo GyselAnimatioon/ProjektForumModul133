@@ -56,3 +56,12 @@ body {
 .list-item {
     margin-left: 35px;
 }
+
+.index {
+    text-decoration: none;
+    color: rgba(0,0,0,0.7);
+}
+
+.index:hover {
+    color: rgba(0,0,0,1);
+}
