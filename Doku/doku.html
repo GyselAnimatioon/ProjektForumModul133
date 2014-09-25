@@ -1,47 +1,92 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Doku analyse</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="/css/DokuStyle/doku.css">
     </head>
     <body>
-        Forum-Projekt Analyse
-        Team:
-        •	Basil Lade
-        •	Timothe Laborié
-        •	Fabian Gysel
-        Projekt Beschreibung:
-        Es wird in einer Partnerarbeit eine 3- Tier WEB Applikation definiert und selbständig entwickelt.
-        Einzusetzende Technologien:
-        •	MySQL
-        •	PHP
-        •	HTML
-        •	CSS
-        •	JS
-        •	
+        <!-- verbindet content-outer mit content-inner -->
+        <div class="content-wrap">
+            <!-- content-outer enthält Titel des Dokuments -->
+            <div class="content-outer">
+                <h1 class="title"> Forum-Projekt Analyse </h1>
+            </div>
+            
+            <!-- content-inner enthält Inhalt der Analyse -->
+            <div class="content-inner">
 
-        Zuständig:
-        •	Basil Lade:
-        o	A
-        o	B
-        o	C
-        •	Timothe Laborié
-        o	EN, FR übersetzung
-        o	B
-        o	C
-        •	Fabian Gysel
-        o	A
-        o	B
-        o	C
-        Projekt-Ablauf:
-        1.	Source Control System bestimmen
-        2.	Projekt Initialisieren
-        3.	IDE bestimmen
-        4.	Entwicklungs-Software installieren
-        5.	Aufteilung der Tasks
-        6.	Programmieren (Dokumentiert und mit Test-Cases)
-        7.	Abgabe 
+                <!-- Jedes "Kapitel" wird in ein Block gepackt(content-block) -->
+                <div class="content-block">
+                    <!-- Titel des Blocks -->
+                    <h3 class="headline-big"> Team: </h3>
+                    <!-- Inhalt des Blocks -->
+                    <ul class="list-items">
+                        <li class="list-item"> Basil Lade </li>
+                        <li class="list-item"> Timothe Laborié </li>
+                        <li class="list-item"> Fabian Gysel </li>
+                    </ul>
+                </div>
 
+                <div class="content-block">
+                    <h3 class="headline-big"> Projekt Beschreibung: </h3>
+                    <p> Es wird in einer Partnerarbeit eine 3- Tier WEB Applikation definiert und selbständig entwickelt. </p>
+                </div>
+
+                <div class="content-block">
+                    <h3 class="headline-big"> Einzusetzende Technologien: </h3>
+                    <ul class="list-items">
+                        <li class="list-item"> MySQL </li>
+                        <li class="list-item"> PHP </li>
+                        <li class="list-item"> HTML </li>
+                        <li class="list-item"> CSS </li>
+                        <li class="list-item"> JS </li>
+                    </ul>
+                </div>
+
+                <div class="content-block">
+                    <h3 class="headline-big"> Zuständig: </h3>
+
+                    <h4 class="headline-sm"> Basil Lade: </h4>
+
+                    <ul class="list-items">
+                        <li class="list-item"> A </li>
+                        <li class="list-item"> B </li>
+                        <li class="list-item"> C </li>
+                    </ul>
+
+                    <h4 class="headline-sm"> Timothé Laborie: </h4>
+
+                    <ul class="list-items">
+                        <li class="list-item"> EN, FR übersetzung </li>
+                        <li class="list-item"> B </li>
+                        <li class="list-item"> C </li>
+                    </ul>
+
+                    <h4 class="headline-sm"> Fabian Gysel: </h4>
+
+                    <ul class="list-items">
+                        <li class="list-item"> A </li>
+                        <li class="list-item"> B </li>
+                        <li class="list-item"> C </li>
+                    </ul>
+                </div>
+
+                <div class="content-block">
+                    <h3 class="headline-big"> Projekt-Ablauf: </h3>
+
+                    <ol class="list-items">
+                        <li class="list-item"> Source Control System bestimmen </li>
+                        <li class="list-item"> Projekt Initialisieren </li>
+                        <li class="list-item"> IDE bestimmen </li>
+                        <li class="list-item"> Entwicklungs-Software installieren </li>
+                        <li class="list-item"> Aufteilung der Tasks </li>
+                        <li class="list-item"> Programmieren (Dokumentiert und mit Test-Cases) </li>
+                        <li class="list-item"> Abgabe </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
