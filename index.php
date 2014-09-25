@@ -69,7 +69,7 @@
                     <div class="clear"></div>
                 </h3>
                 <p class="box_text">
-                    Es wurde Regeln für dieses Forum erstellt und auf dies kann man nun zugreifen <a href="projekt_texte/commit_rules.html"><input type="button" value="Reglen"></a>
+                    Es wurde Regeln für dieses Forum erstellt und auf dies kann man nun zugreifen <a href="projekt_texte/rules.html"><input type="button" value="Reglen"></a>
                 </p>
             </div>
         </div>
