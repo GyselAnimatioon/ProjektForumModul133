@@ -12,6 +12,8 @@
         <title>F0rum</title>
         <!-- Stylesheet für Titel -->
         <link type="text/css" rel="Stylesheet" href="css/head.css">
+        <!-- Stylesheet für Body -->
+        <link type="text/css" rel="Stylesheet" href="css/body.css">
     </head>
     <body>
         <!--Titel-->
@@ -29,7 +31,7 @@
             <div class="clear"></div>
         </div>
         
-        <div class="bod">
+        <div class="body">
             <p>Inhalt</p>
         </div>
         
