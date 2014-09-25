@@ -55,7 +55,7 @@
                     <div class="clear"></div>
                 </h3>
                 <p class="box_text">
-                    Es wurde eine Dokumentation für dieses Forum erstellt und auf dies kann man nun zugreifen <a href="Doku/doku.html"><input type="button" value="Dokumentation"></a>
+                    Es wurde eine Dokumentation für dieses Forum erstellt und auf dies kann man nun zugreifen <a href="projekt_texte/doku.html"><input type="button" value="Dokumentation"></a>
                 </p>
             </div>
         </div>
