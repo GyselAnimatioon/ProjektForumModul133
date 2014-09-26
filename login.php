@@ -28,9 +28,15 @@ while ($row = mysql_fetch_object($login_querry)) {
 }
 
 if ($control != 0) {
-    echo "Login geht";
+    $_SESSION["username"] = $username;
+    $_SESSION["login"] = 1;
+    $url = "Location:index.php";
+    header($url);
 } else {
-    echo "Login geht nicht";
+    $_SESSION["login"] = 2;
+    $_SESSION["message"] = "Benutzer nicht gefunden";
+    $url = "Location:index.php";
+    header($url);
 }
 
 ?>

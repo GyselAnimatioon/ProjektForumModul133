@@ -21,7 +21,7 @@
         <?php require_once('navigation.php');?>
 
 
- <!--
+ 
          <div class="body">
              <div class="body_box">
                  <h3 class="box_title">
@@ -96,6 +96,6 @@
  
          <footer>
              &copy; Timothe Laborie, Fabian Gysel, Basil Lade 2014
-         </footer> -->
+         </footer>  
     </body>
 </html>

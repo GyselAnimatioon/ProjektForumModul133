@@ -2,6 +2,8 @@
 
 include_once './Business/password.php';
 
+session_start();
+
 $password = filter_input(INPUT_POST, 'password');
 $password2 = filter_input(INPUT_POST, 'password2');
 
@@ -11,8 +13,8 @@ $password2 = encrypt_password($password2);
 if ($password != $password2) {
     echo "2 Verschiedene Passwörter!";
 } else {
-    
-    
+
+
 
     $control = 0;
     $username = filter_input(INPUT_POST, 'username');
@@ -45,12 +47,16 @@ if ($password != $password2) {
         $eintrag_querry = mysql_query($insert_querry);
 
         if ($eintrag_querry == true) {
-            echo "Du hast dich Registriert! Melde dich nun <a href='index.php'>an</a>";
+            $_SESSION["username"] = $username;
+            $_SESSION["login"] = 1;
+            $url = "Location:index.php";
+            header($url);
         } else {
-            echo "Fehler beim Registrieren!";
+            $_SESSION["login"] = 0;
+            $url = "Location:register.php";
+            header($url);
         }
         mysql_close($connect);
     }
 }
-
 ?>
