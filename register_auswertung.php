@@ -1,18 +1,17 @@
 <?php
 
-$password = md5($_POST['password']);
-$password2 = md5($_POST['password2']);
+$password = filter_input(INPUT_POST, 'password');
+$password2 = filter_input(INPUT_POST, 'password2');
 
 if ($password != $password2) {
-
     echo "2 Verschiedene Passwörter!";
 } else {
 
     $control = 0;
-    $username = strtolower($_POST['username']);
-    $vorname = $_POST['vorname'];
-    $nachname = $_POST['nachname'];
-    $mail = $_POST['mail'];
+    $username = filter_input(INPUT_POST, 'username');
+    $vorname = filter_input(INPUT_POST, 'vorname');
+    $nachname = filter_input(INPUT_POST, 'nachname');
+    $mail = filter_input(INPUT_POST, 'mail');
     $server = 'localhost';
     $dbuser = 'root';
     $dbpassword = '';

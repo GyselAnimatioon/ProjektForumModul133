@@ -2,8 +2,8 @@
 
 session_start();
 
-$username = strtolower($_POST['username']);
-$password = md5($_POST['password']);
+$username = filter_input(INPUT_POST, 'username');
+$password = filter_input(INPUT_POST, 'password');
 $control = 0;
 $server = "localhost";
 $dbuser = "root";
