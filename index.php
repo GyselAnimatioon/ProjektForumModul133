@@ -13,7 +13,7 @@
         <link type="text/css" rel="Stylesheet" href="css/body.css">
         <link rel="stylesheet" href="/css/RegistrationStyle/pure.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Google Fonts -->
+        <!-- Google Fontss -->
         <link href='http://fonts.googleapis.com/css?family=Nixie+One|PT+Mono|Monoton|Varela+Round' rel='stylesheet' type='text/css'>
     </head>
     <body>
