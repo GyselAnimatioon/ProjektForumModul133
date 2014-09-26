@@ -8,7 +8,7 @@
         <li><a href="#">Trends</a></li>
         <li><a href="doku.php">Info</a></li>
         <li><a href="rules.php">Rules</a></li>
-        <li><a href="#">Contact</a></li>
+        
 
         <?php
         session_start();
@@ -30,6 +30,7 @@
             <?php
         } else if ($eingelogt == 1) {
             ?>
+            <li><a href="new_message.php">New Message</a></li>
             <li><a href="profil.php">Eingeloggt als <?php if(isset($_SESSION["username"])) {echo $_SESSION["username"];} ?></a></li>
             <li><a href="logout.php">Log out</a></li>
             <?php
