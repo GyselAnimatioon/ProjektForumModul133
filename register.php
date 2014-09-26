@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" rel="stylesheet" href="/css/RegistrationStyle/registration.css">
         <!-- Bibliothek für formular -->
-        <link rel="stylesheet" href="/css/RegistrationStyle/pure.css">
+        <link rel="stylesheet" href="/css/pure.css">
         <link href='http://fonts.googleapis.com/css?family=Nixie+One|PT+Mono|Monoton|Varela+Round' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -39,7 +39,7 @@
                     <div class="pure-u-1-2">
                         <input class="pure-input-1" type="password" name="password2" placeholder="Passwort Bestätigen">
                     </div>
-
+                    
                     <div class="pure-u-1">
                          <input class="pure-button pure-input-2-4 pure-button-primary" type="submit" value="Registrieren!">
                     </div>

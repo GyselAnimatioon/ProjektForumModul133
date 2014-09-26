@@ -6,8 +6,8 @@
         <li><a href="#">Best</a></li>
         <li><a href="#">Random</a></li>
         <li><a href="#">Trends</a></li>
-        <li><a href="#">Info</a></li>
-        <li><a href="#">Rules</a></li>
+        <li><a href="doku.php">Info</a></li>
+        <li><a href="rules.php">Rules</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="register.php">Sign up</a></li>
     </ul>

@@ -11,6 +11,8 @@ $password2 = encrypt_password($password2);
 if ($password != $password2) {
     echo "2 Verschiedene Passwörter!";
 } else {
+    
+    
 
     $control = 0;
     $username = filter_input(INPUT_POST, 'username');
