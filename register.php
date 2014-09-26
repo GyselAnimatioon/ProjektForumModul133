@@ -6,10 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" rel="stylesheet" href="/css/RegistrationStyle/registration.css">
         <!-- Bibliothek für formular -->
-        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+        <link rel="stylesheet" href="/css/RegistrationStyle/pure.css">
         <link href='http://fonts.googleapis.com/css?family=Nixie+One|PT+Mono|Monoton|Varela+Round' rel='stylesheet' type='text/css'>
     </head>
     <body>
+        
+         <?php require_once('navigation.php');?>
 
         <div class="content-wrap">
             <div class="content-outer">

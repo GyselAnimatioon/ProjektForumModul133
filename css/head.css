@@ -10,10 +10,11 @@ body {
 
 .title_box {
     /*Bodenstrich Titel*/
-    border-bottom: 1px solid black;
+    /*border-bottom: 1px solid black;*/
     /*Titel hintergrund hellgrau*/
-    background-color: lightgray;
+ 
     /*Standart Margin entfernen*/
+    
     margin: 0;
     font-family: 'Varela Round', cursive;
 }
@@ -36,8 +37,8 @@ h1.title {
     /*Login und titel nebeneinander*/
     float: left;
     padding: 1%;
-    /*border: 1px solid black;*/
-    width: 70%;
+    border: 1px solid black;
+    width: 10%;
     margin: 1% 3%;
     text-align: center;
     font-family: 'Nixie One', cursive;
