@@ -636,6 +636,11 @@ table {
 .pure-menu li a {
     padding: 5px 20px;
 }
+input.small_button {
+    border: none;
+    background-color: transparent;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
+}
 .pure-menu-can-have-children>.pure-menu-label:after {
     content: '\25B8';
     float: right;
@@ -662,7 +667,8 @@ table {
     top: 0;
     left: 0;
     width: 100%}
-.pure-menu-horizontal li {
+.pure-menu-horizontal li,
+.pure-menu-horizontal input /* Hinzugefuegt */ {
     display: inline-block;
     *display: inline;
     zoom: 1;

@@ -19,10 +19,6 @@ body {
     font-family: 'Varela Round', cursive;
 }
 
-.login input.small_button {
-    width: 48%;
-}
-
 div.login {
     /*Login und titel nebeneinander*/
     float: right;
