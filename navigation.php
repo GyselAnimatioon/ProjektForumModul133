@@ -30,7 +30,7 @@
             <?php
         } else if ($eingelogt == 1) {
             ?>
-            <li>Eingeloggt als <?php if(isset($_SESSION["username"])) {echo $_SESSION["username"];} ?></li>
+            <li><a href="profil.php">Eingeloggt als <?php if(isset($_SESSION["username"])) {echo $_SESSION["username"];} ?></a></li>
             <li><a href="logout.php">Log out</a></li>
             <?php
         } else if ($eingelogt == 2) {

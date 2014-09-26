@@ -23,75 +23,9 @@
 
  
          <div class="body">
-             <div class="body_box">
-                 <h3 class="box_title">
-                     <div class="daumen">
-                         Datenbank
-                         <img src="img/daumen_hoch.png">1
-                         <img src="img/daumen_runter.png">0
-                     </div>
-                     <div class="clear"></div>
-                 </h3>
-                 <p class="box_text">
-                     So kann jemand vielleicht den datenbank machen ? :3
-                 </p>
-             </div>
-             <div class="body_box">
-                 <h3 class="box_title">
-                     <div class="daumen">
-                         Forum gestartet!
-                         <img src="img/daumen_hoch.png">3'921
-                         <img src="img/daumen_runter.png">12
-                     </div>
-                     <div class="clear"></div>
-                 </h3>
-                 <p class="box_text">
-                     Das F0rum wurde eröffnet!! juhu xD
-                 </p>
-             </div>
- 
-             <div class="body_box">
-                 <h3 class="box_title">
-                     <div class="daumen">
-                         Forum gestartet!
-                         <img src="img/daumen_hoch.png">3'921
-                         <img src="img/daumen_runter.png">12
-                     </div>
-                     <div class="clear"></div>
-                 </h3>
-                 <p class="box_text">
-                     Das F0rum wurde eröffnet!! juhu xD
-                 </p>
-             </div>
- 
- 
-             <div class="body_box">
-                 <h3 class="box_title">
-                     <div class="daumen">
-                         F0rum Dokumentation
-                         <img src="img/daumen_hoch.png">56
-                         <img src="img/daumen_runter.png">3
-                     </div>
-                     <div class="clear"></div>
-                 </h3>
-                 <p class="box_text">
-                     Es wurde eine Dokumentation für dieses Forum erstellt und auf dies kann man nun zugreifen <a href="projekt_texte/doku.html"><input type="button" value="Dokumentation"></a>
-                 </p>
-             </div>
- 
-             <div class="body_box">
-                 <h3 class="box_title">
-                     <div class="daumen">
-                         F0rum Regeln
-                         <img src="img/daumen_hoch.png">56'921'221
-                         <img src="img/daumen_runter.png">3'212
-                     </div>
-                     <div class="clear"></div>
-                 </h3>
-                 <p class="box_text">
-                     Es wurde Regeln für dieses Forum erstellt und auf dies kann man nun zugreifen <a href="projekt_texte/rules.html"><input type="button" value="Reglen"></a>
-                 </p>
-             </div>
+           
+ <?php require_once('nachrichten.php');?>
+
          </div>
  
          <footer>
