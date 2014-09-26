@@ -31,6 +31,19 @@
         </div>
 
         <div class="body">
+                  <div class="body_box">
+                <h3 class="box_title">
+                    <div class="daumen">
+                        So kann jemand vielleicht den datenbank machen ? :3
+                        <img src="img/daumen_hoch.png">1
+                        <img src="img/daumen_runter.png">0
+                    </div>
+                    <div class="clear"></div>
+                </h3>
+                <p class="box_text">
+                    Das F0rum wurde eröffnet!! juhu xD
+                </p>
+            </div>
             <div class="body_box">
                 <h3 class="box_title">
                     <div class="daumen">
@@ -44,6 +57,7 @@
                     Das F0rum wurde eröffnet!! juhu xD
                 </p>
             </div>
+            
 
             <div class="body_box">
                 <h3 class="box_title">
