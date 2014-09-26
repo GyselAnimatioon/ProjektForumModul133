@@ -1,7 +1,12 @@
 <?php
 
+include_once './Business/password.php';
+
 $password = filter_input(INPUT_POST, 'password');
 $password2 = filter_input(INPUT_POST, 'password2');
+
+$password = encrypt_password($password);
+$password2 = encrypt_password($password2);
 
 if ($password != $password2) {
     echo "2 Verschiedene Passwörter!";
@@ -45,4 +50,5 @@ if ($password != $password2) {
         mysql_close($connect);
     }
 }
+
 ?>

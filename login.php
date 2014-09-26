@@ -1,9 +1,12 @@
 <?php
 
+include_once './Business/password.php';
+
 session_start();
 
 $username = filter_input(INPUT_POST, 'username');
 $password = filter_input(INPUT_POST, 'password');
+$password = encrypt_password($password);
 $control = 0;
 $server = "localhost";
 $dbuser = "root";
