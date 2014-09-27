@@ -10,9 +10,9 @@
         <link href='http://fonts.googleapis.com/css?family=Nixie+One|PT+Mono|Monoton|Varela+Round' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        
-        <?php require_once('navigation.php');?>
-        
+
+        <?php require_once('navigation.php'); ?>
+
         <!-- verbindet content-outer mit content-inner -->
         <div class="content-wrap">
             <!-- content-outer enthält Titel des Dokuments -->
@@ -52,16 +52,16 @@
                     <h3 class="headline-big"> Projekt Beschreibung: </h3>
                     <p> Es wird in einer Partnerarbeit eine 3- Tier WEB Applikation definiert und selbständig entwickelt. </p>
                     <p>Die Applikation wird in 3 Ebene unterteilt.</p>
-                    <p>Die Daten-Ebene verwaltet die Datenbank, diese werden wir dannach in PHP benutz.</p>
-                    <p>In der Business-Ebene wird Code wie z.B. PHP verwalten, mit dieser man dannach Daten aus der Daten-Ebene benutzen kann.</p>
-                    <p>Im Presentationen-Layer wird alles verwaltet, was der Endnutzer auf dem Bildschirm sieht, wie z.B. Texte auf der Website und Formation der Texte. HTML und CSS werden dort z.B. verwaltet.</p> 
+                    <p>Die Daten-Ebene verwaltet die Datenbank, diese werden wir dannach in PHP benutzen.</p>
+                    <p>In der Business-Ebene ist der Code wie z.B. PHP enthalten, mit dieser man dannach Daten aus der Daten-Ebene benutzen kann.</p>
+                    <p>Der Presentationen-Layer enthält alles, was der Endnutzer auf dem Bildschirm sieht, wie z.B. Texte auf der Website und Formation der Texte. HTML und CSS werden dort z.B. verwaltet.</p> 
                     <br>
                     <p>
-                        Wir wollen ein Webapplikation erstelln, in der es Möglich ist sich in eine Datenbnk Anzumelden oder zu Registrieren. Man soll ein eigenes
-                        Profil bekommen und dies dann auch bearbeiten könne. Über die Startseite kann man Nachrichten erstllen, diese mit einem Titel verzeichnen und dies 
-                        dannach "Posten". Jeder eingeloggte User kann seine Meinung zu dieser Nachrichten über ein Voting-System ("Gefällt mir", "Gefällt mir nicht") abgeben.
-                        Auf der Startseite werden die jeweiligen Nachrichten, mit den meissten "Hochvotings" der Reihe nache aufgeführt.
-                        Der User soll auch seine eigenen Nachrichten verwalten können und diese auf einer Seperaten Seite einsehen und auch auf wunsch Löschen.
+                        Wir wollen ein Webapplikation erstellen, in der es Möglich ist, sich in einer Datenbank Anzumelden oder zu Registrieren. Man soll ein eigenes
+                        Profil bekommen und dies dann auch bearbeiten können. Über die Startseite kann man Nachrichten erstellen, diese mit einem Titel versehem und dies 
+                        dannach "Posten". Jeder eingeloggte User kann seine Meinung zu einer Nachricht über ein Voting-System ("Gefällt mir", "Gefällt mir nicht") abgeben.
+                        Auf der Startseite werden die jeweiligen Nachrichten, mit den meisten "Hochvotings" der Reihe nache aufgeführt.
+                        Der User soll auch seine eigenen Nachrichten verwalten können und diese auf einer seperaten Seite einsehen und auch Löschen.
                         Der User kann sich schlussentlich auch wieder Ausloggen.
                     </p>
                 </div>
@@ -69,37 +69,119 @@
                 <div id="technologien" class="content-block">
                     <h3 class="headline-big"> Einzusetzende Technologien: </h3>
                     <ul class="list-items">
-                        <li class="list-item"> MySQL ist ein Weltweit stark verbreitetes Relationales Datenbanksystem, wir haben  MySQL gewählt weil sie eine der bekanntesten ist und es eine Open-Source Lizensierung gibt. </li>
-                        <li class="list-item"> PHP ist eine Serverseitige Programmiersprache und wird für die Funktionalität der Website benötigt, z.B. Erstellen eines Login oder eines Accounts. PHP wurde gewählt, weil es als Schulstandard empfohlen wurde und wir schon etwas Erfahrung haben..</li>
-                        <li class="list-item"> HTML für die Website, es ist eine Auszeichungs Sprache um ein Dokument zu strukturieren. </li>
-                        <li class="list-item"> CSS wird genutzt um den Style eines HTML-Dokument festzulegen. Wir benutzen CSS als eine der einzigsten Stylesprachen die mit HTML compatibel sind.</li>
-                        <li class="list-item"> JS steht für JavaScript. Es ist eine Skriptsprache, mit der man Dynamische Websiten erstellen kann.</li>
+                        <li class="list-item logo-item">
+                            <img class="logo-mysql" src="img/doku/mysql-logo.png" alt="mysql logo"/>
+                            MySQL ist ein Weltweit stark verbreitetes Relationales Datenbanksystem, wir haben  MySQL gewählt weil sie eine der bekanntesten ist und es eine Open-Source Lizensierung gibt.
+                        </li>
+                        <li class="list-item logo-item">
+                            <img class="logo-php" src="img/doku/phplogo-highres.png" alt="php-logo"/>
+                            PHP ist eine Serverseitige Programmiersprache und wird für die Funktionalität der Website benötigt, z.B. Erstellen eines Login oder eines Accounts. PHP wurde gewählt, weil es als Schulstandard empfohlen wurde und wir schon etwas Erfahrung haben...
+                        </li>
+
+                        <li class="list-item logo-item">
+                            <img class="logo-html" src="img/doku/HTML5_Logo_512.png" alt=""/>
+                            HTML ist für die Website, es ist eine Auszeichungs Sprache, mit der eine Website struktoriert wird.
+                        </li>
+                        <li class="list-item logo-item">
+                            <img class="logo-css3" src="img/doku/css3-logo.png" alt=""/>
+                            CSS wird genutzt um den Style eines HTML-Dokument festzulegen. Wir benutzen CSS als eine der einzigsten Stylesprachen die mit HTML compatibel sind.
+                        </li>
+                        <li class="list-item logo-item"> JS steht für JavaScript. Es ist eine Skriptsprache, mit der man Dynamische Websiten erstellen kann.</li>
                     </ul>
                 </div>
-                
+
                 <div id="einz-aufgaben" class="content-block">
                     <h3 class="headline-big"> Aufgaben: </h3>
                     <ul class="list-items">
-                        <li class="list-item"> Hauptseite (PHP)</li>
-                        <li class="list-item"> Datenbank (MySQL)</li>
-                        <li class="list-item"> Login (PHP / MySQL)</li>
-                        <li class="list-item"> Registrierung (PHP / MySQL)</li>
-                        <li class="list-item"> Nachrichten zur Datenbank hizufügen ()</li>
-                        <li class="list-item"> Nachrichten aus Datenbank anzeigen </li>
-                        <li class="list-item"> Gefällt mir Anzeige </li>
-                        <li class="list-item"> Logout (PHP)</li>
-                        <li class="list-item"> Profilseite (PHP | Sehr viel Arbeit)</li>
-                        <li class="list-item"> Profil zurückspeichern (PHP | Sehr viel Arbeit)</li>
-                        <li class="list-item"> Dokumentation / Regelung </li>
-                        <li class="list-item"> Design Website </li>
-                        <li class="list-item"> HTML usw. Struktur </li>
-                        <li class="list-item"> Nachrichtenentwurfs-Ansichtseite </li>
-                        <li class="list-item"> Eigene Nachrichten </li>
-                        <li class="list-item">  </li>
-                        <li class="list-item"> Eitere Ideen: </li>
+                        <li class="list-item">
+                            Hauptseite (PHP)
+                            <ul>
+                                <li>Auf der Hauptseite kann man alle Einträge des nutzers sehen.</li>
+                            </ul>
+                        </li>
+                        <li class="list-item">
+                            Datenbank (MySQL)
+                            <ul>
+                                <li>In der Datenbank sind die Nutzer und deren Einträge gespeichert.</li>
+                            </ul>
+                        </li>
+                        <li class="list-item">
+                            Registrierung (PHP / MySQL)
+                            <ul>
+                                <li>Der Nutzer kann sich registrieren.</li>
+                            </ul>
+                        </li>
+                        <li class="list-item">
+                            Login (PHP / MySQL)
+                            <ul>
+                                <li>Der Nutzer kann sich anmelden, vorausgesetzt er hat sich schon Registriert.</li>
+                            </ul>
+                        </li>
+                        <li class="list-item">
+                            Nachrichten hizufügen
+                            <ul>
+                                <li>Nachrichten werden in der Datenbank gespeichert.</li>
+                            </ul>
+                        </li>
+                        <li class="list-item">
+                            Nachrichten anzeigen
+                            <ul>
+                                <li>Nachrichten werden aus der Datenbank geholt und auf der Website dargestellt.</li>
+                            </ul>
+                        </li>
+                        <li class="list-item">
+                            Voting
+                            <ul>
+                                <li>Ein Nutzer kann ein Eintrag eines anderen Nutzers bewerten, indem er einen Daumen hoch oder runter gibt.</li>
+                            </ul>
+                        </li>
+                        <li class="list-item"> 
+                            Logout (PHP)
+                            <ul>
+                                <li>Der Nutzer kann sich abmelden.</li>
+                            </ul>
+                        </li>
+                        <li class="list-item">
+                            Profilseite (PHP | Sehr viel Arbeit)
+                            <ul>
+                                <li>Der Nutzer kann sein Profil und seine Nachrichten auf einer seperaten Webpage ansehen.</li>
+                            </ul>
+                        </li>
+                        <li class="list-item">
+                            Profil ändern (PHP | Sehr viel Arbeit)
+                            <ul>
+                                <li>Der Nutzer kann auf Wunsch sein Profil ändern.</li>
+                            </ul>
+                        </li>
+                        <li class="list-item">
+                            Dokumentation / Regelung
+                            <ul>
+                                <li>Dokumentation enthält Beschreibung des Projekts</li>
+                                <li>Regelung enthält verschiedene Regeln, wie z.B. der richtige Umgang mit "Pull", "Commit" und "Push".</li>
+                            </ul>
+                        </li>
+                        <li class="list-item">
+                            Design Website
+                            <ul>
+                                <li>Die Website wird mit CSS gestylt.</li>
+                            </ul>
+                        </li>
+                        <li class="list-item">
+                            Struktur der Codes
+                            <ul>
+                                <li>Beinhaltet: Aufbau und Einrückung der Codes, sinvolle Namen(Variablen, Klassen usw.) und Leserlichkeit. </li>
+                            </ul>
+                        </li>
+                        <li class="list-item">
+                            Nachrichtenentwurfs-Ansichtseite
+                            <ul>
+                                <li>BITTE BESCHREIBUNG HINZUFÜGEN...</li>
+                            </ul>
+                        </li>
+                        <li class="list-item"> Weitere Ideen: </li>
                     </ul>
                 </div>
-                
+
                 <div id="zustaendig" class="content-block"> 
                     <h3 class="headline-big"> Zuständigkeiten: </h3>
 
@@ -126,7 +208,7 @@
                         <li class="list-item"> Registrierung </li>
                         <li class="list-item">  </li>
                     </ul>
-                    
+
                     <h4 class="headline-sm"> Team: </h4>
 
                     <ul class="list-items">
@@ -141,7 +223,7 @@
                         <li class="list-item"> Abgabe </li>
                     </ul>
                 </div>
-                
+
                 <div id="proj-ablauf" class="content-block">
                     <h3 class="headline-big"> Projekt-Ablauf: </h3>
 
@@ -155,13 +237,27 @@
                         <li class="list-item"> Abgabe </li>
                     </ol>
                 </div>
-                
+
                 <div id="erm" class="content-block">
                     <h3 class="headline-big"> ERM: </h3>
-                    
-                    <img src="../img/ERM.png" alt=""/>
+                    <dl>
+                        <dt><img src="/img/doku/ERM.png" alt="Datenbank ERD"/></dt>
+                        <dd>
+                            In der Tabelle <strong>user</strong>
+                            sind alle Kontaktdaten des Nutzers gespeichert.
+                        </dd>
+                        <dd>
+                            In der Tabelle <strong>nachrichten</strong>
+                            sind alle Nachrichten gespeichert. </dd>
+                        <dd>
+                            In der Tabelle <strong>user_nachrichten</strong> 
+                            wird jede Nachricht einem Nutzer zugewiesen, 
+                            damit später alle Nachrichten von einem bestimmten
+                            Nutzer herausgesucht werden kann.
+                        </dd>
+                    </dl>
                 </div>
-                
+
             </div>
         </div>
     </body>
