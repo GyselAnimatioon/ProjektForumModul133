@@ -53,7 +53,19 @@ body {
 }
 
 .list-item {
-    margin-left: 35px;
+    margin-left: 4px;
+    padding: 0;
+}
+
+.logo-item{
+    margin-bottom: 25px;
+    clear: left;
+}
+
+.logo-mysql, .logo-php, .logo-html, .logo-css3 {
+    float: left;
+    margin-right: 8px;
+    width: 102px;
 }
 
 .index {
