@@ -14,7 +14,7 @@ body {
     /*Titel hintergrund hellgrau*/
  
     /*Standart Margin entfernen*/
-    
+   
     margin: 0;
     font-family: 'Varela Round', cursive;
 }
@@ -41,7 +41,7 @@ h1.title {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
     border-top: 1px solid black;
