@@ -21,7 +21,7 @@ $select_querry = "SELECT * FROM nachrichten inner join user_nachricht u on u.nac
 $selectt_querry = mysql_query($select_querry);
 while ($row = mysql_fetch_object($selectt_querry)) {
     ?>
-    <div class="body_box">
+<div style="width:40%;border:1px solid black;border-radius:5px;background-color: #66ff66;margin:1%;padding:1%;" class="body_box">
         <h3 class="box_title">
             <div class="daumen">
                 <?php echo $row->titel; ?>
@@ -30,6 +30,7 @@ while ($row = mysql_fetch_object($selectt_querry)) {
                 <img src="img/daumen_runter.png">
                 <?php echo $row->daumen_runter; ?>
             </div>
+            
             <div class="clear"></div>
         </h3>
         <p class="box_text">
