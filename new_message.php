@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Doku analyse</title>
+        <title>New Message</title>
         <meta charset="UTF-8">
         <!-- Stylesheet für Titel -->
         <link type="text/css" rel="Stylesheet" href="css/pure.css">
@@ -31,11 +31,9 @@
                     <input type="hidden" name="date" value="<?php echo date("Y:m:d G:i:s"); ?>">
                 </div>
                 
-                <div class="pure-u-1-2">
-                    <input class="pure-input-1" type="reset" value="Reset!">
-                </div>
-                <div class="pure-u-1-2">
-                    <input class="pure-input-1" type="submit" value="Senden!">
+                <div class="pure-u-1">
+                    <input class="pure-button pure-button-error pure-input-1-4" type="reset" value="Reset!">
+                    <input class="pure-button pure-button-primary pure-input-1-4" type="submit" value="Senden!">
                 </div>
 
             </form>
