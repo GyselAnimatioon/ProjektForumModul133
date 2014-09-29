@@ -17,29 +17,13 @@
         <link href='http://fonts.googleapis.com/css?family=Nixie+One|PT+Mono|Monoton|Varela+Round' rel='stylesheet' type='text/css'>
     </head>
     <body>
-
-        <?php require_once('navigation.php');?>
-
-
- 
-         <div class="body">
-           
- <?php require_once('nachrichten.php');?>
-
-             <pre>
-             
-             <?php
-             
-             print_r($_SESSION);
-             
-             ?>
-             
-             </pre>
-
-         </div>
- 
-         <footer>
-             &copy; Timothe Laborie, Fabian Gysel, Basil Lade 2014
-         </footer>  
+        <?php require_once('navigation.php'); ?>
+        <div class="body">
+            <?php require_once('nachrichten.php'); ?>
+        </div>
+        
+        <footer>
+            &copy; Timothe Laborie, Fabian Gysel, Basil Lade 2014
+        </footer>  
     </body>
 </html>

@@ -246,7 +246,6 @@
                 <div id="erm" class="content-block">
                     <h3 class="headline-big"> ERM: </h3>
                     <dl>
-                        <!--<dt><img src="/img/doku/ERM.png" alt="Datenbank ERD"/></dt> Bild nicht komplett -->
                         <dd>
                             In der Tabelle <strong>user</strong>
                             sind alle Kontaktdaten des Nutzers gespeichert. Um 

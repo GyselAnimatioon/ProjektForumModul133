@@ -11,7 +11,7 @@ if (isset($_SESSION['login'])) {
         $dbpassword = '';
         $db = 'mydb';
 
-
+        $control = 0;
 
         $username_querry = "SELECT * FROM user WHERE username = '$username_session'";
         $usernamee_querry = mysql_query($username_querry);
@@ -26,31 +26,43 @@ if (isset($_SESSION['login'])) {
         $selectt_querry = mysql_query($select_querry);
         while ($row2 = mysql_fetch_object($selectt_querry)) {
             $nachrichten_id = $row2->nachrichten_id;
-
+            
+            //Bewertet
             if ($row->id == $nachrichten_id) {
-                if ($row2->how == 1) {
-                    echo "<span style='color: green;border:1px solid gray;padding:0 5px;'>+</span> "
+                if ($row2->how == 1 && $control != 2) {
+                    $control = 1;
+                    
+                    echo "<span class='like_button_up_set'>+</span> "
                     . $row->daumen_hoch
-                    . "<span style='color: black;border:1px solid gray;padding:0 5px;'>-</span> "
+                    . "<a href='gefaellt_mir_auswertung.php?how=0&new=0&id=$nachrichten_id' class='like_button_down'>-</a> "
                     . $row->daumen_runter;
-                } else {
-                    echo "<span style='color: black;border:1px solid gray;padding:0 5px;'>+</span> "
+                } elseif ($row2->how == 0 && $control != 1) {
+                    $control = 2;
+                    
+                    echo "<a href='gefaellt_mir_auswertung.php?how=1&new=0&id=$nachrichten_id' class='like_button_up'>+</a> "
                     . $row->daumen_hoch
-                    . "<span style='color: red;border:1px solid gray;padding:0 5px;'>-</span> "
+                    . "<span class='like_button_down_set'>-</span> "
                     . $row->daumen_runter;
                 }
             }
         }
+        if ($control == 0) {
+            
+            echo "<a href='gefaellt_mir_auswertung.php?how=1&new=1&id=$row->id' class='like_button'>+</a> "
+            . $row->daumen_hoch
+            . "<a href='gefaellt_mir_auswertung.php?how=0&new=1&id=$row->id' class='like_button'>-</a> "
+            . $row->daumen_runter;
+        }
     } else {
-        echo "<span style='color: black;'>+</span>"
+        echo "<span class='like_button'>+</span>"
         . $row->daumen_hoch
-        . "<span style='color: black;'>-</span>"
+        . "<span class='like_button'>-</span>"
         . $row->daumen_runter;
     }
 } else {
-    echo "<img src = 'img/daumen_hoch.png'>"
+    echo "<span class='like_button'>+</span>"
     . $row->daumen_hoch
-    . "<img src='img/daumen_runter.png'>"
+    . "<span class='like_button'>-</span>"
     . $row->daumen_runter;
 }
 ?>

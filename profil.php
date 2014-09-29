@@ -229,7 +229,17 @@
                                 </tr>
                                 <tr class="pure-table-odd">
                                     <td>Sprache</td>
-                                    <td><?php if($row->lang=="EN"){echo"Englisch";}elseif($row->lang=="DE"){echo"Deutsch";}elseif($row->lang=="FR"){echo"France";}else{echo $row->lang;} ?></td>
+                                    <td><?php
+                                        if ($row->lang == "EN") {
+                                            echo"Englisch";
+                                        } elseif ($row->lang == "DE") {
+                                            echo"Deutsch";
+                                        } elseif ($row->lang == "FR") {
+                                            echo"France";
+                                        } else {
+                                            echo $row->lang;
+                                        }
+                                        ?></td>
                                     <td>
                                         <select name="lang2">
                                             <option selected>

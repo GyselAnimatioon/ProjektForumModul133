@@ -4,7 +4,7 @@ $dbuser = 'root';
 $dbpassword = '';
 $db = 'mydb';
 
-$select_querry = "SELECT * FROM nachrichten";
+$select_querry = "SELECT * FROM nachrichten ORDER BY erstellt_am DESC";
 
 $connect = mysql_connect($server, $dbuser, $dbpassword)
         or die("Verbidung nicht Möglich!");
@@ -16,15 +16,21 @@ $nachrichten_querry = mysql_query($select_querry);
 
 while ($row = mysql_fetch_object($nachrichten_querry)) {
     ?>
-    <div class="body_box">
+    <div class="body_box" style="background-image: url('img/background/<?php echo rand(1,6) ?>.jpg');background-size: cover;">
         <h3 class="box_title">
             <div class="daumen">
+                <?php echo $row->erstellt_am; ?>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <?php echo $row->titel; ?>
 
+                
+                
                 <?php require 'gefaellt_mir.php'; ?>
 
 
+                
 
+                
             </div>
             <div class="clear"></div>
         </h3>

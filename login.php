@@ -35,8 +35,8 @@ if ($control != 0) {
 } else {
     $_SESSION["login"] = 2;
     $_SESSION["message"] = "Benutzer nicht gefunden";
-    //$url = "Location:index.php";
-    //header($url);
+    $url = "Location:index.php";
+    header($url);
 }
 
 ?>
