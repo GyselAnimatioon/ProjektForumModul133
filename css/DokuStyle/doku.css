@@ -62,10 +62,15 @@ body {
     clear: left;
 }
 
-.logo-mysql, .logo-php, .logo-html, .logo-css3 {
+.logo-mysql, .logo-php, .logo-html, .logo-css3, .logo-js {
     float: left;
     margin-right: 8px;
     width: 102px;
+}
+
+.logo-js {
+    margin: 0 20px 0 10px;
+    width: 80px;
 }
 
 .index {

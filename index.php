@@ -26,6 +26,16 @@
            
  <?php require_once('nachrichten.php');?>
 
+             <pre>
+             
+             <?php
+             
+             print_r($_SESSION);
+             
+             ?>
+             
+             </pre>
+
          </div>
  
          <footer>

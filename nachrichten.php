@@ -20,10 +20,11 @@ while ($row = mysql_fetch_object($nachrichten_querry)) {
         <h3 class="box_title">
             <div class="daumen">
                 <?php echo $row->titel; ?>
-                <img src="img/daumen_hoch.png">
-                <?php echo $row->daumen_hoch; ?>
-                <img src="img/daumen_runter.png">
-                <?php echo $row->daumen_runter; ?>
+
+                <?php require 'gefaellt_mir.php'; ?>
+
+
+
             </div>
             <div class="clear"></div>
         </h3>

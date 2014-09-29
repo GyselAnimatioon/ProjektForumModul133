@@ -86,10 +86,15 @@
                             <img class="logo-css3" src="img/doku/css3-logo.png" alt=""/>
                             CSS wird genutzt um den Style eines HTML-Dokument festzulegen. Wir benutzen CSS als eine der einzigsten Stylesprachen die mit HTML compatibel sind.
                         </li>
-                        <li class="list-item logo-item"> JS steht für JavaScript. Es ist eine Skriptsprache, mit der man Dynamische Websiten erstellen kann.</li>
+                        <li class="list-item logo-item">
+                            <img class="logo-js" src="img/doku/js6-logo.png" alt=""/>
+                            JS steht für JavaScript. Es ist eine Skriptsprache, mit der man Dynamische Websiten erstellen kann.
+                        </li>
                     </ul>
                 </div>
-
+                <br>
+                <br>
+                <br>
                 <div id="einz-aufgaben" class="content-block">
                     <h3 class="headline-big"> Aufgaben: </h3>
                     <ul class="list-items">
@@ -241,14 +246,31 @@
                 <div id="erm" class="content-block">
                     <h3 class="headline-big"> ERM: </h3>
                     <dl>
-                        <dt><img src="/img/doku/ERM.png" alt="Datenbank ERD"/></dt>
+                        <!--<dt><img src="/img/doku/ERM.png" alt="Datenbank ERD"/></dt> Bild nicht komplett -->
                         <dd>
                             In der Tabelle <strong>user</strong>
-                            sind alle Kontaktdaten des Nutzers gespeichert.
+                            sind alle Kontaktdaten des Nutzers gespeichert. Um 
+                            später die Nachrichten, nach sehr vielen und genauen 
+                            Daten zu sortieren, hat die Tabelle <strong>user</strong> 
+                            einige Attribute. Der User hat allerdings bloss einen 
+                            Username, Vornamen, Nachnamen und eine EMail anzugeben.
+                            Die restlichen Daten können nachträglich hinzugefügt 
+                            werden. Alle Daten ausser das Passwort kann direkt 
+                            unter der Profilanzeige verädert werden. Diese ruft 
+                            man auf, indem man auf "Eingeloggt als ...." klickt.
                         </dd>
+                        <br>
                         <dd>
                             In der Tabelle <strong>nachrichten</strong>
-                            sind alle Nachrichten gespeichert. </dd>
+                            sind alle Nachrichten gespeichert. Diese verfügen über 
+                            einen Titel, einen Text, eine Anzahl der Gefällt mir 
+                            und Gefällt mir nicht Anzeige und über ein Datum an 
+                            dem die Nachricht erstellt wurde. Die Nachrichten 
+                            lassen sich unter nach mehreren Kategorien anzeigen 
+                            und über viele weitere Filtern. Seine eigenen Nachrichten 
+                            kann man unter der Profilansicht ansehen.
+                        </dd>
+                        <br>
                         <dd>
                             In der Tabelle <strong>user_nachrichten</strong> 
                             wird jede Nachricht einem Nutzer zugewiesen, 

@@ -27,7 +27,7 @@ if ($password != $password2) {
     $db = 'mydb';
 
     $select_querry = "SELECT username FROM user WHERE username = '$username'";
-    $insert_querry = "INSERT INTO user VALUES(null,'$username','$vorname','$nachname','$mail','$password')";
+    $insert_querry = "INSERT INTO user VALUES(null,'$username','$vorname','$nachname','$mail','$password',null,null,null,null,null,null,null,null,null,null,null,null)";
 
     $connect = mysql_connect($server, $dbuser, $dbpassword)
             or die("Verbidung nicht Möglich!");
