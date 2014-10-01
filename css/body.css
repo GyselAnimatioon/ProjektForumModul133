@@ -7,7 +7,11 @@ and open the template in the editor.
     Created on : 25.09.2014, 09:36:32
     Author     : f.gysel
 */
-
+.standard_form {
+   width: 800px;
+   margin: auto;
+    
+}
 .body {
     margin: 2% 25%;
     /*border: 1px solid black;*/

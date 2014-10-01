@@ -1,22 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <head>
-    <head>
-        <meta charset="UTF-8">
-        <title>F0rum</title>
-        <!-- Stylesheet für Titel -->
-        <link type="text/css" rel="Stylesheet" href="css/head.css">
-        <!-- Stylesheet für Body -->
-        <link type="text/css" rel="Stylesheet" href="css/body.css">
-        <link rel="stylesheet" href="/css/pure.css">
-        <link href="css/DokuStyle/doku.css" rel="stylesheet" type="text/css"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Google Fontss -->
-        <link href='http://fonts.googleapis.com/css?family=Nixie+One|PT+Mono|Monoton|Varela+Round' rel='stylesheet' type='text/css'>
-    </head>
-    <body>
 
-        <?php require_once('navigation.php'); ?>
+
+        <?php ?>
 
         <!-- verbindet content-outer mit content-inner -->
         <div class="content-wrap">
@@ -34,7 +18,7 @@
 
                 while ($row = mysql_fetch_object($nachrichten_querry)) {
                     ?>
-                    <form method="POST" action="profil_auswerten.php">
+                    <form method="POST" action="../index.php?page=profil_auswerten.php">
                         <table class="pure-table">
                             <thead>
                                 <tr>
@@ -264,5 +248,3 @@
             }
             ?>
         </div>
-    </body>
-</html>

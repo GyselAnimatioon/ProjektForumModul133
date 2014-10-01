@@ -1,14 +1,15 @@
 <?php
 
-include_once './Business/password.php';
+include_once 'Business/password.php';
 
-session_start();
+
 
 $username = filter_input(INPUT_POST, 'username');
 $password = filter_input(INPUT_POST, 'password');
 $password = encrypt_password($password);
 $control = 0;
-include_once "Data/DBConnection.php";
+include_once "./Data/DBConnection.php";
+
 
 $querry = "SELECT * FROM user WHERE username = '$username' AND password = '$password'";
 
@@ -28,6 +29,10 @@ if ($control != 0) {
 } else {
     $_SESSION["login"] = 2;
     $_SESSION["message"] = "Benutzer nicht gefunden";
+    session_destroy();
+    unset($_SESSION);
+    unset($_POST);
+    unset($_GET);
     $url = "Location:index.php";
     header($url);
 }

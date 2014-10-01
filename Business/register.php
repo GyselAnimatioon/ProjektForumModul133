@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Registration</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" rel="stylesheet" href="/css/RegistrationStyle/registration.css">
-        <!-- Bibliothek für formular -->
-        <link rel="stylesheet" href="/css/pure.css">
-        <link href='http://fonts.googleapis.com/css?family=Nixie+One|PT+Mono|Monoton|Varela+Round' rel='stylesheet' type='text/css'>
-    </head>
-    <body>
+
         
-         <?php require_once('navigation.php');?>
+         <?php ?>
+<div class = "pure-form-aligned pure-form standard_form">
 
         <div class="content-wrap">
             <div class="content-outer">
@@ -20,7 +10,7 @@
 
             <div class="content-inner">
                 <!-- Formular mit PURE Bibliothek gestaltet -->
-                <form class="pure-form pure-g" method="POST" action="register_auswertung.php">
+                <form class="pure-form pure-g" method="POST" action="../index.php?page=register_auswertung.php">
                     <div class="pure-u-1">
                         <input class="pure-input-1" type="text" name="username" placeholder="Username">
                     </div>
@@ -46,5 +36,5 @@
                 </form>
             </div>
         </div>
-    </body>
-</html>
+
+</div>
