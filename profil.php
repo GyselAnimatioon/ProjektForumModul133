@@ -267,7 +267,7 @@
                         </table>
                     </form>
                     <?php
-                    require_once('my_nachrichten.php');
+                    require('my_nachrichten.php');
                 }
             }
             ?>

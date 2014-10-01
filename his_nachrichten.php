@@ -3,7 +3,7 @@ $server = 'localhost';
 $dbuser = 'root';
 $dbpassword = '';
 $db = 'mydb';
-$username_session = $_SESSION['username'];
+$username_session = $row->username;
 
 $connect = mysql_connect($server, $dbuser, $dbpassword)
         or die("Verbidung nicht Möglich!");
@@ -13,8 +13,8 @@ mysql_select_db($db)
 
 $username_querry = "SELECT * FROM user WHERE username = '$username_session'";
 $usernamee_querry = mysql_query($username_querry);
-while ($row = mysql_fetch_object($usernamee_querry)) {
-    $id = $row->id;
+while ($row2 = mysql_fetch_object($usernamee_querry)) {
+    $id = $row2->id;
 }
 
 $select_querry = "SELECT "

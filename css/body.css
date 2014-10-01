@@ -60,6 +60,22 @@ and open the template in the editor.
     border-bottom: 1px solid gray;
 }
 
+.made_by {
+    text-decoration: none;
+    color: lightgray;
+    float: left;
+    background-color: rgba(200,200,200,0.2);
+    padding: 4px;
+    z-index: 10;
+    
+    border-radius: 5px;
+    margin: -10px 10px 50px 10px;
+}
+
+.time {
+    font-size: 10px;
+}
+
 .daumen {
     float: right;
     margin-bottom: 2%;

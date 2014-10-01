@@ -3,7 +3,7 @@
     <img class="pure-menu-heading" src="img/blitz.jpg" alt="" style="height: 4em;"/>
     <ul>
         <li><a href="index.php">Home</a></li>
-        <li><a href="#">Best</a></li>
+        <li><a href="best.php">Best</a></li>
         <li><a href="random.php">Random</a></li>
         <li><a href="#">Trends</a></li>
         <li><a href="doku.php">Info</a></li>

@@ -10,8 +10,14 @@ if (isset($_SESSION['login'])) {
         $dbuser = 'root';
         $dbpassword = '';
         $db = 'mydb';
-
         $control = 0;
+        if (isset($_SESSION['nachrichten_id'])) {
+            $nachrichten_id = $_SESSION['nachrichten_id'];
+        }
+        $connect = mysql_connect($server, $dbuser, $dbpassword)
+                or die("Verbidung nicht Möglich!");
+        mysql_select_db($db)
+                or die("Datenbank Fehler!");
 
         $username_querry = "SELECT * FROM user WHERE username = '$username_session'";
         $usernamee_querry = mysql_query($username_querry);
@@ -19,26 +25,34 @@ if (isset($_SESSION['login'])) {
             $id = $row2->id;
         }
 
+        $select_querry = "SELECT "
+                . "* "
+                . "FROM "
+                . "gefaellt_mir g "
+                . "INNER JOIN nachrichten n ON g.nachrichten_id = n.id "
+                . "WHERE "
+                . "g.user_id = '$id'";
 
 
 
-        $select_querry = "SELECT * FROM gefaellt_mir g inner join user u on u.id = g.user_id WHERE g.user_id = $id";
         $selectt_querry = mysql_query($select_querry);
         while ($row2 = mysql_fetch_object($selectt_querry)) {
-            $nachrichten_id = $row2->nachrichten_id;
-            
+            if ($row->id == $row2->nachrichten_id) {
+                $nachrichten_id = $row2->nachrichten_id;
+            }
+
             //Bewertet
-            if ($row->id == $nachrichten_id) {
+            if ($row->nachrichten_id && $row2->nachrichten_id == $row->nachrichten_id) {
                 if ($row2->how == 1 && $control != 2) {
                     $control = 1;
-                    
+
                     echo "<span class='like_button_up_set'>+</span> "
                     . $row->daumen_hoch
                     . "<a href='gefaellt_mir_auswertung.php?how=0&new=0&id=$nachrichten_id' class='like_button_down'>-</a> "
                     . $row->daumen_runter;
                 } elseif ($row2->how == 0 && $control != 1) {
                     $control = 2;
-                    
+
                     echo "<a href='gefaellt_mir_auswertung.php?how=1&new=0&id=$nachrichten_id' class='like_button_up'>+</a> "
                     . $row->daumen_hoch
                     . "<span class='like_button_down_set'>-</span> "
@@ -47,11 +61,11 @@ if (isset($_SESSION['login'])) {
             }
         }
         if ($control == 0) {
-            
-            echo "<a href='gefaellt_mir_auswertung.php?how=1&new=1&id=$row->id' class='like_button'>+</a> "
+            echo "<a href='gefaellt_mir_auswertung.php?how=1&new=1&id=$nachrichten_id' class='like_button'>+</a> "
             . $row->daumen_hoch
-            . "<a href='gefaellt_mir_auswertung.php?how=0&new=1&id=$row->id' class='like_button'>-</a> "
+            . "<a href='gefaellt_mir_auswertung.php?how=0&new=1&id=$nachrichten_id' class='like_button'>-</a> "
             . $row->daumen_runter;
+            $control = 1;
         }
     } else {
         echo "<span class='like_button'>+</span>"

@@ -6,7 +6,14 @@ if (isset($_SESSION["login"])) {
 
     $title = filter_input(INPUT_POST, 'title');
     $text = filter_input(INPUT_POST, 'text');
-    $date = $_POST["date"];
+    $date_sek = $_POST["date_sek"];
+    $date_min = $_POST["date_min"];
+    $date_h = $_POST["date_h"];
+    $date_day = $_POST["date_day"];
+    $date_m = $_POST["date_m"];
+    $date_y = $_POST["date_y"];
+    $date_for_db = date("Y:m:d G:i:s", mktime($date_h, $date_min, $date_sek, $date_m, $date_day, $date_y));
+    $date_for_view = date("G, i, s, n, j, Y",mktime($date_h, $date_min, $date_sek, $date_m, $date_day, $date_y));
     $server = 'localhost';
     $dbuser = 'root';
     $dbpassword = '';
@@ -22,7 +29,7 @@ if (isset($_SESSION["login"])) {
     mysql_select_db($db)
             or die("Datenbank Fehler!");
 
-    $message_querry = "INSERT INTO nachrichten VALUES(null,'$title','$text',0,0,'$date')";
+    $message_querry = "INSERT INTO nachrichten VALUES(null,'$title','$text',0,0,'$date_for_db','$date_sek','$date_min','$date_h','$date_day','$date_m','$date_y')";
     $nachrichten_querry = mysql_query($message_querry);
 
     $profil_querry = "SELECT * FROM user WHERE username = '$username_session'";
@@ -32,7 +39,7 @@ if (isset($_SESSION["login"])) {
         $user_id = $row->id;
     }
 
-    $nachricht_querry = "SELECT * FROM nachrichten WHERE erstellt_am = '$date'";
+    $nachricht_querry = "SELECT * FROM nachrichten WHERE erstellt_am = '$date_for_db'";
     $nachricht = mysql_query($nachricht_querry);
     while ($row = mysql_fetch_object($nachricht)) {
         $control3++;
