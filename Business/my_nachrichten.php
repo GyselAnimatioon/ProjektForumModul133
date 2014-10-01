@@ -153,7 +153,7 @@ while ($row = mysql_fetch_object($nachrichten_querry)) {
     <div class="body_box" style="background-image: url('img/background/<?php echo rand(1, 6) ?>.jpg');background-size: cover;">
         <h3 class="box_title">
             <?php echo $row->titel; ?>
-            <?php echo "<a class='made_by' href='profile.php?id=$row->id'>By: " . $row->username . "</a>"; ?>
+            <?php echo "<a class='made_by' href='index.php?page=../Presentation/profile.php?id=$row->id'>By: " . $row->username . "</a>"; ?>
             <?php echo "<span class='time'>" . $time_ago . "</span>"; ?>
             <div class="daumen">
 

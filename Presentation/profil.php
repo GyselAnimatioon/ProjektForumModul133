@@ -243,7 +243,7 @@
                         </table>
                     </form>
                     <?php
-                    require('my_nachrichten.php');
+                    require('./Business/my_nachrichten.php');
                 }
             }
             ?>

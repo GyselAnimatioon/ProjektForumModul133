@@ -46,8 +46,8 @@
     } else if ($eingelogt == 1) {
         ?>
         <ul>
-            <li><a href="../index.php?page=new_message.php">New Message</a></li>
-            <li><a href="../index.php?page=profil.php">Eingeloggt als <?php
+            <li><a href="../index.php?page=../Presentation/new_message.php">New Message</a></li>
+            <li><a href="../index.php?page=../Presentation/profil.php">Eingeloggt als <?php
                     if (isset($_SESSION["username"])) {
                         echo $_SESSION["username"];
                     }
