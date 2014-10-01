@@ -6,18 +6,12 @@ if (isset($_SESSION['login'])) {
 
         $username_session = $_SESSION['username'];
 
-        $server = 'localhost';
-        $dbuser = 'root';
-        $dbpassword = '';
-        $db = 'mydb';
+   include_once "Data/DBConnection.php";
         $control = 0;
         if (isset($_SESSION['nachrichten_id'])) {
             $nachrichten_id = $_SESSION['nachrichten_id'];
         }
-        $connect = mysql_connect($server, $dbuser, $dbpassword)
-                or die("Verbidung nicht Möglich!");
-        mysql_select_db($db)
-                or die("Datenbank Fehler!");
+ 
 
         $username_querry = "SELECT * FROM user WHERE username = '$username_session'";
         $usernamee_querry = mysql_query($username_querry);

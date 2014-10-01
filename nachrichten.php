@@ -1,8 +1,5 @@
 <?php
-$server = 'localhost';
-$dbuser = 'root';
-$dbpassword = '';
-$db = 'mydb';
+include_once "Data/DBConnection.php";
 
 $select_querry = "SELECT "
         . "* "
@@ -14,10 +11,6 @@ $select_querry = "SELECT "
         . "n.erstellt_am "
         . "DESC";
 
-$connect = mysql_connect($server, $dbuser, $dbpassword)
-        or die("Verbidung nicht Möglich!");
-mysql_select_db($db)
-        or die("Datenbank Fehler!");
 $nachrichten_querry = mysql_query($select_querry);
 
 while ($row = mysql_fetch_object($nachrichten_querry)) {

@@ -24,15 +24,8 @@
 
         <div class="body">
             <?php
-            $server = 'localhost';
-            $dbuser = 'root';
-            $dbpassword = '';
-            $db = 'mydb';
+       include_once "Data/DBConnection.php";
 
-            $connect = mysql_connect($server, $dbuser, $dbpassword)
-                    or die("Verbidung nicht Möglich!");
-            mysql_select_db($db)
-                    or die("Datenbank Fehler!");
 
             $max_querry = "SELECT * FROM nachrichten ORDER BY id DESC LIMIT 1";
             $maxx_querry = mysql_query($max_querry);

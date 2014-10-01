@@ -1,21 +1,13 @@
 <?php
-
+include_once "Data/DBConnection.php";
 session_start();
 
-$server = "localhost";
-$dbuser = "root";
-$dbpassword = "";
-$db = "mydb";
+
 $username_session = $_SESSION['username'];
 $how = $_GET['how'];
 $new = $_GET['new'];
 $n_id = $_GET['id'];
 
-$connect = mysql_connect($server, $dbuser, $dbpassword)
-        or die("Verbidung nicht Möglich!");
-
-mysql_select_db($db)
-        or die("Datenbank Fehler!");
 
 $abfrage_user = "SELECT id FROM user WHERE username LIKE '$username_session'";
 $ergebnis_user = mysql_query($abfrage_user);
