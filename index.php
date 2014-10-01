@@ -21,7 +21,7 @@
         <div class="body">
             <?php require_once('nachrichten.php'); ?>
         </div>
-        
+
         <footer>
             &copy; Timothe Laborie, Fabian Gysel, Basil Lade 2014
         </footer>  

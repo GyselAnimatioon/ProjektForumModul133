@@ -28,7 +28,12 @@
                     <input class="pure-input-1" type="text" name="text" placeholder="Nachricht">
                 </div>
                 <div class="pure-u-1">
-                    <input type="hidden" name="date" value="<?php echo date("Y:m:d G:i:s"); ?>">
+                    <input type="hidden" name="date_sek" value="<?php echo date("s"); ?>">
+                    <input type="hidden" name="date_min" value="<?php echo date("i"); ?>">
+                    <input type="hidden" name="date_h" value="<?php echo date("G"); ?>">
+                    <input type="hidden" name="date_day" value="<?php echo date("j"); ?>">
+                    <input type="hidden" name="date_m" value="<?php echo date("n"); ?>">
+                    <input type="hidden" name="date_y" value="<?php echo date("Y"); ?>">
                 </div>
                 
                 <div class="pure-u-1">

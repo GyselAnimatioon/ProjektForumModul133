@@ -34,6 +34,7 @@
                         <li class="list-item"><a class="index" href="#zustaendig">Zuständig</a></li>
                         <li class="list-item"><a class="index" href="#proj-ablauf">Projekt-Ablauf</a></li>
                         <li class="list-item"><a class="index" href="#erm">ERM</a></li>
+                        <li class="list-item"><a class="index" href="#funktionen">Funktion der Website</a></li>
                     </ul>
                 </div>
 
@@ -278,7 +279,37 @@
                         </dd>
                     </dl>
                 </div>
-
+                <div id="funktionen" class="content-block">
+                    <!-- Titel des Blocks -->
+                    <h3 class="headline-big"> Funktionen der Website: </h3>
+                    <!-- Inhalt des Blocks -->
+                    <ul class="list-items">
+                        <li class="list-item"> Profil verwalten &#10003;</li>
+                        <li class="list-item"> Anmelden &#10003;</li>
+                        <li class="list-item"> Abmelden &#10003;</li>
+                        <li class="list-item"> Registrieren &#10003;</li>
+                        <li class="list-item"> nachrichten Schreiben &#10003;</li>
+                        <li class="list-item"> Nachrichten Bewerten &#10003;</li>
+                        <li class="list-item"> Andere Profile ansehen &#10003;</li>
+                        <li class="list-item"> Beste Nachrichten ansehen &#10003;</li>
+                        <li class="list-item"> Neuste Nachrichten ansehen &#10003;</li>
+                        <li class="list-item"> Zeitspanne seit erstellung einer Nachricht &#10003;</li>
+                        <li class="list-item"> Zufall Nachricht ansehen &#10003;</li>
+                        <li class="list-item"> Trendige Nachrichten ansehen </li>
+                        <li class="list-item"> Weiter gefilterte Nachrichten ansehen </li>
+                        <li class="list-item"> Doku anshen &#10003; </li>
+                        <li class="list-item"> Regeln ansehen &#10003; </li>
+                        <li class="list-item"> Seine Nachrichten löschen </li>
+                        <li class="list-item"> Anderen Nutzern Privatnachricht schreiben </li>
+                        <li class="list-item"> Auf Nachrichten Antworten </li>
+                        <li class="list-item"> auf Nachricht geantwortete Nachrichten Bewerten </li>
+                        <li class="list-item"> Nachrichten öffenlich an jemanden schreiben </li>
+                        <li class="list-item"> Nachrichten bearbeiten </li>
+                        <li class="list-item"> vlt. Fotos </li>
+                    </ul>
+                </div>
+                
+                <?php require 'nach_oben.php'; ?>
             </div>
         </div>
     </body>
