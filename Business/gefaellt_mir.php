@@ -42,12 +42,12 @@ if (isset($_SESSION['login'])) {
 
                     echo "<span class='like_button_up_set'>+</span> "
                     . $row->daumen_hoch
-                    . "<a href='gefaellt_mir_auswertung.php?how=0&new=0&id=$nachrichten_id' class='like_button_down'>-</a> "
+                    . "<a href='../index.php?page=gefaellt_mir_auswertung.php?how=0&new=0&id=$nachrichten_id' class='like_button_down'>-</a> "
                     . $row->daumen_runter;
                 } elseif ($row2->how == 0 && $control != 1) {
                     $control = 2;
 
-                    echo "<a href='gefaellt_mir_auswertung.php?how=1&new=0&id=$nachrichten_id' class='like_button_up'>+</a> "
+                    echo "<a href='../index.php?page=gefaellt_mir_auswertung.php?how=1&new=0&id=$nachrichten_id' class='like_button_up'>+</a> "
                     . $row->daumen_hoch
                     . "<span class='like_button_down_set'>-</span> "
                     . $row->daumen_runter;
@@ -55,9 +55,9 @@ if (isset($_SESSION['login'])) {
             }
         }
         if ($control == 0) {
-            echo "<a href='gefaellt_mir_auswertung.php?how=1&new=1&id=$nachrichten_id' class='like_button'>+</a> "
+            echo "<a href='../index.php?page=gefaellt_mir_auswertung.php?how=1&new=1&id=$nachrichten_id' class='like_button'>+</a> "
             . $row->daumen_hoch
-            . "<a href='gefaellt_mir_auswertung.php?how=0&new=1&id=$nachrichten_id' class='like_button'>-</a> "
+            . "<a href='../index.php?page=gefaellt_mir_auswertung.php?how=0&new=1&id=$nachrichten_id' class='like_button'>-</a> "
             . $row->daumen_runter;
             $control = 1;
         }
