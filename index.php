@@ -19,8 +19,18 @@
     <body>
         <?php require_once('navigation1.php'); ?>
         <div class="body">
-            <?php require_once('nachrichten.php'); ?>
+            <?php require_once('Business/nachrichten.php'); ?>
         </div>
+        <?php 
+            $page = filter_input(INPUT_GET, "page");
+            $name = "./Business/" . $page;
+            if (!empty($page)){
+            require_once $name;
+            }
+            
+            
+
+        ?>
 
         <footer>
             &copy; Timothe Laborie, Fabian Gysel, Basil Lade 2014
