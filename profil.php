@@ -19,7 +19,7 @@
         <?php require_once('navigation1.php'); ?>
 
         <!-- verbindet content-outer mit content-inner -->
-        <div class="content-wrap">
+        <div class="content-wrap body">
 
             <?php
             if (isset($_SESSION["login"])) {
@@ -266,11 +266,19 @@
                             </tbody>
                         </table>
                     </form>
+
+
                     <?php
                     require('my_nachrichten.php');
+                    ?>
+
+
+
+                    <?php
                 }
             }
             ?>
+
         </div>
     </body>
 </html>

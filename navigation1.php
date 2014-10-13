@@ -8,7 +8,6 @@
         <li><a href="#">Trends</a></li>
         <li><a href="doku.php">Info</a></li>
         <li><a href="rules.php">Rules</a></li>
-    </ul>
 
     <?php
     session_start();
@@ -19,9 +18,10 @@
         $eingelogt = 0;
     }
 
+    
+    //nie versucht einzuloggen
     if ($eingelogt == 0) {
         ?>
-        <ul>
             <li>
                 <form class="pure-form" action="login.php" method="POST">
                     <fieldset>
@@ -38,7 +38,6 @@
                     </fieldset>
                 </form>
             </li>
-        </ul>
         <!--
             <li><form action="login.php" method="POST"></li>
             <li><input type="text" name="username" placeholder="Username"></li>
@@ -48,9 +47,9 @@
             <li><a href="register.php">Register</a></li>
         -->
         <?php
+        //eigeloggt
     } else if ($eingelogt == 1) {
         ?>
-        <ul>
             <li><a href="new_message.php">New Message</a></li>
             <li><a href="profil.php">Eingeloggt als <?php
                     if (isset($_SESSION["username"])) {
@@ -58,13 +57,12 @@
                     }
                     ?></a></li>
             <li><a href="logout.php">Log out</a></li>
-        </ul>
         <?php
+        //fehlerhaftes einliogegen
     } else if ($eingelogt == 2) {
         ?>
-        <ul>
             <li>
-                <form class="pure-form" action="register.php" method="POST">
+                <form class="pure-form" action="login.php" method="POST">
                     <fieldset>
                         <input type="text" name="username" placeholder="Username">
                         <input type="password" name="password" placeholder="Password">

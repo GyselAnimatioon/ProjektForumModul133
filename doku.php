@@ -309,7 +309,6 @@
                     </ul>
                 </div>
                 
-                <?php require 'nach_oben.php'; ?>
             </div>
         </div>
     </body>
