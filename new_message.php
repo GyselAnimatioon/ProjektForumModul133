@@ -11,7 +11,7 @@
     </head>
     <body>
 
-        <?php require_once('navigation.php'); ?>
+        <?php require_once('navigation1.php'); ?>
 
         <div class="content-wrap">
 

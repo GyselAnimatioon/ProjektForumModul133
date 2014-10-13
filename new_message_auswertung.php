@@ -34,22 +34,22 @@ if (isset($_SESSION["login"])) {
 
     $profil_querry = "SELECT * FROM user WHERE username = '$username_session'";
     $profil = mysql_query($profil_querry);
-    while ($row = mysql_fetch_object($profil)) {
+    while ($linie = mysql_fetch_object($profil)) {
         $control2++;
-        $user_id = $row->id;
+        $user_id = $linie->id;
     }
 
     $nachricht_querry = "SELECT * FROM nachrichten WHERE erstellt_am = '$date_for_db'";
     $nachricht = mysql_query($nachricht_querry);
-    while ($row = mysql_fetch_object($nachricht)) {
+    while ($linie = mysql_fetch_object($nachricht)) {
         $control3++;
-        $nachricht_id = $row->id;
+        $nachricht_id = $linie->id;
     }
 
     $key_querry = "INSERT INTO user_nachricht VALUES($user_id,$nachricht_id)";
     $zwischentabelle = mysql_query($key_querry);
 
-    $url = "Location:index.php";
-    header($url);
+    $url1 = "Location:index.php";
+    header($url1);
 }
 ?>

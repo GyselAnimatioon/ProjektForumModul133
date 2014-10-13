@@ -17,7 +17,7 @@
         <link href='http://fonts.googleapis.com/css?family=Nixie+One|PT+Mono|Monoton|Varela+Round' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <?php require_once('navigation.php'); ?>
+        <?php require_once('navigation1.php'); ?>
         <div class="body">
             <?php require_once('nachrichten.php'); ?>
         </div>

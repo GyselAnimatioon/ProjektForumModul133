@@ -16,7 +16,7 @@
     </head>
     <body>
 
-        <?php require_once('navigation.php'); ?>
+        <?php require_once('navigation1.php'); ?>
 
         <!-- verbindet content-outer mit content-inner -->
         <div class="content-wrap">
@@ -40,7 +40,7 @@
 
                 $nachrichten_querry = mysql_query($select_querry);
 
-                while ($row = mysql_fetch_object($nachrichten_querry)) {
+                while ($linie = mysql_fetch_object($nachrichten_querry)) {
                     ?>
                     <form method="POST" action="profil_auswerten.php">
                         <table class="pure-table">
@@ -54,48 +54,48 @@
                             <tbody>
                                 <tr>
                                     <td>Username</td>
-                                    <td><?php echo $row->username; ?></td>
-                                    <td><input type="text" name="username2" value="<?php echo $row->username; ?>" placeholder="Neuer Benutzername"></td>
+                                    <td><?php echo $linie->username; ?></td>
+                                    <td><input type="text" name="username2" value="<?php echo $linie->username; ?>" placeholder="Neuer Benutzername"></td>
                                 </tr>
                                 <tr class="pure-table-odd">
                                     <td>Vorname</td>
-                                    <td><?php echo $row->vorname; ?></td>
-                                    <td><input type="text" name="vorname2" value="<?php echo $row->vorname; ?>" placeholder="Neuer Vorname"></td>
+                                    <td><?php echo $linie->vorname; ?></td>
+                                    <td><input type="text" name="vorname2" value="<?php echo $linie->vorname; ?>" placeholder="Neuer Vorname"></td>
                                 </tr>
                                 <tr>
                                     <td>Nachname</td>
-                                    <td><?php echo $row->nachname; ?></td>
-                                    <td><input type="text" name="nachname2" value="<?php echo $row->nachname; ?>" placeholder="Neuer Nachname"></td>
+                                    <td><?php echo $linie->nachname; ?></td>
+                                    <td><input type="text" name="nachname2" value="<?php echo $linie->nachname; ?>" placeholder="Neuer Nachname"></td>
                                 </tr>
                                 <tr class="pure-table-odd">
                                     <td>EMail</td>
-                                    <td><?php echo $row->mail; ?></td>
-                                    <td><input type="text" name="mail2" value="<?php echo $row->mail; ?>" placeholder="Neue EMail"></td>
+                                    <td><?php echo $linie->mail; ?></td>
+                                    <td><input type="text" name="mail2" value="<?php echo $linie->mail; ?>" placeholder="Neue EMail"></td>
                                 </tr>
                                 <tr>
                                     <td>Telefonnr.</td>
-                                    <td><?php echo $row->phone_nummer; ?></td>
-                                    <td><input type="text" name="phone_nummer2" value="<?php echo $row->phone_nummer; ?>" placeholder="Neue Telefonnummer"></td>
+                                    <td><?php echo $linie->phone_nummer; ?></td>
+                                    <td><input type="text" name="phone_nummer2" value="<?php echo $linie->phone_nummer; ?>" placeholder="Neue Telefonnummer"></td>
                                 </tr>
                                 <tr class="pure-table-odd">
                                     <td>Geburtsdatum</td>
-                                    <td><?php echo $row->birthdate; ?></td>
-                                    <td><input type="date" name="birthdate2" value="<?php echo $row->birthdate; ?>" placeholder="Neues Geburtsdatum"></td>
+                                    <td><?php echo $linie->birthdate; ?></td>
+                                    <td><input type="date" name="birthdate2" value="<?php echo $linie->birthdate; ?>" placeholder="Neues Geburtsdatum"></td>
                                 </tr>
                                 <tr>
                                     <td>Biographie</td>
-                                    <td><?php echo $row->bio; ?></td>
-                                    <td><input type="text" name="bio2" value="<?php echo $row->bio; ?>" placeholder="Neue Biographie"></td>
+                                    <td><?php echo $linie->bio; ?></td>
+                                    <td><input type="text" name="bio2" value="<?php echo $linie->bio; ?>" placeholder="Neue Biographie"></td>
                                 </tr>
                                 <tr class="pure-table-odd">
                                     <td>Lieblings Farbe</td>
-                                    <td><?php echo $row->fav_color; ?></td>
+                                    <td><?php echo $linie->fav_color; ?></td>
                                     <td>
                                         <select name="fav_color2">
                                             <option selected>
                                                 <?php
-                                                if ($row->fav_color != NULL) {
-                                                    echo $row->fav_color;
+                                                if ($linie->fav_color != NULL) {
+                                                    echo $linie->fav_color;
                                                 } else {
                                                     echo "Nichts Ausgewählt";
                                                 }
@@ -114,13 +114,13 @@
                                 </tr>
                                 <tr>
                                     <td>Lieblings Tier</td>
-                                    <td><?php echo $row->fav_animal; ?></td>
+                                    <td><?php echo $linie->fav_animal; ?></td>
                                     <td>
                                         <select name="fav_animal2">
                                             <option selected>
                                                 <?php
-                                                if ($row->fav_animal != NULL) {
-                                                    echo $row->fav_animal;
+                                                if ($linie->fav_animal != NULL) {
+                                                    echo $linie->fav_animal;
                                                 } else {
                                                     echo "Nichts Ausgewählt";
                                                 }
@@ -147,13 +147,13 @@
                                 </tr>
                                 <tr class="pure-table-odd">
                                     <td>Lieblings Essen</td>
-                                    <td><?php echo $row->fav_food; ?></td>
+                                    <td><?php echo $linie->fav_food; ?></td>
                                     <td>
                                         <select name="fav_food2">
                                             <option selected>
                                                 <?php
-                                                if ($row->fav_food != NULL) {
-                                                    echo $row->fav_food;
+                                                if ($linie->fav_food != NULL) {
+                                                    echo $linie->fav_food;
                                                 } else {
                                                     echo "Nichts Ausgewählt";
                                                 }
@@ -178,13 +178,13 @@
                                 </tr>
                                 <tr>
                                     <td>Lieblings Getränk</td>
-                                    <td><?php echo $row->fav_drink; ?></td>
+                                    <td><?php echo $linie->fav_drink; ?></td>
                                     <td>
                                         <select name="fav_drink2">
                                             <option selected>
                                                 <?php
-                                                if ($row->fav_drink != NULL) {
-                                                    echo $row->fav_drink;
+                                                if ($linie->fav_drink != NULL) {
+                                                    echo $linie->fav_drink;
                                                 } else {
                                                     echo "Nichts Ausgewählt";
                                                 }
@@ -209,43 +209,43 @@
                                 </tr>
                                 <tr class="pure-table-odd">
                                     <td>Facebook</td>
-                                    <td><a href="http://www.facebook.com/<?php echo $row->facebook; ?>" >www.facebook.com/<?php echo $row->facebook; ?></a></td>
-                                    <td>www.facebook.com/<input type="text" name="facebook2" value="<?php echo $row->facebook; ?>" placeholder="Facebook Link"></td>
+                                    <td><a href="http://www.facebook.com/<?php echo $linie->facebook; ?>" >www.facebook.com/<?php echo $linie->facebook; ?></a></td>
+                                    <td>www.facebook.com/<input type="text" name="facebook2" value="<?php echo $linie->facebook; ?>" placeholder="Facebook Link"></td>
                                 </tr>
                                 <tr>
                                     <td>YouTube</td>
-                                    <td><a href="http://www.youtube.com/user/<?php echo $row->youtube; ?>" >www.youtube.com/<?php echo $row->youtube; ?></a></td>
-                                    <td>www.youtube.com/user/<input type="text" name="youtube2" value="<?php echo $row->youtube; ?>" placeholder="YouTube Link"></td>
+                                    <td><a href="http://www.youtube.com/user/<?php echo $linie->youtube; ?>" >www.youtube.com/<?php echo $linie->youtube; ?></a></td>
+                                    <td>www.youtube.com/user/<input type="text" name="youtube2" value="<?php echo $linie->youtube; ?>" placeholder="YouTube Link"></td>
                                 </tr>
                                 <tr class="pure-table-odd">
                                     <td>Twitter</td>
-                                    <td><a href="http://www.twitter.com/<?php echo $row->twitter; ?>" >www.twitter.com/<?php echo $row->twitter; ?></a></td>
-                                    <td>www.twitter.com/<input type="text" name="twitter2" value="<?php echo $row->twitter; ?>" placeholder="Twitter Link"></td>
+                                    <td><a href="http://www.twitter.com/<?php echo $linie->twitter; ?>" >www.twitter.com/<?php echo $linie->twitter; ?></a></td>
+                                    <td>www.twitter.com/<input type="text" name="twitter2" value="<?php echo $linie->twitter; ?>" placeholder="Twitter Link"></td>
                                 </tr>
                                 <tr>
                                     <td>Instagram</td>
-                                    <td><a href="http://www.instagram.com/<?php echo $row->instagram; ?>" >www.instagram.com/<?php echo $row->instagram; ?></a></td>
-                                    <td>www.instagram.com/<input type="text" name="instagram2" value="<?php echo $row->instagram; ?>" placeholder="Instagram Link"></td>
+                                    <td><a href="http://www.instagram.com/<?php echo $linie->instagram; ?>" >www.instagram.com/<?php echo $linie->instagram; ?></a></td>
+                                    <td>www.instagram.com/<input type="text" name="instagram2" value="<?php echo $linie->instagram; ?>" placeholder="Instagram Link"></td>
                                 </tr>
                                 <tr class="pure-table-odd">
                                     <td>Sprache</td>
                                     <td><?php
-                                        if ($row->lang == "EN") {
+                                        if ($linie->lang == "EN") {
                                             echo"Englisch";
-                                        } elseif ($row->lang == "DE") {
+                                        } elseif ($linie->lang == "DE") {
                                             echo"Deutsch";
-                                        } elseif ($row->lang == "FR") {
+                                        } elseif ($linie->lang == "FR") {
                                             echo"France";
                                         } else {
-                                            echo $row->lang;
+                                            echo $linie->lang;
                                         }
                                         ?></td>
                                     <td>
                                         <select name="lang2">
                                             <option selected>
                                                 <?php
-                                                if ($row->lang != NULL) {
-                                                    echo $row->lang;
+                                                if ($linie->lang != NULL) {
+                                                    echo $linie->lang;
                                                 } else {
                                                     echo "Nichts Ausgewählt";
                                                 }

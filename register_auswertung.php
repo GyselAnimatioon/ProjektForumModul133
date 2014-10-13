@@ -37,7 +37,7 @@ if ($password != $password2) {
 
     $user_querry = mysql_query($select_querry);
 
-    while ($row = mysql_fetch_object($user_querry)) {
+    while ($linie = mysql_fetch_object($user_querry)) {
         $control++;
     }
 
@@ -49,12 +49,12 @@ if ($password != $password2) {
         if ($eintrag_querry == true) {
             $_SESSION["username"] = $username;
             $_SESSION["login"] = 1;
-            $url = "Location:index.php";
-            header($url);
+            $url1 = "Location:index.php";
+            header($url1);
         } else {
             $_SESSION["login"] = 0;
-            $url = "Location:register.php";
-            header($url);
+            $url1 = "Location:register.php";
+            header($url1);
         }
         mysql_close($connect);
     }

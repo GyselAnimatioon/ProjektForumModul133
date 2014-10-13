@@ -23,20 +23,20 @@ mysql_select_db($db)
 
 $login_querry = mysql_query($querry);
 
-while ($row = mysql_fetch_object($login_querry)) {
+while ($linie = mysql_fetch_object($login_querry)) {
     $control++;
 }
 
 if ($control != 0) {
     $_SESSION["username"] = $username;
     $_SESSION["login"] = 1;
-    $url = "Location:index.php";
-    header($url);
+    $url1 = "Location:index.php";
+    header($url1);
 } else {
     $_SESSION["login"] = 2;
     $_SESSION["message"] = "Benutzer nicht gefunden";
-    $url = "Location:index.php";
-    header($url);
+    $url1 = "Location:index.php";
+    header($url1);
 }
 
 ?>

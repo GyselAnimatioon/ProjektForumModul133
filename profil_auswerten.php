@@ -75,7 +75,7 @@ $_SESSION['youtube'] = $youtube2;
 $_SESSION['twitter'] = $twitter2;
 $_SESSION['instagram'] = $instagram2;
 $_SESSION['lang'] = $lang2;
-$url = "Location: index.php";
-header($url);
+$url1 = "Location: index.php";
+header($url1);
 
 ?>

@@ -20,10 +20,10 @@ mysql_select_db($db)
         or die("Datenbank Fehler!");
 $nachrichten_querry = mysql_query($select_querry);
 
-while ($row = mysql_fetch_object($nachrichten_querry)) {
-    $time = mktime($row->erstellt_h, $row->erstellt_min, $row->erstellt_sek, $row->erstellt_m, $row->erstellt_day, $row->erstellt_y);
+while ($linie = mysql_fetch_object($nachrichten_querry)) {
+    $time = mktime($linie->erstellt_h, $linie->erstellt_min, $linie->erstellt_sek, $linie->erstellt_m, $linie->erstellt_day, $linie->erstellt_y);
     $ago = time() - $time;
-    $_SESSION['nachrichten_id'] = "$row->nachrichten_id";
+    $_SESSION['nachrichten_id'] = "$linie->nachrichten_id";
     //In dieser if-abfrage wird abgefragt vor wieviel sekunden dieser Post gepostet worden ist und
     //es wird eine ca. angabe in $time_ago geschrieben.
     //Die While schlaufe ist um bei NetBeans das ganze eifach zu minimieren,
@@ -154,8 +154,8 @@ while ($row = mysql_fetch_object($nachrichten_querry)) {
 
         <div class="body_box" style="background-image: url('img/background/<?php echo rand(1, 6) ?>.jpg');background-size: cover;">
         <h3 class="box_title">
-            <?php echo $row->titel; ?>
-            <?php echo "<a class='made_by' href='profile.php?id=$row->id'>By: " . $row->username . "</a>"; ?>
+            <?php echo $linie->titel; ?>
+            <?php echo "<a class='made_by' href='profile.php?id=$linie->id'>By: " . $linie->username . "</a>"; ?>
             <?php echo "<span class='time'>" . $time_ago . "</span>"; ?>
             <div class="daumen">
 
@@ -167,7 +167,7 @@ while ($row = mysql_fetch_object($nachrichten_querry)) {
         </h3>
         <br>
         <p class="box_text">
-            <?php echo $row->nachricht; ?>
+            <?php echo $linie->nachricht; ?>
         </p>
     </div>
     <?php

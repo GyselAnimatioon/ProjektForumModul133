@@ -19,8 +19,8 @@ mysql_select_db($db)
 
 $abfrage_user = "SELECT id FROM user WHERE username LIKE '$username_session'";
 $ergebnis_user = mysql_query($abfrage_user);
-while ($row = mysql_fetch_object($ergebnis_user)) {
-    $id = $row->id;
+while ($linie = mysql_fetch_object($ergebnis_user)) {
+    $id = $linie->id;
 }
 
 if ($new == 0) {
@@ -53,6 +53,6 @@ $ergebnis = mysql_query($querry);
 $ergebnis2 = mysql_query($querry2);
 $ergebnis3 = mysql_query($querry3);
 
-$url = "Location: index.php";
-header($url);
+$url1 = "Location: index.php";
+header($url1);
 ?>

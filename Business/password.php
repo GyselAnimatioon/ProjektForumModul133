@@ -1,6 +1,6 @@
 <?php
 
-const SALT = "oaidfsuocf23jla9oaöcè!?";
+const SALT = "oaidfsuocf23jla9oasöcè!?";
 
 function encrypt_password($password) {
     $secret_salt = SALT;
