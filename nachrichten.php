@@ -18,10 +18,6 @@ while ($linie = mysql_fetch_object($nachrichten_querry)) {
     $time = mktime($linie->erstellt_h, $linie->erstellt_min, $linie->erstellt_sek, $linie->erstellt_m, $linie->erstellt_day, $linie->erstellt_y);
     $ago = time() - $time;
     $_SESSION['nachrichten_id'] = "$linie->nachrichten_id";
-    //In dieser if-abfrage wird abgefragt vor wieviel sekunden dieser Post gepostet worden ist und
-    //es wird eine ca. angabe in $time_ago geschrieben.
-    //Die While schlaufe ist um bei NetBeans das ganze eifach zu minimieren,
-    //dies ersparrt mir viel unnötiges scrollen.
     $i = 1;
     while ($i == 1) {
 

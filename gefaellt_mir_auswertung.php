@@ -4,48 +4,37 @@ session_start();
 
 require_once './Data/DBConnection.php';
 
-$username_session = $_SESSION['username'];
+//Username Abfrage
+$user_name = $_SESSION['username'];
+//Wie Bewertet Abfrage
 $how = $_GET['how'];
+//Schonmal Bewertet Abfrage
 $new = $_GET['new'];
-$n_id = $_GET['id'];
-
-
-$abfrage_user = "SELECT id FROM user WHERE username LIKE '$username_session'";
-$ergebnis_user = mysql_query($abfrage_user);
-while ($linie = mysql_fetch_object($ergebnis_user)) {
-    $id = $linie->id;
+//Nachrichten ID Abfrage
+$nachrichten_id = $_GET['id'];
+//User ID Abfrage
+$user_id_abfrage = "SELECT * FROM user WHERE username LIKE '$user_name'";
+$user_id_ausgabe = mysql_query($user_id_abfrage);
+while ($user_id_row = mysql_fetch_object($user_id_ausgabe)) {
+    $user_id = $user_id_row->id;
 }
 
-if ($new == 0) {
-    if ($how == 1) {
-        $querry = "UPDATE nachrichten SET daumen_hoch = daumen_hoch + 1 WHERE id = '$n_id'";
-        $querry2 = "UPDATE gefaellt_mir SET how = 1 WHERE nachrichten_id = '$n_id'";
-        $querry3 = "UPDATE nachrichten SET daumen_runter = daumen_runter - 1 WHERE id = '$n_id'";
-        echo "new0how1";
-    } elseif ($how == 0) {
-        $querry = "UPDATE nachrichten SET daumen_runter = daumen_runter + 1 WHERE id = '$n_id'";
-        $querry2 = "UPDATE gefaellt_mir SET how = 0 WHERE nachrichten_id = '$n_id'";
-        $querry3 = "UPDATE nachrichten SET daumen_hoch = daumen_hoch - 1 WHERE id = '$n_id'";
-        echo "new0how0";
+if($new == 1) {
+    if($how == 1) {
+        $like = "INSERT INTO gefaellt_mir VALUES('$user_id','$nachrichten_id',1)";
+    } else if($how == 0) {
+        $like = "INSERT INTO gefaellt_mir VALUES('$user_id','$nachrichten_id',0)";
     }
-} elseif ($new == 1) {
-    if ($how == 1) {
-        $querry = "UPDATE nachrichten SET daumen_hoch = daumen_hoch + 1 WHERE id = '$n_id'";
-        $querry2 = "INSERT INTO gefaellt_mir VALUES($id,$n_id,1)";
-        $querry3 = "    ";
-        echo "new1how1";
-    } elseif ($how == 0) {
-        $querry = "UPDATE nachrichten SET daumen_runter = daumen_runter + 1 WHERE id = '$n_id'";
-        $querry2 = "INSERT INTO gefaellt_mir VALUES($id,$n_id,0)";
-        $querry3 = "";
-        echo "new1how0";
+} else if($new == 0) {
+    if($how == 1) {
+        $like = "UPDATE gefaellt_mir SET how = 1 WHERE user_id = '$user_id' AND nachrichten_id = '$nachrichten_id'";
+    } else if($how == 0) {
+        $like = "UPDATE gefaellt_mir SET how = 0 WHERE user_id = '$user_id' AND nachrichten_id = '$nachrichten_id'";
     }
 }
-echo "<br><br>" . $querry . "<br><br>" . $querry2 . "<br><br>" . $querry3;
-$ergebnis = mysql_query($querry);
-$ergebnis2 = mysql_query($querry2);
-$ergebnis3 = mysql_query($querry3);
 
-$url1 = "Location: index.php";
-header($url1);
+$like_ausgabe = mysql_query($like);
+$url = "Location: index.php";
+header($url);
+
 ?>

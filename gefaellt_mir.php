@@ -1,76 +1,84 @@
 <?php
+//Nachrichten ID Abfrage
+$nachrichten_id = $_SESSION['nachrichten_id'];
 
-if (isset($_SESSION['login'])) {
-    if ($_SESSION['login'] == 1) {
+//Wieviele Likes Abfrage
+$plus_abfrage = "SELECT COUNT(how) AS how FROM gefaellt_mir WHERE nachrichten_id = '$nachrichten_id' AND how = 1";
+$plus_ausgabe = mysql_query($plus_abfrage);
+while ($plus_row = mysql_fetch_object($plus_ausgabe)) {
+    $plus = $plus_row->how;
+}
 
+//Wieviele Dislikes Abfrage
+$minus_abfrage = "SELECT COUNT(how) AS how FROM gefaellt_mir WHERE nachrichten_id = '$nachrichten_id' AND how = 0";
+$minus_ausgabe = mysql_query($minus_abfrage);
+while ($minus_row = mysql_fetch_object($minus_ausgabe)) {
+    $minus = $minus_row->how;
+}
 
-        $username_session = $_SESSION['username'];
+if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
+    //Eingeloggt
+    //User ID Abfragen
+    $user_name = $_SESSION['username'];
+    $user_id_abfrage = "SELECT * FROM user WHERE username = '$user_name'";
+    $user_id_ausgabe = mysql_query($user_id_abfrage);
+    while ($user_id_row = mysql_fetch_object($user_id_ausgabe)) {
+        $user_id = $user_id_row->id;
+        $_SESSION['id'] = $user_id;
+    }
 
-        require_once './Data/DBConnection.php';
-        
-        $control = 0;
-        if (isset($_SESSION['nachrichten_id'])) {
-            $nachrichten_id = $_SESSION['nachrichten_id'];
+    //Wie bewertet Abfrage
+    $wie_bewertet_abfrage = "SELECT * FROM gefaellt_mir WHERE user_id = '$user_id' AND nachrichten_id = '$nachrichten_id' ";
+    $wie_bewertet_ausgabe = mysql_query($wie_bewertet_abfrage);
+    while ($wie_bewertet_row = mysql_fetch_object($wie_bewertet_ausgabe)) {
+        $wie_bewertet = $wie_bewertet_row->how;
+        $schonmal_bewertet = 1;
+    }
+
+    //Schonmal bewertet Abfrage
+    if (!isset($wie_bewertet)) {
+        $schonmal_bewertet = 0;
+    }
+
+    //Bewertung
+    if ($schonmal_bewertet == 1) {
+        if ($wie_bewertet == 1) {
+            ?>
+
+            <span class="like_button_up_set">+</span> 
+            <?php echo $plus; ?>
+            <a href="gefaellt_mir_auswertung.php?how=0&new=0&id=<?php echo $nachrichten_id; ?>" class="like_button_down">-</a> 
+            <?php echo $minus; ?>
+
+            <?php
+        } else if ($wie_bewertet == 0) {
+            ?>
+
+            <a href="gefaellt_mir_auswertung.php?how=1&new=0&id=<?php echo $nachrichten_id; ?>" class="like_button_up">+</a> 
+            <?php echo $plus; ?>
+            <span class="like_button_down_set">-</span> 
+            <?php echo $minus; ?>
+
+            <?php
         }
-        
-        $username_querry = "SELECT * FROM user WHERE username = '$username_session'";
-        $usernamee_querry = mysql_query($username_querry);
-        while ($linie2 = mysql_fetch_object($usernamee_querry)) {
-            $id = $linie2->id;
-        }
+    } else if ($schonmal_bewertet == 0) {
+        ?>
 
-        $select_querry = "SELECT "
-                . "* "
-                . "FROM "
-                . "gefaellt_mir g "
-                . "INNER JOIN nachrichten n ON g.nachrichten_id = n.id "
-                . "WHERE "
-                . "g.user_id = '$id'";
+        <a href="gefaellt_mir_auswertung.php?how=1&new=1&id=<?php echo $nachrichten_id; ?>" class="like_button_up">+</a> 
+        <?php echo $plus; ?>
+        <a href="gefaellt_mir_auswertung.php?how=0&new=1&id=<?php echo $nachrichten_id; ?>" class="like_button_down">+</a> 
+        <?php echo $minus; ?>
 
-
-
-        $selectt_querry = mysql_query($select_querry);
-        while ($linie2 = mysql_fetch_object($selectt_querry)) {
-            if ($linie->id == $linie2->nachrichten_id) {
-                $nachrichten_id = $linie2->nachrichten_id;
-            }
-
-            //Bewertet
-            if ($linie->nachrichten_id && $linie2->nachrichten_id == $linie->nachrichten_id) {
-                if ($linie2->how == 1 && $control != 2) {
-                    $control = 1;
-
-                    echo "<span class='like_button_up_set'>+</span> "
-                    . $linie->daumen_hoch
-                    . "<a href='gefaellt_mir_auswertung.php?how=0&new=0&id=$nachrichten_id' class='like_button_down'>-</a> "
-                    . $linie->daumen_runter;
-                } elseif ($linie2->how == 0 && $control != 1) {
-                    $control = 2;
-
-                    echo "<a href='gefaellt_mir_auswertung.php?how=1&new=0&id=$nachrichten_id' class='like_button_up'>+</a> "
-                    . $linie->daumen_hoch
-                    . "<span class='like_button_down_set'>-</span> "
-                    . $linie->daumen_runter;
-                }
-            }
-        }
-        if ($control == 0) {
-            echo "<a href='gefaellt_mir_auswertung.php?how=1&new=1&id=$nachrichten_id' class='like_button'>+</a> "
-            . $linie->daumen_hoch
-            . "<a href='gefaellt_mir_auswertung.php?how=0&new=1&id=$nachrichten_id' class='like_button'>-</a> "
-            . $linie->daumen_runter;
-            $control = 1;
-        }
-    } else {
-        echo "<span class='like_button'>+</span>"
-        . $linie->daumen_hoch
-        . "<span class='like_button'>-</span>"
-        . $linie->daumen_runter;
+        <?php
     }
 } else {
-    echo "<span class='like_button'>+</span>"
-    . $linie->daumen_hoch
-    . "<span class='like_button'>-</span>"
-    . $linie->daumen_runter;
+    ?>
+
+    <span class="like_button_up">+</span> 
+    <?php echo $plus; ?>
+    <span class="like_button_down">-</span> 
+    <?php echo $minus; ?>
+
+    <?php
 }
 ?>
