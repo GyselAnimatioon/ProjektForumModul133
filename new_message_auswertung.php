@@ -2,6 +2,8 @@
 
 session_start();
 
+require_once './Data/DBConnection.php';
+
 if (isset($_SESSION["login"])) {
 
     $title = filter_input(INPUT_POST, 'title');
@@ -13,21 +15,11 @@ if (isset($_SESSION["login"])) {
     $date_m = $_POST["date_m"];
     $date_y = $_POST["date_y"];
     $date_for_db = date("Y:m:d G:i:s", mktime($date_h, $date_min, $date_sek, $date_m, $date_day, $date_y));
-    $date_for_view = date("G, i, s, n, j, Y",mktime($date_h, $date_min, $date_sek, $date_m, $date_day, $date_y));
-    $server = 'localhost';
-    $dbuser = 'root';
-    $dbpassword = '';
-    $db = 'mydb';
+    $date_for_view = date("G, i, s, n, j, Y", mktime($date_h, $date_min, $date_sek, $date_m, $date_day, $date_y));
     $username_session = $_SESSION['username'];
     $control = 0;
     $control2 = 0;
     $control3 = 0;
-
-    $connect = mysql_connect($server, $dbuser, $dbpassword)
-            or die("Verbidung nicht Möglich!");
-
-    mysql_select_db($db)
-            or die("Datenbank Fehler!");
 
     $message_querry = "INSERT INTO nachrichten VALUES(null,'$title','$text',0,0,'$date_for_db','$date_sek','$date_min','$date_h','$date_day','$date_m','$date_y')";
     $nachrichten_querry = mysql_query($message_querry);

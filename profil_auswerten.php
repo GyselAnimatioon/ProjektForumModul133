@@ -1,14 +1,10 @@
 <?php
 
 session_start();
-/*
-echo "<pre>";
 
-print_r($_POST);
+require_once './Data/DBConnection.php';
 
-echo "</pre>";
-*/
-
+//User Daten
 $username2 = filter_input(INPUT_POST, 'username2');
 $vorname2 = filter_input(INPUT_POST, 'vorname2');
 $nachname2 = filter_input(INPUT_POST, 'nachname2');
@@ -27,10 +23,7 @@ $instagram2 = filter_input(INPUT_POST, 'instagram2');
 $lang2 = $_POST['lang2'];
 $username = $_SESSION['username'];
 
-$server = 'localhost';
-$dbuser = 'root';
-$dbpassword = '';
-$db = 'mydb';
+
 
 $update_querry = "UPDATE user "
         . "SET username = '$username2', "
@@ -50,12 +43,6 @@ $update_querry = "UPDATE user "
         . "instagram = '$instagram2', "
         . "lang = '$lang2' "
         . "WHERE username = '$username'";
-
-$connect = mysql_connect($server, $dbuser, $dbpassword)
-        or die("Verbidung nicht Möglich!");
-
-mysql_select_db($db)
-        or die("Datenbank Fehler!");
 
 $updatee_querry = mysql_query($update_querry);
 
@@ -77,5 +64,4 @@ $_SESSION['instagram'] = $instagram2;
 $_SESSION['lang'] = $lang2;
 $url1 = "Location: index.php";
 header($url1);
-
 ?>

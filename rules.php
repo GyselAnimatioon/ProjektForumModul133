@@ -11,9 +11,9 @@
 
     </head>
     <body>
-        
-        <?php require_once('navigation1.php');?>
-        
+
+        <?php require_once('navigation1.php'); ?>
+
         <!-- verbindet content-outer mit content-inner -->
         <div class="content-wrap">
             <!-- content-outer enthält Titel des Dokuments -->

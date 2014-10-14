@@ -26,32 +26,20 @@
             <?php
             require_once './Data/DBConnection.php';
 
-            $max_querry = "SELECT * FROM nachrichten ORDER BY id DESC LIMIT 1";
-            $maxx_querry = mysql_query($max_querry);
-            while ($linie = mysql_fetch_object($maxx_querry)) {
-                $max = $linie->id;
-            }
+            $jz = time();
+            $jz_monat = date("m", $jz);
 
-            $min_querry = "SELECT * FROM nachrichten ORDER BY id ASC LIMIT 1";
-            $minn_querry = mysql_query($min_querry);
-            while ($linie = mysql_fetch_object($minn_querry)) {
-                $min = $linie->id;
-            }
-
-            $random = rand($min, $max);
             $select_querry = "SELECT "
                     . "* "
                     . "FROM "
                     . "nachrichten n "
                     . "INNER JOIN user_nachricht un ON un.nachrichten_id = n.id "
                     . "INNER JOIN user u ON un.user_id = u.id "
-                    . "WHERE "
-                    . "n.id = '$random'";
+                    . "WHERE n.erstellt_m = $jz_monat "
+                    . "ORDER BY "
+                    . "n.daumen_hoch "
+                    . "DESC";
 
-            $connect = mysql_connect($server, $dbuser, $dbpassword)
-                    or die("Verbidung nicht Möglich!");
-            mysql_select_db($db)
-                    or die("Datenbank Fehler!");
             $nachrichten_querry = mysql_query($select_querry);
 
             while ($linie = mysql_fetch_object($nachrichten_querry)) {
@@ -192,6 +180,8 @@
                         <?php echo "<a class='made_by' href='profile.php?id=$linie->id'>By: " . $linie->username . "</a>"; ?>
                         <?php echo "<span class='time'>" . $time_ago . "</span>"; ?>
                         <div class="daumen">
+
+
                             <?php
                             require "gefaellt_mir.php";
                             ?>

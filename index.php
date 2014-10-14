@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <?php
+
 ?>
 
 <html>

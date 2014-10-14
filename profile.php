@@ -22,19 +22,11 @@
         <div class="content-wrap">
 
             <?php
-            $server = 'localhost';
-            $dbuser = 'root';
-            $dbpassword = '';
-            $db = 'mydb';
+            require_once './Data/DBConnection.php';
+
             $username_session = $_GET['id'];
 
             $select_querry = "SELECT * FROM user WHERE id = '$username_session'";
-
-            $connect = mysql_connect($server, $dbuser, $dbpassword)
-                    or die("Verbidung nicht Möglich!");
-
-            mysql_select_db($db)
-                    or die("Datenbank Fehler!");
 
             $nachrichten_querry = mysql_query($select_querry);
             while ($linie = mysql_fetch_object($nachrichten_querry)) {

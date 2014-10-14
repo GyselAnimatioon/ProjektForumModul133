@@ -35,7 +35,7 @@
                     <input type="hidden" name="date_m" value="<?php echo date("n"); ?>">
                     <input type="hidden" name="date_y" value="<?php echo date("Y"); ?>">
                 </div>
-                
+
                 <div class="pure-u-1">
                     <input class="pure-button pure-button-error pure-input-1-4" type="reset" value="Reset!">
                     <input class="pure-button pure-button-primary pure-input-1-4" type="submit" value="Senden!">

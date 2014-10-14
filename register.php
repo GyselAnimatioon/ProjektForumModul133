@@ -10,8 +10,8 @@
         <link href='http://fonts.googleapis.com/css?family=Nixie+One|PT+Mono|Monoton|Varela+Round' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        
-         <?php require_once('navigation1.php');?>
+
+        <?php require_once('navigation1.php'); ?>
 
         <div class="content-wrap">
             <div class="content-outer">
@@ -39,9 +39,9 @@
                     <div class="pure-u-1-2">
                         <input class="pure-input-1" type="password" name="password2" placeholder="Passwort Bestätigen">
                     </div>
-                    
+
                     <div class="pure-u-1">
-                         <input class="pure-button pure-input-2-4 pure-button-primary" type="submit" value="Registrieren!">
+                        <input class="pure-button pure-input-2-4 pure-button-primary" type="submit" value="Registrieren!">
                     </div>
                 </form>
             </div>

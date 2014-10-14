@@ -1,14 +1,11 @@
 <?php
 
-session_start();
-
 require_once './Data/DBConnection.php';
 
 $username_session = $_SESSION['username'];
 $how = $_GET['how'];
 $new = $_GET['new'];
 $n_id = $_GET['id'];
-
 
 $abfrage_user = "SELECT id FROM user WHERE username LIKE '$username_session'";
 $ergebnis_user = mysql_query($abfrage_user);
