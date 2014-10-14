@@ -2,7 +2,7 @@
 
 session_start();
 
-require_once './Data/DBConnection.php';
+require_once '../Data/DBConnection.php';
 
 //Username Abfrage
 $user_name = $_SESSION['username'];
@@ -34,7 +34,7 @@ if($new == 1) {
 }
 
 $like_ausgabe = mysql_query($like);
-$url = "Location: index.php";
+$url = "Location: ../index.php";
 header($url);
 
 ?>

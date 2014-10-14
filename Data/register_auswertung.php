@@ -2,9 +2,9 @@
 
 session_start();
 
-require_once './Data/DBConnection.php';
+require_once '../Data/DBConnection.php';
 
-include_once './Business/password.php';
+include_once '../Business/password.php';
 
 $password = filter_input(INPUT_POST, 'password');
 $password2 = filter_input(INPUT_POST, 'password2');
@@ -41,11 +41,11 @@ if ($password != $password2) {
         if ($eintrag_querry == true) {
             $_SESSION["username"] = $username;
             $_SESSION["login"] = 1;
-            $url1 = "Location:index.php";
+            $url1 = "Location: ../index.php";
             header($url1);
         } else {
             $_SESSION["login"] = 0;
-            $url1 = "Location:register.php";
+            $url1 = "Location: ../register.php";
             header($url1);
         }
         mysql_close($connect);

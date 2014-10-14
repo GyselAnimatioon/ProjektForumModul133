@@ -20,7 +20,7 @@
 
             <div class="content-inner">
                 <!-- Formular mit PURE Bibliothek gestaltet -->
-                <form class="pure-form pure-g" method="POST" action="register_auswertung.php">
+                <form class="pure-form pure-g" method="POST" action="Data/register_auswertung.php">
                     <div class="pure-u-1">
                         <input class="pure-input-1" type="text" name="username" placeholder="Username">
                     </div>

@@ -16,7 +16,7 @@
         <div class="content-wrap">
 
 
-            <form class="pure-form pure-g" method="POST" action="new_message_auswertung.php">
+            <form class="pure-form pure-g" method="POST" action="Data/new_message_auswertung.php">
 
                 <div class="pure-u-1">
                     <input class="pure-input-1" type="text" name="title" placeholder="Titel">

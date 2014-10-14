@@ -34,7 +34,7 @@
 
                 while ($linie = mysql_fetch_object($nachrichten_querry)) {
                     ?>
-                    <form method="POST" action="profil_auswerten.php">
+                    <form method="POST" action="Data/profil_auswerten.php">
                         <table class="pure-table">
                             <thead>
                                 <tr>

@@ -2,7 +2,7 @@
 
 session_start();
 
-require_once './Data/DBConnection.php';
+require_once 'DBConnection.php';
 
 if (isset($_SESSION["login"])) {
 
@@ -21,9 +21,9 @@ if (isset($_SESSION["login"])) {
     $control2 = 0;
     $control3 = 0;
 
-    $message_querry = "INSERT INTO nachrichten VALUES(null,'$title','$text',0,0,'$date_for_db','$date_sek','$date_min','$date_h','$date_day','$date_m','$date_y')";
+    $message_querry = "INSERT INTO nachrichten VALUES(null,'$title','$text','$date_for_db','$date_sek','$date_min','$date_h','$date_day','$date_m','$date_y')";
     $nachrichten_querry = mysql_query($message_querry);
-
+echo $message_querry;
     $profil_querry = "SELECT * FROM user WHERE username = '$username_session'";
     $profil = mysql_query($profil_querry);
     while ($linie = mysql_fetch_object($profil)) {
@@ -33,6 +33,7 @@ if (isset($_SESSION["login"])) {
 
     $nachricht_querry = "SELECT * FROM nachrichten WHERE erstellt_am = '$date_for_db'";
     $nachricht = mysql_query($nachricht_querry);
+    echo $nachricht_querry;
     while ($linie = mysql_fetch_object($nachricht)) {
         $control3++;
         $nachricht_id = $linie->id;
@@ -41,7 +42,7 @@ if (isset($_SESSION["login"])) {
     $key_querry = "INSERT INTO user_nachricht VALUES($user_id,$nachricht_id)";
     $zwischentabelle = mysql_query($key_querry);
 
-    $url1 = "Location:index.php";
+    $url1 = "Location: ../index.php";
     header($url1);
 }
 ?>

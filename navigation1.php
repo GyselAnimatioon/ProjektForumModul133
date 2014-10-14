@@ -23,7 +23,7 @@
         if ($eingelogt == 0) {
             ?>
             <li>
-                <form class="pure-form" action="login.php" method="POST">
+                <form class="pure-form" action="Data/login.php" method="POST">
                     <fieldset>
                         <input type="text" name="username" placeholder="Username">
                         <input type="password" name="password" placeholder="Password">
@@ -48,13 +48,13 @@
                         echo $_SESSION["username"];
                     }
                     ?></a></li>
-            <li><a href="logout.php">Log out</a></li>
+            <li><a href="Data/logout.php">Log out</a></li>
             <?php
             //fehlerhaftes einliogegen
         } else if ($eingelogt == 2) {
             ?>
             <li>
-                <form class="pure-form" action="login.php" method="POST">
+                <form class="pure-form" action="Data/login.php" method="POST">
                     <fieldset>
                         <input type="text" name="username" placeholder="Username">
                         <input type="password" name="password" placeholder="Password">

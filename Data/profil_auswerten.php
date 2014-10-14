@@ -2,7 +2,7 @@
 
 session_start();
 
-require_once './Data/DBConnection.php';
+require_once '../Data/DBConnection.php';
 
 //User Daten
 $username2 = filter_input(INPUT_POST, 'username2');
@@ -62,6 +62,6 @@ $_SESSION['youtube'] = $youtube2;
 $_SESSION['twitter'] = $twitter2;
 $_SESSION['instagram'] = $instagram2;
 $_SESSION['lang'] = $lang2;
-$url1 = "Location: index.php";
+$url1 = "Location: ../index.php";
 header($url1);
 ?>

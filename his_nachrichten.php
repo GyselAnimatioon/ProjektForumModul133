@@ -31,6 +31,12 @@ while ($linie = mysql_fetch_object($nachrichten_querry)) {
     $i = 1;
     while ($i == 1) {
 
+        
+        
+        
+        
+        
+        
         if ($ago < 60) {
             $time_ago = $ago . " sek ago";
         } elseif ($ago < 120) {

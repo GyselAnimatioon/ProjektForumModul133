@@ -47,14 +47,14 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
 
             <span class="like_button_up_set">+</span> 
             <?php echo $plus; ?>
-            <a href="gefaellt_mir_auswertung.php?how=0&new=0&id=<?php echo $nachrichten_id; ?>" class="like_button_down">-</a> 
+            <a href="Data/gefaellt_mir_auswertung.php?how=0&new=0&id=<?php echo $nachrichten_id; ?>" class="like_button_down">-</a> 
             <?php echo $minus; ?>
 
             <?php
         } else if ($wie_bewertet == 0) {
             ?>
 
-            <a href="gefaellt_mir_auswertung.php?how=1&new=0&id=<?php echo $nachrichten_id; ?>" class="like_button_up">+</a> 
+            <a href="Data/gefaellt_mir_auswertung.php?how=1&new=0&id=<?php echo $nachrichten_id; ?>" class="like_button_up">+</a> 
             <?php echo $plus; ?>
             <span class="like_button_down_set">-</span> 
             <?php echo $minus; ?>
@@ -64,9 +64,9 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
     } else if ($schonmal_bewertet == 0) {
         ?>
 
-        <a href="gefaellt_mir_auswertung.php?how=1&new=1&id=<?php echo $nachrichten_id; ?>" class="like_button_up">+</a> 
+            <a href="Data/gefaellt_mir_auswertung.php?how=1&new=1&id=<?php echo $nachrichten_id; ?>" class="like_button_up">+</a> 
         <?php echo $plus; ?>
-        <a href="gefaellt_mir_auswertung.php?how=0&new=1&id=<?php echo $nachrichten_id; ?>" class="like_button_down">+</a> 
+            <a href="Data/gefaellt_mir_auswertung.php?how=0&new=1&id=<?php echo $nachrichten_id; ?>" class="like_button_down">+</a> 
         <?php echo $minus; ?>
 
         <?php
