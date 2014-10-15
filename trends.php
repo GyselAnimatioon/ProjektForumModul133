@@ -24,6 +24,8 @@
 
         <div class="body">
             <?php
+            
+            
             require_once './Data/DBConnection.php';
             require_once './Business/functions.php';
             $jz = time();
@@ -32,12 +34,15 @@
             $select_querry = "SELECT "
                     . "* "
                     . "FROM "
-                    . "nachrichten n "
+                    . "gefaellt_mir g "
+                    . "INNER JOIN nachrichten n ON n.id = g.nachrichten_id "
                     . "INNER JOIN user_nachricht un ON un.nachrichten_id = n.id "
-                    . "INNER JOIN user u ON un.user_id = u.id "
+                    . "INNER JOIN user u ON u.id = un.user_id "
                     . "WHERE n.erstellt_m = $jz_monat "
+                    . "GROUP BY "
+                    . "g.nachrichten_id "
                     . "ORDER BY "
-                    . "n.daumen_hoch "
+                    . "g.how "
                     . "DESC";
 
             $nachrichten_querry = mysql_query($select_querry);

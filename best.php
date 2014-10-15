@@ -30,14 +30,15 @@
             $select_querry = "SELECT "
                     . "* "
                     . "FROM "
-                    . "nachrichten n "
+                    . "gefaellt_mir g "
+                    . "INNER JOIN nachrichten n ON n.id = g.nachrichten_id "
                     . "INNER JOIN user_nachricht un ON un.nachrichten_id = n.id "
-                    . "INNER JOIN user u ON un.user_id = u.id "
-                    . "INNER JOIN gefaellt_mir g ON g.user_id = u.id "
+                    . "INNER JOIN user u ON u.id = un.user_id "
+                    . "GROUP BY "
+                    . "g.nachrichten_id "
                     . "ORDER BY "
                     . "g.how "
                     . "DESC";
-            echo $select_querry;
             $nachrichten_querry = mysql_query($select_querry);
 
             while ($linie = mysql_fetch_object($nachrichten_querry)) {
@@ -55,7 +56,6 @@
                 $plus_ausgabe = mysql_query($plus_abfrage);
                 while ($plus_row = mysql_fetch_object($plus_ausgabe)) {
                     $plus = $plus_row->how;
-                    echo $plus;
                 }
 
                 //Wieviele Dislikes Abfrage
@@ -63,7 +63,6 @@
                 $minus_ausgabe = mysql_query($minus_abfrage);
                 while ($minus_row = mysql_fetch_object($minus_ausgabe)) {
                     $minus = $minus_row->how;
-                    echo $minus;
                 }
                 ?>
 

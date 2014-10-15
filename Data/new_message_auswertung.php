@@ -23,7 +23,7 @@ if (isset($_SESSION["login"])) {
 
     $message_querry = "INSERT INTO nachrichten VALUES(null,'$title','$text','$date_for_db','$date_sek','$date_min','$date_h','$date_day','$date_m','$date_y')";
     $nachrichten_querry = mysql_query($message_querry);
-echo $message_querry;
+    echo $message_querry . "<br>";
     $profil_querry = "SELECT * FROM user WHERE username = '$username_session'";
     $profil = mysql_query($profil_querry);
     while ($linie = mysql_fetch_object($profil)) {
