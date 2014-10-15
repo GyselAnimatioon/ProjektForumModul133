@@ -1,5 +1,6 @@
 -- MySQL Workbench Forward Engineering
-
+drop schema if exists  mydb;
+create schema mydb;
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
@@ -21,13 +22,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`nachrichten` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `titel` VARCHAR(150) NOT NULL,
   `nachricht` MEDIUMTEXT NOT NULL,
-  `erstellt_am` DATETIME NOT NULL,
-  `erstellt_sek` VARCHAR(45) NOT NULL,
-  `erstellt_min` VARCHAR(45) NOT NULL,
-  `erstellt_h` VARCHAR(45) NOT NULL,
-  `erstellt_day` VARCHAR(45) NOT NULL,
-  `erstellt_m` VARCHAR(45) NOT NULL,
-  `erstellt_y` VARCHAR(45) NOT NULL,
+  `erstellt_am` int(8) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 77
