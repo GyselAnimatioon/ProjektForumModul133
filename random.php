@@ -38,7 +38,9 @@
                 $min = $linie->id;
             }
 
+            if(!empty($min) && !empty($max)){
             $random = rand($min, $max);
+            
             $select_querry = "SELECT "
                     . "* "
                     . "FROM "
@@ -47,7 +49,7 @@
                     . "INNER JOIN user u ON un.user_id = u.id "
                     . "WHERE "
                     . "n.id = '$random'";
-
+            
             $connect = mysql_connect($server, $dbuser, $dbpassword)
                     or die("Verbidung nicht Möglich!");
             mysql_select_db($db)
@@ -78,7 +80,7 @@
                     </p>
                 </div>
                 <?php
-            }
+            }}
             ?>
         </div>
     </body>
