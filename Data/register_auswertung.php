@@ -4,7 +4,7 @@ session_start();
 
 require_once '../Data/DBConnection.php';
 
-include_once '../Business/password.php';
+include_once '../Business/functions.php';
 
 $password = filter_input(INPUT_POST, 'password');
 $password2 = filter_input(INPUT_POST, 'password2');

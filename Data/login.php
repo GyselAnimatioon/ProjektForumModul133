@@ -2,7 +2,7 @@
 
 session_start();
 
-include_once '../Business/password.php';
+include_once '../Business/functions.php';
 
 require_once '../Data/DBConnection.php';
 

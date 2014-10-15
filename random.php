@@ -25,7 +25,7 @@
         <div class="body">
             <?php
             require_once './Data/DBConnection.php';
-            require_once './Business/password.php';
+            require_once './Business/functions.php';
             $max_querry = "SELECT * FROM nachrichten ORDER BY id DESC LIMIT 1";
             $maxx_querry = mysql_query($max_querry);
             while ($linie = mysql_fetch_object($maxx_querry)) {

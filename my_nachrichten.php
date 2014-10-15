@@ -1,6 +1,6 @@
 <?php
 require_once './Data/DBConnection.php';
-require_once './Business/password.php';
+require_once './Business/functions.php';
 $username_session = $_SESSION['username'];
 
 $username_querry = "SELECT * FROM user WHERE username = '$username_session'";

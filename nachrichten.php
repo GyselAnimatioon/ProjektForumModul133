@@ -1,6 +1,6 @@
 <?php
 require_once './Data/DBConnection.php';
-require_once './Business/password.php';
+require_once './Business/functions.php';
 $select_querry = "SELECT "
         . "* "
         . "FROM "
