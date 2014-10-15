@@ -11,7 +11,7 @@
     </head>
     <body>
 
-        <?php  ?>
+        <?php require_once './navigation1.php'; ?>
 
         <!-- verbindet content-outer mit content-inner -->
         <div class="content-wrap">
@@ -308,8 +308,6 @@
                         <li class="list-item"> vlt. Fotos </li>
                     </ul>
                 </div>
-                
-                <?php require '/Business/nach_oben.php'; ?>
             </div>
         </div>
     </body>
