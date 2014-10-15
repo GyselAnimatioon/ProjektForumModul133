@@ -1,10 +1,7 @@
 <?php
 
-session_start();
+include_once 'Business/functions.php';
 
-include_once '../Business/functions.php';
-
-require_once '../Data/DBConnection.php';
 
 $username = filter_input(INPUT_POST, 'username');
 $password = filter_input(INPUT_POST, 'password');
@@ -18,7 +15,7 @@ $querry = "SELECT * FROM user WHERE username = '$username' AND password = '$pass
 $login_querry = mysql_query($querry);
 
 while ($linie = mysql_fetch_object($login_querry)) {
-    
+
     $control++;
 }
 

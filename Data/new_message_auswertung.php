@@ -1,9 +1,5 @@
 <?php
 
-session_start();
-
-require_once 'DBConnection.php';
-
 if (isset($_SESSION["login"])) {
 
     $title = filter_input(INPUT_POST, 'title');
@@ -38,7 +34,7 @@ if (isset($_SESSION["login"])) {
     mysql_query($wer_erstellt_nachricht);
 
     //weiterleitung
-    $url1 = "Location: ../index.php";
+    $url1 = "Location: ../index.php?folder=Business&page=nachrichten.php";
     header($url1);
 }
 ?>

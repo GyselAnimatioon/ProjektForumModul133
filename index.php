@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-
 <?php
-
+session_start();
 ?>
 
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -18,13 +17,22 @@
         <link href='http://fonts.googleapis.com/css?family=Nixie+One|PT+Mono|Monoton|Varela+Round' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <?php 
-        require_once('navigation1.php');
-        ?>
-
+        <?php require_once ('Data/DBConnection.php'); ?>
+        <?php require_once('Presentation/navigation1.php'); ?>
+        
         <div class="body">
-            <?php require ('./nachrichten.php'); ?>
+            <?php
+            $page = filter_input(INPUT_GET, "page");
+            $folder = filter_input(INPUT_GET, "folder");
+            $name = $folder . "/" . $page;
+            if (!empty($page)) {
+                require_once $name;
+            } else {
+                require_once 'Business/nachrichten.php';
+            }
+            ?>
         </div>
+        
         <footer>
             &copy; Timothe Laborie, Fabian Gysel, Basil Lade 2014
         </footer>  

@@ -1,9 +1,5 @@
 <?php
 
-session_start();
-
-require_once '../Data/DBConnection.php';
-
 //User Daten
 $username2 = filter_input(INPUT_POST, 'username2');
 $vorname2 = filter_input(INPUT_POST, 'vorname2');

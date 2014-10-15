@@ -1,9 +1,5 @@
 <?php
 
-session_start();
-
-require_once '../Data/DBConnection.php';
-
 //Username Abfrage
 $user_name = $_SESSION['username'];
 //Wie Bewertet Abfrage
@@ -33,7 +29,9 @@ if ($new == 1) {
     }
 }
 
+
 $like_ausgabe = mysql_query($like);
-$url = "Location: ../index.php";
+echo $like;
+$url = "Location: ../index.php?folder=Business&page=nachrichten.php";
 header($url);
 ?>

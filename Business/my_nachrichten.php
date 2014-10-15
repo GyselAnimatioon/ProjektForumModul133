@@ -1,12 +1,11 @@
 <?php
-require_once './Data/DBConnection.php';
-require_once './Business/functions.php';
-$username_session = $linie->username;
+require_once 'functions.php';
+$username_session = $_SESSION['username'];
 
 $username_querry = "SELECT * FROM user WHERE username = '$username_session'";
 $usernamee_querry = mysql_query($username_querry);
-while ($linie2 = mysql_fetch_object($usernamee_querry)) {
-    $id = $linie2->id;
+while ($linie = mysql_fetch_object($usernamee_querry)) {
+    $id = $linie->id;
 }
 
 $select_querry = "SELECT "
@@ -29,13 +28,13 @@ while ($linie = mysql_fetch_object($nachrichten_querry)) {
     <div class="body_box" style="background-image: url('img/background/<?php echo rand(1, 6) ?>.jpg');background-size: cover;">
         <h3 class="box_title">
             <?php echo $linie->titel; ?>
-            <?php echo "<a class='made_by' href='profile.php?id=$linie->id'>By: " . $linie->username . "</a>"; ?>
+            <?php echo "<a class='made_by' href='../index.php?folder=Presentation&page=profile.php&id=$linie->id'>By: " . $linie->username . "</a>"; ?>
             <?php echo "<span class='time'>" . $time_ago . "</span>"; ?>
             <div class="daumen">
 
 
                 <?php
-                require "gefaellt_mir.php";
+                require_once 'gefaellt_mir.php';
                 ?>
             </div>
         </h3>
