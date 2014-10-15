@@ -19,16 +19,16 @@ while ($user_id_row = mysql_fetch_object($user_id_ausgabe)) {
     $user_id = $user_id_row->id;
 }
 
-if($new == 1) {
-    if($how == 1) {
+if ($new == 1) {
+    if ($how == 1) {
         $like = "INSERT INTO gefaellt_mir VALUES('$user_id','$nachrichten_id',1)";
-    } else if($how == 0) {
+    } else if ($how == 0) {
         $like = "INSERT INTO gefaellt_mir VALUES('$user_id','$nachrichten_id',0)";
     }
-} else if($new == 0) {
-    if($how == 1) {
+} else if ($new == 0) {
+    if ($how == 1) {
         $like = "UPDATE gefaellt_mir SET how = 1 WHERE user_id = '$user_id' AND nachrichten_id = '$nachrichten_id'";
-    } else if($how == 0) {
+    } else if ($how == 0) {
         $like = "UPDATE gefaellt_mir SET how = 0 WHERE user_id = '$user_id' AND nachrichten_id = '$nachrichten_id'";
     }
 }
@@ -36,5 +36,4 @@ if($new == 1) {
 $like_ausgabe = mysql_query($like);
 $url = "Location: ../index.php";
 header($url);
-
 ?>

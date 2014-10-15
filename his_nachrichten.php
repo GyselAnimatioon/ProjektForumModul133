@@ -21,8 +21,7 @@ $select_querry = "SELECT "
 $nachrichten_querry = mysql_query($select_querry);
 
 while ($linie = mysql_fetch_object($nachrichten_querry)) {
-    $time = mktime($linie->erstellt_h, $linie->erstellt_min, $linie->erstellt_sek, $linie->erstellt_m, $linie->erstellt_day, $linie->erstellt_y);
-    $ago = time() - $time;
+    $ago = $linie->erstellt_am;
     $_SESSION['nachrichten_id'] = "$linie->nachrichten_id";
     $time_ago = time_ago_analyse($ago);
     ?>

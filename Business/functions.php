@@ -11,6 +11,7 @@ function encrypt_password($password) {
 }
 
 function time_ago_analyse($ago) {
+    $ago = time() - $ago;
     if ($ago < 60) {
         $time_ago = round($ago) . " sek ago";
     } elseif ($ago < 3600) {
@@ -23,6 +24,8 @@ function time_ago_analyse($ago) {
         $time_ago = round(($ago / 31536000)) . " years ago";
     } elseif ($ago > 315360000) {
         $time_ago = "SEHR SEHR LANG";
+    } else {
+        $time_ago = "fehler";
     }
     return $time_ago;
 }
