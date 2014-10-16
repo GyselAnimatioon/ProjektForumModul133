@@ -1,11 +1,10 @@
 <!-- verbindet content-outer mit content-inner -->
 <div class="content-wrap">
-
     <?php
-    require_once 'Data/fuerProfil.php';
-
+    require_once 'Business/functions.php';
+    require_once 'Data/select_query_functions.php';
+    $linie = query_profile();
     ?>
-
     <table class="pure-table">
         <thead>
             <tr>
@@ -76,14 +75,9 @@
             </tr>
             <tr class="pure-table-odd">
                 <td>Sprache</td>
-                <td><?php
-                    echo $linie->lang_text;
-                    ?>
-                </td>
+                <td><?php echo $linie->lang_text; ?></td>
             </tr>
         </tbody>
     </table>
-<?php
-require_once 'Business/his_nachrichten.php';
-?>
+    <?php require_once 'Business/his_nachrichten.php'; ?>
 </div>

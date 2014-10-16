@@ -1,6 +1,9 @@
 <?php
 
         const SALT = "oaidfsuocf23jla9oasöcè!?";
+$lang = array('EN' => 'Englisch', 'FR' => 'Franzoesisch', 'DE' => 'Deutsch');
+
+
 
 function encrypt_password($password) {
     $secret_salt = SALT;
@@ -39,14 +42,12 @@ function check_email($email) {
     }
 }
 
-$lang = array('EN'=> 'Englisch','FR' => 'Franzoesisch','DE' => 'Deutsch');
-function get_language($lang_adk){
+function get_lang($lang_adk) {
     global $lang;
-    if(isset($lang[$lang_adk])){
-          return $lang[$lang_adk];
-    } 
-    return 'keine';
-      
+    if (isset($lang[$lang_adk])) {
+        return $lang[$lang_adk];
+    }
+    return 'Nichts Ausgewählt';
 }
 
 ?>
