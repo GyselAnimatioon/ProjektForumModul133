@@ -57,15 +57,7 @@
                     <td><?php echo $linie->fav_color; ?></td>
                     <td>
                         <select name="fav_color2">
-                            <option selected>
-                                <?php
-                                if ($linie->fav_color != NULL) {
-                                    echo $linie->fav_color;
-                                } else {
-                                    echo "Nichts Ausgewählt";
-                                }
-                                ?>
-                            </option>
+                            <option selected><?php echo $linie->color_text; ?></option>
                             <option>Weiss</option>
                             <option>Schwarz</option>
                             <option>Gr&uuml;n</option>
@@ -82,15 +74,7 @@
                     <td><?php echo $linie->fav_animal; ?></td>
                     <td>
                         <select name="fav_animal2">
-                            <option selected>
-                                <?php
-                                if ($linie->fav_animal != NULL) {
-                                    echo $linie->fav_animal;
-                                } else {
-                                    echo "Nichts Ausgewählt";
-                                }
-                                ?>
-                            </option>
+                            <option selected><?php echo $linie->animal_text; ?></option>
                             <option>Pferd</option>
                             <option>Schildkr&ouml;te</option>
                             <option>Tieger</option>
@@ -115,15 +99,7 @@
                     <td><?php echo $linie->fav_food; ?></td>
                     <td>
                         <select name="fav_food2">
-                            <option selected>
-                                <?php
-                                if ($linie->fav_food != NULL) {
-                                    echo $linie->fav_food;
-                                } else {
-                                    echo "Nichts Ausgewählt";
-                                }
-                                ?>
-                            </option>
+                            <option selected><?php echo $linie->food_text; ?></option>
                             <option>Spaghetti</option>
                             <option>Schnitzel</option>
                             <option>Pizza</option>
@@ -146,15 +122,7 @@
                     <td><?php echo $linie->fav_drink; ?></td>
                     <td>
                         <select name="fav_drink2">
-                            <option selected>
-                                <?php
-                                if ($linie->fav_drink != NULL) {
-                                    echo $linie->fav_drink;
-                                } else {
-                                    echo "Nichts Ausgewählt";
-                                }
-                                ?>
-                            </option>
+                            <option selected><?php echo $linie->drink_text; ?></option>
                             <option>Wasser</option>
                             <option>Coca-Cola</option>
                             <option>Kaffee</option>
@@ -213,7 +181,5 @@
             </tbody>
         </table>
     </form>
-    <?php
-    require_once 'Business/my_nachrichten.php';
-    ?>
+    <?php require_once 'Business/my_nachrichten.php'; ?>
 </div>

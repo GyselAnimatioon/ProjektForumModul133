@@ -60,6 +60,7 @@ function getmail() {
         echo $linie->mail;
     }
 }
+
 function check_email2($email) {
     $muster = '^([^\s@,:"<>]+)@([^\s@,:"<>]+\.[^\s@,:"<>.\d]{2,}|(\d{1,3}\.){3}\d{1,3})$';
     if (preg_match("/$muster/", $email)) {
@@ -67,7 +68,15 @@ function check_email2($email) {
     } else {
         return "<span style='color:red;'>Falsches Format</span>";
     }
+}
 
+
+
+function get_fav($fav) {
+    if ($fav != NULL) {
+        return $fav;
+    }
+    return "Nichts Ausgewählt";
 }
 
 ?>

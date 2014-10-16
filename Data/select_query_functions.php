@@ -17,6 +17,10 @@ function query_profil() {
         $linie = mysql_fetch_object($nachrichten_querry);
         $linie->lang_text = get_lang($linie->lang);
         $linie->email_text = check_email2($linie->mail);
+        $linie->color_text = get_fav($linie->fav_color);
+        $linie->animal_text = get_fav($linie->fav_animal);
+        $linie->food_text = get_fav($linie->fav_food);
+        $linie->drink_text = get_fav($linie->fav_drink);
         return $linie;
     }
 }
