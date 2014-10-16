@@ -34,7 +34,15 @@
                         </tr>
                         <tr class="pure-table-odd">
                             <td>EMail</td>
-                            <td><?php if (isset($_SESSION['mail_ok'])) { if ($_SESSION['mail_ok'] == 0) { echo "<span style='color:red;'>Falsches Format</span>"; } else { echo $linie->mail; } } else { echo $linie->mail; } ?></td>
+                            <td><?php if (isset($_SESSION['mail_ok'])) {
+            if ($_SESSION['mail_ok'] == 0) {
+                echo "<span style='color:red;'>Falsches Format</span>";
+            } else {
+                echo $linie->mail;
+            }
+        } else {
+            echo $linie->mail;
+        } ?></td>
                             <td><input type="email" name="mail2" value="<?php echo $linie->mail; ?>" placeholder="Neue EMail"></td>
                         </tr>
                         <tr>
@@ -58,13 +66,13 @@
                             <td>
                                 <select name="fav_color2">
                                     <option selected>
-                                        <?php
-                                        if ($linie->fav_color != NULL) {
-                                            echo $linie->fav_color;
-                                        } else {
-                                            echo "Nichts Ausgewählt";
-                                        }
-                                        ?>
+        <?php
+        if ($linie->fav_color != NULL) {
+            echo $linie->fav_color;
+        } else {
+            echo "Nichts Ausgewählt";
+        }
+        ?>
                                     </option>
                                     <option>Weiss</option>
                                     <option>Schwarz</option>
@@ -83,13 +91,13 @@
                             <td>
                                 <select name="fav_animal2">
                                     <option selected>
-                                        <?php
-                                        if ($linie->fav_animal != NULL) {
-                                            echo $linie->fav_animal;
-                                        } else {
-                                            echo "Nichts Ausgewählt";
-                                        }
-                                        ?>
+        <?php
+        if ($linie->fav_animal != NULL) {
+            echo $linie->fav_animal;
+        } else {
+            echo "Nichts Ausgewählt";
+        }
+        ?>
                                     </option>
                                     <option>Pferd</option>
                                     <option>Schildkr&ouml;te</option>
@@ -116,13 +124,13 @@
                             <td>
                                 <select name="fav_food2">
                                     <option selected>
-                                        <?php
-                                        if ($linie->fav_food != NULL) {
-                                            echo $linie->fav_food;
-                                        } else {
-                                            echo "Nichts Ausgewählt";
-                                        }
-                                        ?>
+        <?php
+        if ($linie->fav_food != NULL) {
+            echo $linie->fav_food;
+        } else {
+            echo "Nichts Ausgewählt";
+        }
+        ?>
                                     </option>
                                     <option>Spaghetti</option>
                                     <option>Schnitzel</option>
@@ -147,13 +155,13 @@
                             <td>
                                 <select name="fav_drink2">
                                     <option selected>
-                                        <?php
-                                        if ($linie->fav_drink != NULL) {
-                                            echo $linie->fav_drink;
-                                        } else {
-                                            echo "Nichts Ausgewählt";
-                                        }
-                                        ?>
+        <?php
+        if ($linie->fav_drink != NULL) {
+            echo $linie->fav_drink;
+        } else {
+            echo "Nichts Ausgewählt";
+        }
+        ?>
                                     </option>
                                     <option>Wasser</option>
                                     <option>Coca-Cola</option>
@@ -208,13 +216,13 @@
                             <td>
                                 <select name="lang2">
                                     <option selected>
-                                        <?php
-                                        if ($linie->lang != NULL) {
-                                            echo $linie->lang;
-                                        } else {
-                                            echo "Nichts Ausgewählt";
-                                        }
-                                        ?>
+        <?php
+        if ($linie->lang != NULL) {
+            echo $linie->lang;
+        } else {
+            echo "Nichts Ausgewählt";
+        }
+        ?>
                                     </option>
                                     <option>DE</option>
                                     <option>EN</option>
