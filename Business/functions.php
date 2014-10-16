@@ -39,4 +39,14 @@ function check_email($email) {
     }
 }
 
+$lang = array('EN'=> 'Englisch','FR' => 'Franzoesisch','DE' => 'Deutsch');
+function get_language($lang_adk){
+    global $lang;
+    if(isset($lang[$lang_adk])){
+          return $lang[$lang_adk];
+    } 
+    return 'keine';
+      
+}
+
 ?>
