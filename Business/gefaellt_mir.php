@@ -33,13 +33,15 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
     while ($wie_bewertet_row = mysql_fetch_object($wie_bewertet_ausgabe)) {
         $wie_bewertet = $wie_bewertet_row->how;
         $schonmal_bewertet = 1;
+        
     }
-
+    
+    
     //Schonmal bewertet Abfrage
     if (!isset($wie_bewertet)) {
         $schonmal_bewertet = 0;
     }
-
+    
     //Bewertung
     if ($schonmal_bewertet == 1) {
         if ($wie_bewertet == 1) {
@@ -81,4 +83,8 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
 
     <?php
 }
+
+$schonmal_bewertet = NULL;
+$wie_bewertet = NULL;
+
 ?>

@@ -1,6 +1,6 @@
 <!--Titel-->
 <nav class="pure-menu pure-menu-open pure-menu-horizontal">
-    <img class="pure-menu-heading" src="img/blitz.jpg" alt="" style="height: 4em;"/>
+    <img class="pure-menu-heading" src="img/blitz_von_timothe.png" alt="" style="height: 4em;"/>
     <ul>
 
         <li><a href="../index.php?folder=Business&page=nachrichten.php">Home</a></li>
