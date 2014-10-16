@@ -33,15 +33,7 @@
                 <tr class="pure-table-odd">
                     <td>EMail</td>
                     <td><?php
-                        if (isset($_SESSION['mail_ok'])) {
-                            if ($_SESSION['mail_ok'] == 0) {
-                                echo "<span style='color:red;'>Falsches Format</span>";
-                            } else {
-                                echo $linie->mail;
-                            }
-                        } else {
-                            echo $linie->mail;
-                        }
+                        echo $linie->email_text;
                         ?></td>
                     <td><input type="email" name="mail2" value="<?php echo $linie->mail; ?>" placeholder="Neue EMail"></td>
                 </tr>

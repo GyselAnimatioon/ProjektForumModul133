@@ -16,8 +16,10 @@ function query_profil() {
         $nachrichten_querry = mysql_query($select_querry);
         $linie = mysql_fetch_object($nachrichten_querry);
         $linie->lang_text = get_lang($linie->lang);
+        $linie->email_text = check_email2($linie->mail);
         return $linie;
     }
 }
+
 
 ?>
