@@ -30,4 +30,13 @@ function time_ago_analyse($ago) {
     return $time_ago;
 }
 
+function check_email($email) {
+    $muster = '^([^\s@,:"<>]+)@([^\s@,:"<>]+\.[^\s@,:"<>.\d]{2,}|(\d{1,3}\.){3}\d{1,3})$';
+    if (preg_match("/$muster/", $email)) {
+        return "true";
+    } else {
+        return "false";
+    }
+}
+
 ?>
