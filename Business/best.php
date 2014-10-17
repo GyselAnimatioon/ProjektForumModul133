@@ -10,7 +10,7 @@ while ($select_row = mysql_fetch_object($select_ausgabe)) {
     $time_ago = time_ago_analyse($ago);
 
     $plus = get_nachrichten_like($_SESSION['nachrichten_id']);
-    $minus = get_nachrichten_dislike($_SESSION['nachrichten_id']);
+    //$minus = get_nachrichten_dislike($_SESSION['nachrichten_id']);
 
     require 'Presentation/nachricht_template.php';
 }

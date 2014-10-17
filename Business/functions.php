@@ -48,19 +48,6 @@ function get_lang($lang_adk) {
     return 'Nichts Ausgewählt';
 }
 
-function getmail() {
-
-    if (isset($_SESSION['mail_ok'])) {
-        if ($_SESSION['mail_ok'] == 0) {
-            echo "<span style='color:red;'>Falsches Format</span>";
-        } else {
-            echo $linie->mail;
-        }
-    } else {
-        echo $linie->mail;
-    }
-}
-
 function check_email2($email) {
     $muster = '^([^\s@,:"<>]+)@([^\s@,:"<>]+\.[^\s@,:"<>.\d]{2,}|(\d{1,3}\.){3}\d{1,3})$';
     if (preg_match("/$muster/", $email)) {
