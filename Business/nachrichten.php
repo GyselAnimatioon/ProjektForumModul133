@@ -1,17 +1,8 @@
 <?php
 
-require_once './Business/functions.php';
-$select_abfrage = "SELECT "
-        . "* "
-        . "FROM "
-        . "nachrichten n "
-        . "INNER JOIN user_nachricht un ON un.nachrichten_id = n.id "
-        . "INNER JOIN user u ON un.user_id = u.id "
-        . "ORDER BY "
-        . "n.erstellt_am "
-        . "DESC";
-
-$select_ausgabe = mysql_query($select_abfrage);
+require_once 'Business/functions.php';
+require_once 'Data/select_query_functions.php';
+$select_ausgabe = select_nachricht();
 
 while ($select_row = mysql_fetch_object($select_ausgabe)) {
     $ago = $select_row->erstellt_am;

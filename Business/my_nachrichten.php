@@ -1,7 +1,7 @@
 <?php
 require_once 'Business/functions.php';
 require_once 'Data/select_query_functions.php';
-$result_set = who_nachrichten($_SESSION['username']);
+$result_set = who_nachrichten($_SESSION['username'],"folder=Presentation&page=profil.php");
 while ($select_row = mysql_fetch_object($result_set)) {
     $ago = $select_row->erstellt_am;
     $_SESSION['nachrichten_id'] = "$select_row->nachrichten_id";

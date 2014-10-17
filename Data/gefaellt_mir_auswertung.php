@@ -3,11 +3,11 @@
 //Username Abfrage
 $user_name = $_SESSION['username'];
 //Wie Bewertet Abfrage
-$how = $_GET['how'];
+$how = filter_input(INPUT_GET, 'how');
 //Schonmal Bewertet Abfrage
-$new = $_GET['new'];
+$new = filter_input(INPUT_GET, 'new');
 //Nachrichten ID Abfrage
-$nachrichten_id = $_GET['id'];
+$nachrichten_id = filter_input(INPUT_GET, 'id');
 //User ID Abfrage
 $user_id_abfrage = "SELECT * FROM user WHERE username LIKE '$user_name'";
 $user_id_ausgabe = mysql_query($user_id_abfrage);
@@ -31,7 +31,8 @@ if ($new == 1) {
 
 
 $like_ausgabe = mysql_query($like);
-echo $like;
-$url = "Location: ../index.php?folder=Business&page=nachrichten.php";
+//echo $like;
+$site = $_SESSION['site'];
+$url = "Location: ../index.php?$site";
 header($url);
 ?>

@@ -25,7 +25,8 @@ function query_profil() {
     }
 }
 
-function who_nachrichten($username) {
+function who_nachrichten($username, $site) {
+    $_SESSION['site'] = $site;
     $user_name_abfrage = "SELECT * FROM user WHERE username = '$username'";
     $user_name_ausgabe = mysql_query($user_name_abfrage);
     $linie = mysql_fetch_object($user_name_ausgabe);
@@ -35,6 +36,92 @@ function who_nachrichten($username) {
             . "INNER JOIN user u ON un.user_id = u.id WHERE un.user_id = '$id'";
     $nachrichten_querry = mysql_query($select_querry);
     return $nachrichten_querry;
+}
+
+function select_best_nachricht() {
+
+    $_SESSION['site'] = "folder=Business&page=best.php";
+
+    $select_abfrage = "SELECT * FROM gefaellt_mir g "
+            . "INNER JOIN nachrichten n ON n.id = g.nachrichten_id "
+            . "INNER JOIN user_nachricht un ON un.nachrichten_id = n.id "
+            . "INNER JOIN user u ON u.id = un.user_id "
+            . "GROUP BY g.nachrichten_id ORDER BY g.how DESC";
+    $select_ausgabe = mysql_query($select_abfrage);
+
+    return $select_ausgabe;
+}
+
+function select_nachricht() {
+    $_SESSION['site'] = "folder=Business&page=nachrichten.php";
+    $select_abfrage = "SELECT "
+            . "* "
+            . "FROM "
+            . "nachrichten n "
+            . "INNER JOIN user_nachricht un ON un.nachrichten_id = n.id "
+            . "INNER JOIN user u ON un.user_id = u.id "
+            . "ORDER BY "
+            . "n.erstellt_am "
+            . "DESC";
+    $select_ausgabe = mysql_query($select_abfrage);
+
+    return $select_ausgabe;
+}
+
+function select_random() {
+    $_SESSION['site'] = "folder=Business&page=random.php";
+    $max_querry = "SELECT * FROM nachrichten ORDER BY id DESC LIMIT 1";
+    $maxx_querry = mysql_query($max_querry);
+    while ($linie = mysql_fetch_object($maxx_querry)) {
+        $max = $linie->id;
+    }
+    $min_querry = "SELECT * FROM nachrichten ORDER BY id ASC LIMIT 1";
+    $minn_querry = mysql_query($min_querry);
+    while ($linie = mysql_fetch_object($minn_querry)) {
+        $min = $linie->id;
+    }
+    if (!empty($min) && !empty($max)) {
+        $random = rand($min, $max);
+        $select_abfrage = "SELECT * FROM nachrichten n "
+                . "INNER JOIN user_nachricht un ON un.nachrichten_id = n.id "
+                . "INNER JOIN user u ON un.user_id = u.id "
+                . "WHERE n.id = '$random'";
+        $select_ausgabe = mysql_query($select_abfrage);
+    }
+    return $select_ausgabe;
+}
+
+function select_trends() {
+    $_SESSION['site'] = "folder=Business&page=trends.php";
+    $jz_monat = time() - 604800;
+    $select_abfrage = "SELECT * FROM gefaellt_mir g "
+            . "INNER JOIN nachrichten n ON n.id = g.nachrichten_id "
+            . "INNER JOIN user_nachricht un ON un.nachrichten_id = n.id "
+            . "INNER JOIN user u ON u.id = un.user_id "
+            . "WHERE n.erstellt_am > $jz_monat GROUP BY g.nachrichten_id "
+            . "ORDER BY g.how DESC";
+    $select_ausgabe = mysql_query($select_abfrage);
+    return $select_ausgabe;
+}
+
+function get_nachrichten_like($nachrichten_id) {
+    //Wieviele Likes Abfrage
+    $plus_abfrage = "SELECT COUNT(how) AS how FROM gefaellt_mir WHERE nachrichten_id = '$nachrichten_id' AND how = 1";
+    $plus_ausgabe = mysql_query($plus_abfrage);
+    while ($plus_row = mysql_fetch_object($plus_ausgabe)) {
+        $plus = $plus_row->how;
+    }
+    return $plus;
+}
+
+function get_nachrichten_dislike($nachrichten_id) {
+    //Wieviele Dislikes Abfrage
+    $minus_abfrage = "SELECT COUNT(how) AS how FROM gefaellt_mir WHERE nachrichten_id = '$nachrichten_id' AND how = 0";
+    $minus_ausgabe = mysql_query($minus_abfrage);
+    while ($minus_row = mysql_fetch_object($minus_ausgabe)) {
+        $minus = $minus_row->how;
+    }
+    return $minus;
 }
 
 ?>
