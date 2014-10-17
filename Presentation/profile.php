@@ -1,4 +1,4 @@
-<div class="content-wrap">
+
     <?php
     require_once 'Business/functions.php';
     require_once 'Data/select_query_functions.php';
@@ -79,5 +79,4 @@
         </tbody>
     </table>
     <?php $exec = "profile_nachrichten";
-    require_once 'Business/nachrichten_ausgeben.php'; ?>
-</div>
+    require_once 'Business/nachrichten_ausgeben.php'; ?>F

@@ -1,7 +1,7 @@
-<div class="content-wrap">
-    <div class="content-outer">
-        <h1 class="title">Regeln</h1>
-    </div>
+
+
+        <h1>Regeln</h1>
+
     <div class="content-inner">
         <div class="content-block">
             <h3 class="headline-big"> Regeln zum Richtigen Commiten... </h3>
@@ -14,4 +14,3 @@
             </ol>
         </div>
     </div>
-</div>

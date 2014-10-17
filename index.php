@@ -7,13 +7,15 @@
         <link type="text/css" rel="Stylesheet" href="css/head.css">
         <link type="text/css" rel="Stylesheet" href="css/body.css">
         <link rel="stylesheet" type="text/css" href="css/pure.css">
+        <link type="text/css" rel="Stylesheet" href="css/doku.css">
+        <link rel="stylesheet" type="text/css" href="css/regi.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Nixie+One|PT+Mono|Monoton|Varela+Round' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <?php require_once ('Data/DBConnection.php'); ?>
         <?php require_once('Presentation/navigation1.php'); ?>
-        <div class="body">
+        <div class="content-wrap">
             <?php
             $exec = filter_input(INPUT_GET, "exec");
             $page = filter_input(INPUT_GET, "page");

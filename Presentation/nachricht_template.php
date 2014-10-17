@@ -1,3 +1,4 @@
+
 <div class="body_box" style="background-image: url('../img/background/<?php echo rand(1, 6) ?>.jpg');background-size: cover;">
     <h3 class="box_title">
         <?php echo $select_row->titel; ?>

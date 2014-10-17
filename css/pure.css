@@ -831,7 +831,7 @@ input.small_button {
     vertical-align: bottom;
 }
 .pure-table td {
-    background-color: transparent;
+    background-color: white;
 }
 .pure-table-odd td {
     background-color: #dedede;
