@@ -21,12 +21,12 @@ if ($control != 0) {
     $_SESSION["username"] = $username;
     $_SESSION["login"] = 1;
     $_SESSION["message"] = "";
-    $url1 = "Location: ../index.php";
+    $url1 = "Location: ../index.php?folder=Business&page=nachrichten_ausgeben.php&exec=nachricht";
     header($url1);
 } else {
     $_SESSION["login"] = 2;
     $_SESSION["message"] = "";
-    $url1 = "Location: ../index.php";
+    $url1 = "Location: ../index.php?folder=Business&page=nachrichten_ausgeben.php&exec=nachricht";
     header($url1);
 }/*
 echo "<pre>";

@@ -65,7 +65,7 @@ if ($ok == "false") {
     $_SESSION['twitter'] = $twitter2;
     $_SESSION['instagram'] = $instagram2;
     $_SESSION['lang'] = $lang2;
-    $url1 = "Location: ../index.php?folder=Business&page=nachrichten.php";
+    $url1 = "Location: ../index.php?folder=Business&page=nachrichten_ausgeben.php&exec=nachricht";
     $_SESSION['mail_ok'] = 1;
     header($url1);
 }

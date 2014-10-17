@@ -3,10 +3,10 @@
     <img class="pure-menu-heading" src="img/blitz_von_timothe.png" alt="" style="height: 4em;"/>
     <ul>
 
-        <li><a href="../index.php?folder=Business&page=nachrichten.php">Home</a></li>
-        <li><a href="../index.php?folder=Business&page=best.php">Best</a></li>
-        <li><a href="../index.php?folder=Business&page=random.php">Random</a></li>
-        <li><a href="../index.php?folder=Business&page=trends.php">Trends</a></li>
+        <li><a href="../index.php?folder=Business&page=nachrichten_ausgeben.php&exec=nachricht">Home</a></li>
+        <li><a href="../index.php?folder=Business&page=nachrichten_ausgeben.php&exec=best">Best</a></li>
+        <li><a href="../index.php?folder=Business&page=nachrichten_ausgeben.php&exec=random">Random</a></li>
+        <li><a href="../index.php?folder=Business&page=nachrichten_ausgeben.php&exec=trends">Trends</a></li>
         <li><a href="../index.php?folder=Presentation&page=doku.php">Info</a></li>
         <li><a href="../index.php?folder=Presentation&page=rules.php">Rules</a></li>
 

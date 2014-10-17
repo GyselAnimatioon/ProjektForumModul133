@@ -64,8 +64,10 @@ function get_fav($fav) {
 }
 
 function get_nachrichten($who) {
-    if ($who == $_SESSION['username']) {
-        return "folder=Presentation&page=profil.php";
+    if (isset($_SESSION['username'])) {
+        if ($who == $_SESSION['username']) {
+            return "folder=Presentation&page=profil.php";
+        }
     }
     return "folder=Presentation&page=profil.php";
 }

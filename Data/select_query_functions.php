@@ -39,7 +39,7 @@ function who_nachrichten($username, $site) {
 }
 
 function select_best() {
-    $_SESSION['site'] = "folder=Business&page=best.php";
+    $_SESSION['site'] = "folder=Business&page=nachrichten_ausgeben.php&exec=best";
     $select_abfrage = "SELECT SUM(g.how) AS total, n.titel, n.nachricht, n.erstellt_am, un.user_id, u.username, un.nachrichten_id "
             . "FROM gefaellt_mir g "
             . "INNER JOIN nachrichten n ON n.id = g.nachrichten_id "
@@ -52,7 +52,7 @@ function select_best() {
 }
 
 function select_nachricht() {
-    $_SESSION['site'] = "folder=Business&page=nachrichten.php";
+    $_SESSION['site'] = "folder=Business&page=nachrichten_ausgeben.php&exec=nachricht";
     $select_abfrage = "SELECT "
             . "* "
             . "FROM "
@@ -68,7 +68,7 @@ function select_nachricht() {
 }
 
 function select_random() {
-    $_SESSION['site'] = "folder=Business&page=random.php";
+    $_SESSION['site'] = "folder=Business&page=nachrichten_ausgeben.php&exec=random";
     $max_querry = "SELECT * FROM nachrichten ORDER BY id DESC LIMIT 1";
     $maxx_querry = mysql_query($max_querry);
     while ($linie = mysql_fetch_object($maxx_querry)) {
@@ -91,7 +91,7 @@ function select_random() {
 }
 
 function select_trends() {
-    $_SESSION['site'] = "folder=Business&page=trends.php";
+    $_SESSION['site'] = "folder=Business&page=nachrichten_ausgeben.php&exec=trends";
     $jz_monat = time() - 604800;
     $select_abfrage = "SELECT * FROM gefaellt_mir g "
             . "INNER JOIN nachrichten n ON n.id = g.nachrichten_id "

@@ -37,7 +37,7 @@ if ($password != $password2) {
         if ($eintrag_querry == true) {
             $_SESSION["username"] = $username;
             $_SESSION["login"] = 1;
-            $url1 = "Location: ../index.php?folder=Business&page=nachrichten.php";
+            $url1 = "Location: ../index.php?folder=Business&page=nachrichten_ausgeben.php&exec=nachricht";
             header($url1);
         } else {
             $_SESSION["login"] = 0;

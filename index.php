@@ -22,6 +22,7 @@ session_start();
 
         <div class="body">
             <?php
+            $exec = filter_input(INPUT_GET, "exec");
             $page = filter_input(INPUT_GET, "page");
             $folder = filter_input(INPUT_GET, "folder");
             $name = $folder . "/" . $page;

@@ -33,7 +33,7 @@ if (isset($_SESSION["login"])) {
     mysql_query($wer_erstellt_nachricht);
 
     //weiterleitung
-    $url1 = "Location: ../index.php?folder=Business&page=nachrichten.php";
+    $url1 = "Location: ../index.php?folder=Business&page=nachrichten_ausgeben.php&exec=nachricht";
     header($url1);
 }
 ?>
