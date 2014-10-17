@@ -28,7 +28,6 @@ if (isset($_SESSION["login"])) {
 
     //User und Nachricht id ausgabe
     //echo "User ID: $user_id <br>Nachricht ID: $nachricht_id";
-
     //wer hat welche nachricht erstellt in user_nachricht schreiben
     $wer_erstellt_nachricht = "INSERT INTO user_nachricht VALUES($user_id,$nachricht_id)";
     mysql_query($wer_erstellt_nachricht);
