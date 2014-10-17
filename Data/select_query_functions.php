@@ -38,17 +38,16 @@ function who_nachrichten($username, $site) {
     return $nachrichten_querry;
 }
 
-function select_best_nachricht() {
-
+function select_best() {
     $_SESSION['site'] = "folder=Business&page=best.php";
-
-    $select_abfrage = "SELECT * FROM gefaellt_mir g "
+    $select_abfrage = "SELECT SUM(g.how) AS total, n.titel, n.nachricht, n.erstellt_am, un.user_id, u.username, un.nachrichten_id "
+            . "FROM gefaellt_mir g "
             . "INNER JOIN nachrichten n ON n.id = g.nachrichten_id "
             . "INNER JOIN user_nachricht un ON un.nachrichten_id = n.id "
             . "INNER JOIN user u ON u.id = un.user_id "
-            . "GROUP BY g.nachrichten_id ORDER BY g.how DESC";
+            . "GROUP BY g.nachrichten_id ORDER BY total DESC";
     $select_ausgabe = mysql_query($select_abfrage);
-
+    
     return $select_ausgabe;
 }
 
@@ -122,6 +121,23 @@ function get_nachrichten_dislike($nachrichten_id) {
         $minus = $minus_row->how;
     }
     return $minus;
+}
+
+function get_user_id() {
+    //User ID Abfragen
+    $user_name = $_SESSION['username'];
+    $user_id_abfrage = "SELECT * FROM user WHERE username = '$user_name'";
+    $user_id_ausgabe = mysql_query($user_id_abfrage);
+    while ($user_id_row = mysql_fetch_object($user_id_ausgabe)) {
+        $user_id = $user_id_row->id;
+        $_SESSION['id'] = $user_id;
+    }
+    return $user_id;
+}
+
+function get_nachrichten_id() {
+    $nachrichten_id = $_SESSION['nachrichten_id'];
+    return $nachrichten_id;
 }
 
 ?>

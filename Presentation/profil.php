@@ -181,5 +181,5 @@
             </tbody>
         </table>
     </form>
-    <?php require_once 'Business/my_nachrichten.php'; ?>
+    <?php require_once 'Business/his_nachrichten.php'; ?>
 </div>

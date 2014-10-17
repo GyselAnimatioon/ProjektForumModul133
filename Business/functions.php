@@ -52,18 +52,22 @@ function check_email2($email) {
     $muster = '^([^\s@,:"<>]+)@([^\s@,:"<>]+\.[^\s@,:"<>.\d]{2,}|(\d{1,3}\.){3}\d{1,3})$';
     if (preg_match("/$muster/", $email)) {
         return $email;
-    } else {
-        return "<span style='color:red;'>Falsches Format</span>";
     }
+    return "<span style='color:red;'>Falsches Format</span>";
 }
-
-
 
 function get_fav($fav) {
     if ($fav != NULL) {
         return $fav;
     }
     return "Nichts Ausgewählt";
+}
+
+function get_nachrichten($who) {
+    if ($who == $_SESSION['username']) {
+        return "folder=Presentation&page=profil.php";
+    }
+    return "folder=Presentation&page=profil.php";
 }
 
 ?>
