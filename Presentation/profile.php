@@ -1,4 +1,3 @@
-<!-- verbindet content-outer mit content-inner -->
 <div class="content-wrap">
     <?php
     require_once 'Business/functions.php';
@@ -79,5 +78,6 @@
             </tr>
         </tbody>
     </table>
-    <?php $exec = "profile_nachrichten"; require_once 'Business/nachrichten_ausgeben.php'; ?>
+    <?php $exec = "profile_nachrichten";
+    require_once 'Business/nachrichten_ausgeben.php'; ?>
 </div>

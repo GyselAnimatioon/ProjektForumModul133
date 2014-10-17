@@ -1,14 +1,8 @@
-
-<!-- verbindet content-outer mit content-inner -->
 <div class="content-wrap">
-    <!-- content-outer enthält Titel des Dokuments -->
     <div class="content-outer">
         <h1 class="title">Regeln</h1>
     </div>
-
-    <!-- content-inner enthält Inhalt der Analyse -->
     <div class="content-inner">
-
         <div class="content-block">
             <h3 class="headline-big"> Regeln zum Richtigen Commiten... </h3>
             <ol class="list-items">

@@ -1,14 +1,8 @@
-<!-- verbindet content-outer mit content-inner -->
 <div class="content-wrap">
-    <!-- content-outer enthält Titel des Dokuments -->
     <div class="content-outer">
         <h1 class="title"> Forum-Projekt Analyse </h1>
     </div>
-
-    <!-- content-inner enthält Inhalt der Analyse -->
     <div class="content-inner">
-
-        <!-- Jedes "Kapitel" wird in ein Block gepackt(content-block) -->
         <div class="content-block">
             <h3 class="headline-big"> Inhaltsverzeichnis: </h3>
             <ul class="list-items">
@@ -22,18 +16,14 @@
                 <li class="list-item"><a class="index" href="#funktionen">Funktion der Website</a></li>
             </ul>
         </div>
-
         <div id="team" class="content-block">
-            <!-- Titel des Blocks -->
             <h3 class="headline-big"> Team: </h3>
-            <!-- Inhalt des Blocks -->
             <ul class="list-items">
                 <li class="list-item"> Basil Lade </li>
                 <li class="list-item"> Timothé Laborie </li>
                 <li class="list-item"> Fabian Gysel </li>
             </ul>
         </div>
-
         <div id="beschreibung" class="content-block">
             <h3 class="headline-big"> Projektbeschreibung: </h3>
             <p> Es wird in einer Partnerarbeit eine 3- Tier WEB Applikation definiert und selbständig entwickelt. </p>
@@ -42,16 +32,13 @@
             <p>In der Business-Ebene ist der Code wie z.B. PHP enthalten, mit welchem man Daten aus der Daten-Ebene benutzen kann.</p>
             <p>Der Präsentation-Ebene enthält alles, was der Endnutzer auf dem Bildschirm sieht, wie z.B. Texte auf der Website und Formation der Texte. HTML und CSS werden dort z.B. verwaltet.</p> 
             <br>
-
             Wir wollen eine Webapplikation erstellen, in der es möglich ist, sich in einer Datenbank anzumelden oder zu registrieren. Man soll ein eigenes
             Profil bekommen und dies dann auch bearbeiten können. Über die Startseite kann man Nachrichten erstellen, diese mit einem Titel versehen und 
             dannach "posten". Jeder eingeloggte User kann seine Meinung zu einer Nachricht über ein Voting-System ("Gefällt mir", "Gefällt mir nicht") abgeben.
             Auf der Startseite werden die jeweiligen Nachrichten mit den meisten "Hochvotings" der Reihe nach aufgeführt.
             Der User soll auch seine eigenen Nachrichten verwalten und diese auf einer seperaten Seite einsehen und auch löschen können.
             Der User kann sich schliesslich auch wieder ausloggen.
-
         </div>
-
         <div id="technologien" class="content-block">
             <h3 class="headline-big"> Einzusetzende Technologien: </h3>
             <ul class="list-items">
@@ -63,7 +50,6 @@
                     <img class="logo-php" src="img/doku/phplogo-highres.png" alt="php-logo"/>
                     PHP ist eine serverseitige Programmiersprache und wird für die Funktionalität der Website benötigt, z.B. Erstellen eines Login oder eines Accounts. PHP wurde gewählt, weil es als Schulstandard empfohlen wurde und wir schon etwas Erfahrung damit haben.
                 </li>
-
                 <li class="list-item logo-item">
                     <img class="logo-html" src="img/doku/HTML5_Logo_512.png" alt=""/>
                     HTML ist für die Website, es ist eine Auszeichungs Sprache, mit der eine Website strukturiert wird.
@@ -172,36 +158,27 @@
                 <li class="list-item"> Weitere Ideen: </li>
             </ul>
         </div>
-
         <div id="zustaendig" class="content-block"> 
             <h3 class="headline-big"> Zuständigkeiten: </h3>
-
             <h4 class="headline-sm"> Basil Lade: </h4>
-
             <ul class="list-items">
                 <li class="list-item"> Dokumentation / Regelung </li>
                 <li class="list-item"> Design der Website </li>
                 <li class="list-item">  </li>
             </ul>
-
             <h4 class="headline-sm"> Timothé Laborie: </h4>
-
             <ul class="list-items">
                 <li class="list-item"> Ausloggen </li>
                 <li class="list-item"> Login </li>
                 <li class="list-item">  </li>
             </ul>
-
             <h4 class="headline-sm"> Fabian Gysel: </h4>
-
             <ul class="list-items">
                 <li class="list-item"> Haupseite </li>
                 <li class="list-item"> Registrierung </li>
                 <li class="list-item">  </li>
             </ul>
-
             <h4 class="headline-sm"> Team: </h4>
-
             <ul class="list-items">
                 <li class="list-item"> Source Control System bestimmt &#10003;</li>
                 <li class="list-item"> Projekt initialisiert </li>
@@ -214,10 +191,8 @@
                 <li class="list-item"> Abgabe </li>
             </ul>
         </div>
-
         <div id="proj-ablauf" class="content-block">
             <h3 class="headline-big"> Projekt-Ablauf: </h3>
-
             <ol class="list-items">
                 <li class="list-item"> Source Control System bestimmen </li>
                 <li class="list-item"> Projekt initialisieren </li>
@@ -228,7 +203,6 @@
                 <li class="list-item"> Abgabe </li>
             </ol>
         </div>
-
         <div id="erm" class="content-block">
             <h3 class="headline-big"> ERM: </h3>
             <dl>
@@ -265,9 +239,7 @@
             </dl>
         </div>
         <div id="funktionen" class="content-block">
-            <!-- Titel des Blocks -->
             <h3 class="headline-big"> Funktionen der Website: </h3>
-            <!-- Inhalt des Blocks -->
             <ul class="list-items">
                 <li class="list-item"> Profil verwalten &#10003;</li>
                 <li class="list-item"> Anmelden &#10003;</li>

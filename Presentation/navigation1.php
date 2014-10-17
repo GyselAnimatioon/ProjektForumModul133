@@ -1,22 +1,18 @@
-<!--Titel-->
 <nav class="pure-menu pure-menu-open pure-menu-horizontal">
     <img class="pure-menu-heading" src="img/blitz_von_timothe.png" alt="" style="height: 4em;"/>
     <ul>
-
         <li><a href="../index.php?folder=Business&page=nachrichten_ausgeben.php&exec=nachricht">Home</a></li>
         <li><a href="../index.php?folder=Business&page=nachrichten_ausgeben.php&exec=best">Best</a></li>
         <li><a href="../index.php?folder=Business&page=nachrichten_ausgeben.php&exec=random">Random</a></li>
         <li><a href="../index.php?folder=Business&page=nachrichten_ausgeben.php&exec=trends">Trends</a></li>
         <li><a href="../index.php?folder=Presentation&page=doku.php">Info</a></li>
         <li><a href="../index.php?folder=Presentation&page=rules.php">Rules</a></li>
-
         <?php
         if (isset($_SESSION["login"])) {
             $eingelogt = $_SESSION["login"];
         } else {
             $eingelogt = 0;
         }
-        //nie versucht einzuloggen
         if ($eingelogt == 0 || $eingelogt == 2) {
             ?>
             <li>
@@ -36,7 +32,6 @@
                 </form>
             </li>
             <?php
-            //eigeloggt
         } else if ($eingelogt == 1) {
             ?>
             <li><a href="../index.php?folder=Presentation&page=new_message.php">New Message</a></li>
@@ -47,9 +42,7 @@
                     ?></a></li>
             <li><a href="../index.php?folder=Data&page=logout.php">Log out</a></li>
             <?php
-            //fehlerhaftes einliogegen
         }
         ?>
     </ul>
-
 </nav>

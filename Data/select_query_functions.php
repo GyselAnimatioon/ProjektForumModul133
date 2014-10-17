@@ -31,7 +31,6 @@ function who_nachrichten($username, $site) {
     $user_name_ausgabe = mysql_query($user_name_abfrage);
     $linie = mysql_fetch_object($user_name_ausgabe);
     $id = $linie->id;
-
     $select_querry = "SELECT * FROM nachrichten n INNER JOIN user_nachricht un ON un.nachrichten_id = n.id "
             . "INNER JOIN user u ON un.user_id = u.id WHERE un.user_id = '$id'";
     $nachrichten_querry = mysql_query($select_querry);
@@ -47,7 +46,6 @@ function select_best() {
             . "INNER JOIN user u ON u.id = un.user_id "
             . "GROUP BY g.nachrichten_id ORDER BY total DESC";
     $select_ausgabe = mysql_query($select_abfrage);
-
     return $select_ausgabe;
 }
 
@@ -63,7 +61,6 @@ function select_nachricht() {
             . "n.erstellt_am "
             . "DESC";
     $select_ausgabe = mysql_query($select_abfrage);
-
     return $select_ausgabe;
 }
 
@@ -118,7 +115,6 @@ function select_profile_nachrichten() {
 }
 
 function get_nachrichten_like($nachrichten_id) {
-    //Wieviele Likes Abfrage
     $plus_abfrage = "SELECT COUNT(how) AS how FROM gefaellt_mir WHERE nachrichten_id = '$nachrichten_id' AND how = 1";
     $plus_ausgabe = mysql_query($plus_abfrage);
     while ($plus_row = mysql_fetch_object($plus_ausgabe)) {
@@ -128,7 +124,6 @@ function get_nachrichten_like($nachrichten_id) {
 }
 
 function get_nachrichten_dislike($nachrichten_id) {
-    //Wieviele Dislikes Abfrage
     $minus_abfrage = "SELECT COUNT(how) AS how FROM gefaellt_mir WHERE nachrichten_id = '$nachrichten_id' AND how = 0";
     $minus_ausgabe = mysql_query($minus_abfrage);
     while ($minus_row = mysql_fetch_object($minus_ausgabe)) {
@@ -138,7 +133,6 @@ function get_nachrichten_dislike($nachrichten_id) {
 }
 
 function get_user_id() {
-    //User ID Abfragen
     $user_name = $_SESSION['username'];
     $user_id_abfrage = "SELECT * FROM user WHERE username = '$user_name'";
     $user_id_ausgabe = mysql_query($user_id_abfrage);

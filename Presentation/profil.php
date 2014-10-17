@@ -1,4 +1,3 @@
-<!-- verbindet content-outer mit content-inner -->
 <div class="body">
     <?php
     require_once 'Business/functions.php';
@@ -181,5 +180,6 @@
             </tbody>
         </table>
     </form>
-    <?php $exec = "profil_nachrichten"; require_once 'Business/nachrichten_ausgeben.php'; ?>
+    <?php $exec = "profil_nachrichten";
+    require_once 'Business/nachrichten_ausgeben.php'; ?>
 </div>

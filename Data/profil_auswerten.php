@@ -1,8 +1,6 @@
 <?php
 
 include_once './Business/functions.php';
-
-//User Daten
 $username2 = filter_input(INPUT_POST, 'username2');
 $vorname2 = filter_input(INPUT_POST, 'vorname2');
 $nachname2 = filter_input(INPUT_POST, 'nachname2');
@@ -20,9 +18,7 @@ $twitter2 = filter_input(INPUT_POST, 'twitter2');
 $instagram2 = filter_input(INPUT_POST, 'instagram2');
 $lang2 = $_POST['lang2'];
 $username = $_SESSION['username'];
-
 $ok = check_email($mail2);
-
 if ($ok == "false") {
     $url1 = "Location: ../index.php?folder=Presentation&page=profil.php";
     $_SESSION['mail_ok'] = 0;
@@ -46,9 +42,7 @@ if ($ok == "false") {
             . "instagram = '$instagram2', "
             . "lang = '$lang2' "
             . "WHERE username = '$username'";
-
     $updatee_querry = mysql_query($update_querry);
-
     $_SESSION['username'] = $username2;
     $_SESSION['vorname'] = $vorname2;
     $_SESSION['nachname'] = $nachname2;
