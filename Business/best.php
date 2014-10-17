@@ -38,6 +38,6 @@ while ($select_row = mysql_fetch_object($select_ausgabe)) {
     while ($minus_row = mysql_fetch_object($minus_ausgabe)) {
         $minus = $minus_row->how;
     }
-    require_once 'Presentation/nachricht_template.php';
+    require 'Presentation/nachricht_template.php';
 }
 ?>

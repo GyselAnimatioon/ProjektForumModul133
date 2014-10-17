@@ -25,5 +25,16 @@ function query_profil() {
     }
 }
 
+function who_nachrichten($username) {
+    $user_name_abfrage = "SELECT * FROM user WHERE username = '$username'";
+    $user_name_ausgabe = mysql_query($user_name_abfrage);
+    $linie = mysql_fetch_object($user_name_ausgabe);
+    $id = $linie->id;
+
+    $select_querry = "SELECT * FROM nachrichten n INNER JOIN user_nachricht un ON un.nachrichten_id = n.id "
+            . "INNER JOIN user u ON un.user_id = u.id WHERE un.user_id = '$id'";
+    $nachrichten_querry = mysql_query($select_querry);
+    return $nachrichten_querry;
+}
 
 ?>

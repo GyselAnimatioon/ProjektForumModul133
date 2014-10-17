@@ -5,7 +5,7 @@
         <?php echo "<span class='time'>" . $time_ago . "</span>"; ?>
         <div class="daumen">
             <?php
-            require_once "Business/gefaellt_mir.php";
+            require "Business/gefaellt_mir.php";
             ?>
         </div>
     </h3>

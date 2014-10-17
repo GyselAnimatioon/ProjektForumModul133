@@ -18,6 +18,6 @@ while ($select_row = mysql_fetch_object($select_ausgabe)) {
     $_SESSION['nachrichten_id'] = "$select_row->nachrichten_id";
     $time_ago = time_ago_analyse($ago);
     
-    require_once 'Presentation/nachricht_template.php';
+    require 'Presentation/nachricht_template.php';
 }
 ?>
