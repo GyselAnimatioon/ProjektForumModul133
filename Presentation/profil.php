@@ -181,5 +181,5 @@
             </tbody>
         </table>
     </form>
-    <?php require_once 'Business/his_nachrichten.php'; ?>
+    <?php $exec = "profil_nachrichten"; require_once 'Business/nachrichten_ausgeben.php'; ?>
 </div>

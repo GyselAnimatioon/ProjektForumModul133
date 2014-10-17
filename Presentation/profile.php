@@ -79,5 +79,5 @@
             </tr>
         </tbody>
     </table>
-    <?php require_once 'Business/his_nachrichten.php'; ?>
+    <?php $exec = "profile_nachrichten"; require_once 'Business/nachrichten_ausgeben.php'; ?>
 </div>

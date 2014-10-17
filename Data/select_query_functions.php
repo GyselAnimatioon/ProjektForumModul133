@@ -47,7 +47,7 @@ function select_best() {
             . "INNER JOIN user u ON u.id = un.user_id "
             . "GROUP BY g.nachrichten_id ORDER BY total DESC";
     $select_ausgabe = mysql_query($select_abfrage);
-    
+
     return $select_ausgabe;
 }
 
@@ -101,6 +101,20 @@ function select_trends() {
             . "ORDER BY g.how DESC";
     $select_ausgabe = mysql_query($select_abfrage);
     return $select_ausgabe;
+}
+
+function select_profil_nachrichten() {
+    $_SESSION['site'] = "folder=Businness&page=nachrichten_ausgeben.php&exec=profil_nachrichten";
+    $linie = query_profil();
+    $param = get_nachrichten($linie->username);
+    return who_nachrichten($linie->username, $param);
+}
+
+function select_profile_nachrichten() {
+    $_SESSION['site'] = "folder=Businness&page=nachrichten_ausgeben.php&exec=profile_nachrichten";
+    $linie = query_profile();
+    $param = get_nachrichten($linie->username);
+    return who_nachrichten($linie->username, $param);
 }
 
 function get_nachrichten_like($nachrichten_id) {
