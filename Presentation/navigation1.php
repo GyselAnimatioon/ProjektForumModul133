@@ -5,6 +5,7 @@
         <li><a href="../index.php?folder=Business&page=nachrichten_ausgeben.php&exec=best">Best</a></li>
         <li><a href="../index.php?folder=Business&page=nachrichten_ausgeben.php&exec=random">Random</a></li>
         <li><a href="../index.php?folder=Business&page=nachrichten_ausgeben.php&exec=trends">Trends</a></li>
+        <li><a href="../index.php?folder=Presentation&page=filter_site.php">Filter</a></li>
         <li><a href="../index.php?folder=Presentation&page=doku.php">Info</a></li>
         <li><a href="../index.php?folder=Presentation&page=rules.php">Rules</a></li>
         <?php
