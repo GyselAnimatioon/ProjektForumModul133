@@ -1,7 +1,6 @@
 <?php
 
 function select_filter($where) {
-    echo $where . "<br>";
     $_SESSION['site'] = "folder=Business&page=filter.php";
     $select_abfrage = "SELECT * "
             . "FROM gefaellt_mir g "
