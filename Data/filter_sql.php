@@ -9,7 +9,6 @@ function select_filter($where) {
             . "INNER JOIN user u ON u.id = un.user_id "
             . "$where "
             . "GROUP BY n.id";
-    echo $select_abfrage;
     $select_ausgabe = mysql_query($select_abfrage);
     return $select_ausgabe;
 }

@@ -1,55 +1,57 @@
-html,
-body {
-    /*Standart Margin und Passing entfertnen*/
-    margin: 0;
-    padding: 0;
-    /*Hintergrundfarbe ein sehr helles grau*/
-    background-color: #eee;
-    font-family: 'Varela Round', cursive;
-}
+@media (min-width:1023px) {
+    html,
+    body {
+        /*Standart Margin und Passing entfertnen*/
+        margin: 0;
+        padding: 0;
+        /*Hintergrundfarbe ein sehr helles grau*/
+        background-color: #eee;
+        font-family: 'Varela Round', cursive;
+    }
 
 
-.title_box {
-    /*Bodenstrich Titel*/
-    /*border-bottom: 1px solid black;*/
-    /*Titel hintergrund hellgrau*/
- 
-    /*Standart Margin entfernen*/
-   
-    margin: 0;
-    font-family: 'Varela Round', cursive;
-}
+    .title_box {
+        /*Bodenstrich Titel*/
+        /*border-bottom: 1px solid black;*/
+        /*Titel hintergrund hellgrau*/
 
-div.login {
-    /*Login und titel nebeneinander*/
-    float: right;
-    /*Standart Margin enfernen*/
-    margin: 0;
-    /*Text mittig machen*/
-    text-align: center;
-    padding: 1%;
-}
+        /*Standart Margin entfernen*/
 
-h1.title {
-    /*Login und titel nebeneinander*/
-    float: left;
-    padding: 1%;
-    border: 1px solid black;
-    width: 10%;
-    margin: 1% 3%;
-    text-align: center;
-    font-family: 'Nixie One', cursive;
-}
+        margin: 0;
+        font-family: 'Varela Round', cursive;
+    }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    border-top: 1px solid black;
-    background-color: lightgray;
-    width: 100%;
-}
+    div.login {
+        /*Login und titel nebeneinander*/
+        float: right;
+        /*Standart Margin enfernen*/
+        margin: 0;
+        /*Text mittig machen*/
+        text-align: center;
+        padding: 1%;
+    }
 
-.clear {
-    clear: both;
+    h1.title {
+        /*Login und titel nebeneinander*/
+        float: left;
+        padding: 1%;
+        border: 1px solid black;
+        width: 10%;
+        margin: 1% 3%;
+        text-align: center;
+        font-family: 'Nixie One', cursive;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        border-top: 1px solid black;
+        background-color: lightgray;
+        width: 100%;
+    }
+
+    .clear {
+        clear: both;
+    }
 }

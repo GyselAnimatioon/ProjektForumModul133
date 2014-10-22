@@ -1,87 +1,89 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 25.09.2014, 09:36:32
-    Author     : f.gysel
-*/
+@media (min-width:1023px) {
+    /*
+    To change this license header, choose License Headers in Project Properties.
+    To change this template file, choose Tools | Templates
+    and open the template in the editor.
+    */
+    /* 
+        Created on : 25.09.2014, 09:36:32
+        Author     : f.gysel
+    */
 
-.body {
-    margin: 2% 25%;
-    /*border: 1px solid black;*/
-}
+    .body {
+        margin: 2% 25%;
+        /*border: 1px solid black;*/
+    }
 
-.body_box {
-    border: 1px solid black;
-    padding: 1%;
-    color: white;
-    width: 90%;
-    margin: 1%;
-}
+    .body_box {
+        border: 1px solid black;
+        padding: 1%;
+        color: white;
+        width: 90%;
+        margin: 1%;
+    }
 
-.like_button {
-    background-color: whitesmoke;
-    border: 1px solid white;
-    margin: 0 7px;
-    padding: 0 7px;
-    text-decoration: none;
-}
+    .like_button {
+        background-color: whitesmoke;
+        border: 1px solid white;
+        margin: 0 7px;
+        padding: 0 7px;
+        text-decoration: none;
+    }
 
-.like_button_down_set {
-    background-color: red;
-    border: 1px solid white;
-    margin: 0 7px;
-    padding: 0 7px;
-    text-decoration: none;
-}
+    .like_button_down_set {
+        background-color: red;
+        border: 1px solid white;
+        margin: 0 7px;
+        padding: 0 7px;
+        text-decoration: none;
+    }
 
-.like_button_up_set {
-    background-color: greenyellow;
-    border: 1px solid white;
-    margin: 0 7px;
-    padding: 0 7px;
-    text-decoration: none;
-}
-.like_button_down,
-.like_button_up {
-    background-color: white;
-    border: 1px solid white;
-    margin: 0 7px;
-    padding: 0 7px;
-    color: black;
-    text-decoration: none;
-}
+    .like_button_up_set {
+        background-color: greenyellow;
+        border: 1px solid white;
+        margin: 0 7px;
+        padding: 0 7px;
+        text-decoration: none;
+    }
+    .like_button_down,
+    .like_button_up {
+        background-color: white;
+        border: 1px solid white;
+        margin: 0 7px;
+        padding: 0 7px;
+        color: black;
+        text-decoration: none;
+    }
 
 
-.box_title {
-    border-bottom: 1px solid gray;
-}
+    .box_title {
+        border-bottom: 1px solid gray;
+    }
 
-.made_by {
-    text-decoration: none;
-    color: lightgray;
-    float: left;
-    background-color: rgba(200,200,200,0.2);
-    padding: 4px;
-    z-index: 10;
+    .made_by {
+        text-decoration: none;
+        color: lightgray;
+        float: left;
+        background-color: rgba(200,200,200,0.2);
+        padding: 4px;
+        z-index: 10;
 
-    border-radius: 5px;
-    margin: -10px 10px 50px 10px;
-}
+        border-radius: 5px;
+        margin: -10px 10px 50px 10px;
+    }
 
-.time {
-    font-size: 10px;
-}
+    .time {
+        font-size: 10px;
+    }
 
-.daumen {
-    float: right;
-    margin-bottom: 2%;
-    margin-right: 2%;
-}
+    .daumen {
+        float: right;
+        margin-bottom: 2%;
+        margin-right: 2%;
+    }
 
-.body_box div.daumen img{
-    height: 5%;
-    width: 5%;
+    .body_box div.daumen img{
+        height: 5%;
+        width: 5%;
+    }
 }
