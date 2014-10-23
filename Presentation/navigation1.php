@@ -19,8 +19,8 @@
             <li>
                 <form class="pure-form" action="../index.php?folder=Data&page=login.php" method="POST">
                     <fieldset>
-                        <input type="text" name="username" placeholder="Username">
-                        <input type="password" name="password" placeholder="Password">
+                        <input class="login-text" type="text" name="username" placeholder="Username">
+                        <input class="login-text" type="password" name="password" placeholder="Password">
                         <input type="submit" name="submit" value="Log in" class="pure-button  pure-button-primary">
                     </fieldset>
                 </form>
