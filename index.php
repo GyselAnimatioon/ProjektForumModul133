@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="css/pure.css">
         <link type="text/css" rel="Stylesheet" href="css/doku.css">
         <link rel="stylesheet" type="text/css" href="css/regi.css">
+        <link rel="stylesheet" type="text/css" href="css/css_phone.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Nixie+One|PT+Mono|Monoton|Varela+Round' rel='stylesheet' type='text/css'>
     </head>
