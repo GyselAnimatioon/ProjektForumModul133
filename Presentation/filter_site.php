@@ -1,13 +1,13 @@
 <div class="content-inner">
     <form class="pure-form pure-g" action="../index.php?folder=Business&page=filter.php" method="POST">
         <div class="pure-u-1">
-            <input class="pure-input-1" type="text" name="1" placeholder="Username">
+            <input class="pure-input-1" type="text" name="username" placeholder="Username">
         </div>
         <div class="pure-u-1-2">
-            <input class="pure-input-1" type="text" name="2" placeholder="Vorname">
+            <input class="pure-input-1" type="text" name="vorname" placeholder="Vorname">
         </div>
         <div class="pure-u-1-2">
-            <input class="pure-input-1" type="text" name="3" placeholder="Nachname">
+            <input class="pure-input-1" type="text" name="nachname" placeholder="Nachname">
         </div>
         <div class="onoffswitch">
             <div class="pure-u-1-4 onoffswitch">Facebook
@@ -45,16 +45,6 @@
                 </label>
             </div>
         </div>
-        <div class="pure-u-1">
-
-        </div>
-
-
-
-
-
-
-
         <input type="text" name="mail" placeholder="EMail">
         <input type="text" name="phone_nummer" placeholder="Telefonnr."><br>
         <input type="text" name="birthdate" placeholder="Geburtsdatum"><br>

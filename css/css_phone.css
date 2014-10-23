@@ -1,3 +1,6 @@
+/*
+
+
 @media (max-width:1023px) {
   
     article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
@@ -391,7 +394,7 @@
         background-color: #0078e7;
         color: #fff;
     }
-    /* Hinzugefügt */
+    
     .pure-button-success, .pure-button-selected, a.pure-button-primary, a.pure-button-selected{
         background: rgb(28, 184, 65);
         color: #fff;
@@ -400,7 +403,7 @@
         background: rgb(202, 60, 60);
         color: #fff;
     }
-    /* Ende */
+    
     .pure-form input[type=text], .pure-form input[type=password], .pure-form input[type=email], .pure-form input[type=url], .pure-form input[type=date], .pure-form input[type=month], .pure-form input[type=time], .pure-form input[type=datetime], .pure-form input[type=datetime-local], .pure-form input[type=week], .pure-form input[type=number], .pure-form input[type=search], .pure-form input[type=tel], .pure-form input[type=color], .pure-form select, .pure-form textarea {
         padding: .5em .6em;
         display: inline-block;
@@ -895,7 +898,7 @@
     
     
     
-    //doku
+   
     
     * {
         font-family: 'Varela Round', cursive;
@@ -904,7 +907,7 @@
     }
 
     body {
-        background: linear-gradient(to bottom, #356aa0 0%,#356aa0 100%); /* W3C */
+        background: linear-gradient(to bottom, #356aa0 0%,#356aa0 100%); 
     }
 
     .content-wrap {
@@ -914,10 +917,10 @@
  
     }
 
-    /* content-outer */
 
 
-    /* first child after parent */
+
+    
     .content-block .headline-big + .headline-sm {
         margin-top: 0;
     }
@@ -946,7 +949,7 @@
     }
 
     .index {
-        /*text-decoration: none;*/
+        
         color: rgba(0,0,0,0.7);
     }
 
@@ -955,7 +958,7 @@
     }
     
     
-    //like
+    
        .like_button {
         background-color: whitesmoke;
         border: 1px solid white;
@@ -998,7 +1001,7 @@
     @media (max-width:880px) {
     
     
-        .pure-menu-horizontal input /* Hinzugefuegt */ {
+        .pure-menu-horizontal input {
         display: inline-block;
         *display: inline;
         zoom: 1;
@@ -1008,5 +1011,678 @@
     }
         
     
+    */
     
-    
+
+@media only screen and (max-width:767px){
+    .mobile-is-hidden {
+        display:none!important;
+        visibility:hidden!important;
+    }
+
+    .mobile-is-visible {
+        display:block!important;
+        opacity:1!important;
+        position:relative!important;
+        visibility:visible!important;
+    }
+
+    .mobile-no-float {
+        float:none;
+    }
+
+    .mobile-left {
+        float:left;
+    }
+
+    .ratioIntro,.ratioWatchplay,.ratio32-15,.ratio16-9,.ratio2-1,.ratio1-1 {
+        padding-top:0;
+        position:relative;
+    }
+
+    .card {
+        padding:16px;
+    }
+
+    .mobile-card {
+        background-color:#fff;
+        border-radius:2px;
+        -webkit-box-shadow:0 2px 3px rgba(0,0,0,.15);
+        box-shadow:0 2px 3px rgba(0,0,0,.15);
+        display:block;
+        position:relative;
+        z-index:1;
+        will-change:box-shadow,margin,transform;
+        padding:16px;
+    }
+
+    .container {
+        margin-top:80px;
+        position:relative;
+    }
+
+    .header-site {
+        background:#455a64;
+        height:80px;
+        padding:0 24px;
+    }
+
+    .header-site.active {
+        height:80px;
+        padding:0 24px;
+    }
+
+    footer {
+        border-top:none;
+    }
+
+    .sign-up h3 {
+        font-size:16px;
+    }
+
+    .sign-up {
+        width:100%;
+        margin:40px auto;
+        padding:0 24px;
+    }
+
+    .google-nav li.g-plus {
+        clear:both;
+        float:none;
+        margin-top:12px;
+    }
+
+    .google-nav li.satellite {
+        float:left;
+        margin-top:12px;
+    }
+
+    .google-nav {
+        padding:24px 24px 15px;
+    }
+
+    .index .intro-panel.ratio32-15 {
+        padding-top:132%;
+    }
+
+    .index .intro-content {
+        background:transparent;
+        bottom:64px;
+        color:#455a64;
+        left:0;
+        position:absolute;
+        top:auto;
+        width:100%;
+        padding:0 24px;
+    }
+
+    .device-panel {
+        border-bottom:1px solid #e1e1e1;
+        border-right:none;
+        float:none;
+        height:400px;
+        padding-right:0;
+        text-align:center;
+        width:100%;
+    }
+
+    .device-panel.nexus5 .device-panel-bg {
+        background-image:url(../images/landing/N5-thumbnail-767.jpg);
+        background-position:center 15px;
+        -webkit-background-size:100% auto;
+        background-size:100% auto;
+    }
+
+    .device-panel.nexus6 .device-panel-bg {
+        background-image:url(../images/landing/N6-thumbnail-767.jpg);
+        background-position:center 15px;
+        -webkit-background-size:90% auto;
+        background-size:90% auto;
+    }
+
+    .device-panel.nexus6 {
+        height:430px;
+    }
+
+    .device-panel.nexusPlayer .device-panel-bg {
+        background-image:url(../images/landing/player-thumbnail-767.jpg);
+        background-position:center 20px;
+        -webkit-background-size:100% auto;
+        background-size:100% auto;
+    }
+
+    .device-panel.nexus9 .device-panel-bg {
+        background-image:url(../images/landing/N9-thumbnail-767.jpg);
+        background-position:center 20px;
+        -webkit-background-size:100% auto;
+        background-size:100% auto;
+    }
+
+    .device-panel .device-text {
+        bottom:30px;
+        position:absolute;
+        text-align:center;
+        width:100%;
+    }
+
+    .device-panel h2 {
+        margin-bottom:5px;
+    }
+
+    .nexus-panel {
+        font-size:20px;
+        padding:20px 50px;
+    }
+
+    .device-page .intro-content h2 {
+        margin-top:5px;
+    }
+
+    .device-page .intro-content {
+        background:transparent;
+        bottom:64px;
+        color:#26c6da;
+        left:0;
+        position:absolute;
+        top:auto;
+        -webkit-transform:none;
+        -ms-transform:none;
+        transform:none;
+        width:100%;
+        margin:0;
+        padding:0 24px;
+    }
+
+    .device-page .intro-number {
+        float:left;
+        font-size:100px;
+        margin:0 8px 0 0;
+    }
+
+    .content-panel {
+        padding:64px 24px;
+    }
+
+    .content-panel p {
+        line-height:1.8;
+    }
+
+    .content-panel h2 {
+        line-height:1.2;
+        margin:0 0 20px;
+    }
+
+    .content-panel h2.mobile-top-margin {
+        margin-top:24px;
+    }
+
+    .content-panel h2.mobile-bottom-margin {
+        margin-bottom:36px;
+    }
+
+    .content-panel.extra-top-padding {
+        padding-top:24px;
+    }
+
+    .content-panel.extra-bottom-padding {
+        padding-bottom:24px;
+    }
+
+    .content-panel .col {
+        padding-right:0;
+    }
+
+    .panel-text.mobile-padding {
+        width:100%;
+        padding:24px;
+    }
+
+    .android-l {
+        background:rgba(144,164,174,.1);
+        height:auto;
+        padding:58px 24px;
+    }
+
+    .phone-text-panel {
+        background:transparent;
+        width:100%;
+        margin:0;
+        padding:0;
+    }
+
+    .phone-text-panel.active {
+        border:none;
+        -webkit-box-shadow:none;
+        box-shadow:none;
+    }
+
+    .phone-text-panel .text {
+        border:1px solid #efefef;
+        margin-bottom:16px;
+        opacity:1;
+        position:relative;
+        -webkit-transform:none;
+        -ms-transform:none;
+        transform:none;
+        visibility:visible;
+        width:100%;
+    }
+
+    .phone-text-panel .text p {
+        margin:10px 0 0;
+    }
+
+    .tech-specs-panel {
+        border-bottom:none;
+    }
+
+    .tech-specs-button {
+        bottom:0;
+        left:50%;
+        margin-bottom:-24px;
+        margin-left:-24px;
+        position:absolute!important;
+        top:auto;
+        z-index:5;
+    }
+
+    .tech-specs {
+        height:404px;
+        padding:60px 24px;
+    }
+
+    .tech-specs h2 {
+        font-size:30px;
+    }
+
+    .tech-specs .tech-specs-close {
+        right:24px;
+        top:70px;
+    }
+
+    .tech-specs .tech-specs-close.active {
+        position:fixed;
+        right:24px;
+        top:100px;
+    }
+
+    .checkout {
+        padding:100% 0 0;
+    }
+
+    .checkout-card {
+        float:none;
+        width:100%!important;
+    }
+
+    #video-embed {
+        height:180px;
+        width:320px;
+        margin:-90px 0 0 -170px;
+    }
+
+    .camera-view .panel-text {
+        position:relative;
+        right:auto;
+        top:auto;
+        width:100%;
+    }
+
+    .camera-view {
+        background-position:0 300px;
+        -webkit-background-size:100% auto;
+        background-size:100% auto;
+        padding-bottom:120%!important;
+    }
+
+    .content-panel.moments {
+        background-color:#f3f3f3;
+        margin-bottom:0;
+        padding-bottom:60px;
+        text-align:left;
+    }
+
+    .content-panel.moments h2 {
+        margin-bottom:24px;
+    }
+
+    .moments-caption p {
+        margin-bottom:16px;
+        opacity:1;
+        position:relative;
+        text-align:left;
+        visibility:visible;
+    }
+
+    .moments-caption p .caption-header {
+        color:#26c6da;
+        font-size:20px;
+        font-weight:400;
+        margin-bottom:10px;
+    }
+
+    .moments-caption p .caption-header:before {
+        content:" ";
+        display:inline-block;
+        height:28px;
+        margin-bottom:-6px;
+        margin-right:10px;
+        width:28px;
+    }
+
+    .moments-caption p .caption-header.perfect-header:before {
+        background:url(../images/animation/hdr-blue.svg) 50% 50% no-repeat;
+        -webkit-background-size:28px 28px;
+        background-size:28px 28px;
+    }
+
+    .moments-caption p .caption-header.degree-header:before {
+        background:url(../images/animation/360deg-blue.svg) 50% 50% no-repeat;
+        -webkit-background-size:28px 28px;
+        background-size:28px 28px;
+    }
+
+    .moments-caption p .caption-header.awesome-header:before {
+        background:url(../images/animation/autostars-blue.svg) 50% 50% no-repeat;
+        -webkit-background-size:28px 28px;
+        background-size:28px 28px;
+    }
+
+    .moments-caption p .caption-header.movie-header:before {
+        background:url(../images/animation/wand-blue.svg) 50% 50% no-repeat;
+        -webkit-background-size:28px 28px;
+        background-size:28px 28px;
+    }
+
+    .watch-play {
+        background-position:-60px 60px;
+        -webkit-background-size:120% auto;
+        background-size:120% auto;
+        padding-top:150%!important;
+    }
+
+    .watch-play .panel-text {
+        background-color:#fff;
+        left:auto;
+        padding-bottom:40px!important;
+        padding-top:40px!important;
+        position:relative;
+        top:auto;
+    }
+
+    .nexus5 .checkout {
+        background-position:left top;
+        -webkit-background-size:100% auto;
+        background-size:100% auto;
+        min-height:0;
+    }
+
+    .intro-panel.nexus6-intro {
+        padding-top:130%!important;
+    }
+
+    .intro-panel.nexus6-intro .intro-content {
+        bottom:40px;
+    }
+
+    .content-panel.more-everything img {
+        height:auto;
+        margin-left:-130px;
+        margin-top:-10px;
+        max-width:620px;
+        width:410px;
+    }
+
+    .epic-shots {
+        background-position:-30px top;
+        -webkit-background-size:cover cover;
+        background-size:cover;
+        padding-top:380px!important;
+    }
+
+    .epic-shots:before {
+        padding-top:380px!important;
+    }
+
+    .epic-shots .panel-text {
+        bottom:40px;
+        left:0;
+        top:auto;
+        width:100%;
+    }
+
+    .epic-shots h2 {
+        font-size:38px;
+    }
+
+    .charging .panel-text {
+        bottom:64px;
+        text-align:left;
+        top:auto;
+    }
+
+    .charging .panel-text.mobile-padding {
+        padding:0 24px;
+    }
+
+    .charging {
+        background-position:left top;
+        padding-top:100%!important;
+    }
+
+    .nexus6 .checkout {
+        background-position:center top;
+        -webkit-background-size:100% auto;
+        background-size:100% auto;
+        min-height:0;
+    }
+
+    .battery-life p {
+        float:none;
+        width:100%;
+        padding:0;
+    }
+
+    .intro-panel.nexus9-intro {
+        padding-top:150%;
+    }
+
+    .intro-panel.nexus9-intro .intro-content {
+        bottom:36px;
+        top:auto;
+    }
+
+    .color-choose {
+        background-position:-20px 20px;
+        -webkit-background-size:auto 340px;
+        background-size:auto 340px;
+        margin-bottom:0;
+        margin-top:40px;
+    }
+
+    .color-choose:before {
+        display:block;
+        padding-top:340px;
+    }
+
+    .color-choose .panel-text {
+        background:#fff;
+        left:0;
+        position:relative;
+        right:auto;
+        width:100%;
+    }
+
+    .color-choose .panel-text h2 {
+        margin-bottom:30px;
+        padding-top:50px;
+    }
+
+    .color-choose .panel-text .explore-colors {
+        left:0;
+        position:absolute;
+        top:-30px;
+    }
+
+    .content-panel.watch-listen-play {
+        margin-bottom:0;
+        padding-bottom:0;
+        padding-top:0;
+    }
+
+    .content-panel.watch-listen-play img {
+        margin-left:-30%;
+        max-width:140%;
+        width:140%;
+    }
+
+    .content-panel.work-play .image-sequence {
+        margin:64px 0 32px;
+    }
+
+    .content-panel.work-play .panel-text {
+        text-align:left;
+        width:100%;
+    }
+
+    .keyboard-sequence {
+        margin-bottom:40px;
+    }
+
+    .nexus9 .checkout {
+        background-position:left top;
+        -webkit-background-size:100% 100%;
+        background-size:100%;
+        min-height:0;
+    }
+
+    .device-page .player-intro {
+        background-repeat:no-repeat;
+        -webkit-background-size:100% auto;
+        background-size:100% auto;
+        padding-top:160%;
+    }
+
+    .device-page .player-intro .intro-content {
+        bottom:36px;
+    }
+
+    .built-to-play {
+        padding-top:48px;
+    }
+
+    .built-to-play img {
+        margin:24px auto;
+    }
+
+    .entertainment .play-credits {
+        width:100%;
+        margin-top:-40px;
+    }
+
+    .entertainment {
+        padding:64px 24px 28px;
+    }
+
+    .entertainment .panel-text-child {
+        float:none;
+        padding-right:0;
+        width:100%;
+    }
+
+    .entertainment .entertainment-image {
+        margin:-20px 0 30px;
+    }
+
+    .apps {
+        padding-top:48px!important;
+        margin:0;
+    }
+
+    .apps .panel-text {
+        padding:24px;
+    }
+
+    ul.playerapps {
+        width:100%;
+        margin:20px 24px;
+    }
+
+    ul.playerapps li {
+        width:27%;
+    }
+
+    .game .image-sequence {
+        float:none;
+        width:100%;
+    }
+
+    .game {
+        padding:64px 24px 24px;
+    }
+
+    .game .panel-text {
+        width:100%;
+        margin:48px 0 0;
+    }
+
+    .player .checkout {
+        background-position:left -20px;
+        -webkit-background-size:100% 100%;
+        background-size:100%;
+        min-height:0;
+    }
+
+    .credits {
+        padding:48px 24px;
+    }
+
+    .one-third,.sign-up input[type="text"],.sign-up input[type="email"],.phone-text-panel .text.js-active,.entertainment .panel-text {
+        width:100%;
+    }
+
+    .ratioIntro:before,.ratioWatchplay:before,.ratio32-15:before,.ratio16-9:before,.ratio2-1:before,.ratio1-1:before,.nexus5 .phone-base,.nexus6 .phone-base,.nexus9 .phone-base {
+        display:none;
+    }
+
+    .sign-up .form-row.checkbox,.index .intro-panel,.android-l.margin-bottom,.epic-shots p,.charging p,.color-choose .panel-text p.no-mobile-margin,.content-panel.work-play .panel-text p {
+        margin-bottom:0;
+    }
+
+    #ss-submit,.device-page .intro-content .video-cta {
+        margin-top:20px;
+    }
+
+    .index .intro-panel .background,.intro-panel.nexus9-intro .intro-full-photo {
+        background-position:center top;
+    }
+
+    .index .intro-content h1,.built-to-play h2 {
+        position:relative;
+    }
+
+    .device-panel .ratio-content,.content-panel.no-mobile-padding {
+        padding:0;
+    }
+
+    .device-page .intro-content h1,.device-page .player-intro h1 {
+        color:#26c6da;
+    }
+
+    .content-panel h2.centered,.entertainment h2,.apps.center-text {
+        text-align:left;
+    }
+
+    .recommend-box .recommend-box-bg.nexus-controller,.recommend-box .recommend-box-bg.nexus9,.recommend-box .recommend-box-bg.nexus6,.recommend-box .recommend-box-bg.nexus-charger,.recommend-box .recommend-box-bg.player,.recommend-box .recommend-box-bg.keyboard {
+        background-image:none;
+    }
+
+    .content-panel.more-everything,.content-panel.work-play {
+        margin-bottom:0;
+        padding-top:0;
+    }
+
+    .charging:before,.credits strong {
+        display:block;
+    }
+}
