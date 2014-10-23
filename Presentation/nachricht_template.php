@@ -1,5 +1,5 @@
 
-<div class="body_box" style="background-image: url('../img/background/<?php echo rand(1, 6) ?>.jpg');background-size: cover;">
+<div class="body_box" style="background-image: url('../img/background/<?php echo rand(1, 6) ?>.jpg');background-size: cover; word-break:break-all; color:white;">
     <h3 class="box_title">
         <?php echo $select_row->titel; ?>
         <?php echo "<a class='made_by' href='../index.php?folder=Presentation&page=profile.php&id=$select_row->user_id'>By: " . $select_row->username . "</a>"; ?>
@@ -11,7 +11,7 @@
         </div>
     </h3>
     <br>
-    <p class="box_text">
+    <p >
         <?php echo $select_row->nachricht; ?>
     </p>
 </div>
