@@ -9,6 +9,18 @@ function query_profile() {
     return $linie;
 }
 
+function query_filter() {
+    $linie = array();
+    foreach ($_POST as $key => $values) {
+        if (is_int($key)) {
+            $linie[$key] = "checked='checked'";
+        } else {
+            $linie[$key] = $values;
+        }
+    }
+    return $linie;
+}
+
 function query_profil() {
     if (isset($_SESSION["login"])) {
         $username_session = $_SESSION['username'];
