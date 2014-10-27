@@ -58,10 +58,6 @@
                 <img class="logo-css3" src="img/doku/css3-logo.png" alt=""/>
                 CSS wird genutzt um den Style eines HTML-Dokuments festzulegen. Wir benutzen CSS, weil es die einzige Stylesprache die mit HTML kompatibel ist.
             </li>
-            <li class="list-item logo-item">
-                <img class="logo-js" src="img/doku/js6-logo.png" alt=""/>
-                JS steht für JavaScript. Es ist eine Skriptsprache, mit der man dynamische Websiten erstellen kann.
-            </li>
         </ul>
     </div>
     <br>
@@ -119,13 +115,13 @@
                 </ul>
             </li>
             <li class="list-item">
-                Profilseite (PHP | Sehr viel Arbeit)
+                Profilseite
                 <ul>
                     <li>Der Nutzer kann sein Profil und seine Nachrichten auf einer seperaten Webpage ansehen.</li>
                 </ul>
             </li>
             <li class="list-item">
-                Profil ändern (PHP | Sehr viel Arbeit)
+                Profil ändern 
                 <ul>
                     <li>Der Nutzer kann auf Wunsch sein Profil ändern.</li>
                 </ul>
@@ -150,32 +146,45 @@
                 </ul>
             </li>
             <li class="list-item">
-                Nachrichtenentwurfs-Ansichtseite
+                Suche nach Nachrichten
                 <ul>
-                    <li>BITTE BESCHREIBUNG HINZUFÜGEN...</li>
+                    <li>Beinhaltet: Aufbau und Einrückung der Codes, sinvolle Namen(Variablen, Klassen usw.) und Leserlichkeit. </li>
                 </ul>
             </li>
-            <li class="list-item"> Weitere Ideen: </li>
         </ul>
     </div>
     <div id="zustaendig" class="content-block"> 
         <h3 class="headline-big"> Zuständigkeiten: </h3>
         <h4 class="headline-sm"> Basil Lade: </h4>
         <ul class="list-items">
-            <li class="list-item"> Dokumentation / Regelung </li>
-            <li class="list-item"> Design der Website </li>
+            <li class="list-item"> Stylen der Dokumentation (css/html/schriftarten) </li>
+            <li class="list-item"> Regeln gestylt </li>
+            <li class="list-item"> Register.php gestylt </li>
+            <li class="list-item"> Navigation.php verbessert </li>
             <li class="list-item">  </li>
         </ul>
         <h4 class="headline-sm"> Timothé Laborie: </h4>
         <ul class="list-items">
-            <li class="list-item"> Ausloggen </li>
-            <li class="list-item"> Login </li>
+            <li class="list-item">  </li>
+            <li class="list-item">  </li>
+            <li class="list-item">  </li>
+            <li class="list-item">  </li>
+            <li class="list-item">  </li>
+            <li class="list-item">  </li>
+            <li class="list-item">  </li>
+            <li class="list-item">  </li>
             <li class="list-item">  </li>
         </ul>
         <h4 class="headline-sm"> Fabian Gysel: </h4>
         <ul class="list-items">
-            <li class="list-item"> Haupseite </li>
-            <li class="list-item"> Registrierung </li>
+            <li class="list-item">  </li>
+            <li class="list-item">  </li>
+            <li class="list-item">  </li>
+            <li class="list-item">  </li>
+            <li class="list-item">  </li>
+            <li class="list-item">  </li>
+            <li class="list-item">  </li>
+            <li class="list-item">  </li>
             <li class="list-item">  </li>
         </ul>
         <h4 class="headline-sm"> Team: </h4>
@@ -254,8 +263,9 @@
             <li class="list-item"> Zufall Nachricht ansehen &#10003;</li>
             <li class="list-item"> Trendige Nachrichten ansehen </li>
             <li class="list-item"> Weiter gefilterte Nachrichten ansehen </li>
-            <li class="list-item"> Doku ansehen &#10003; </li>
+            <li class="list-item"> Dokumentation ansehen &#10003; </li>
             <li class="list-item"> Regeln ansehen &#10003; </li>
+            <li class="list-item"> Website für Händys und Tablets optimiert &#10003;</li>
             <li class="list-item"> Seine Nachrichten löschen </li>
             <li class="list-item"> Anderen Nutzern Privatnachricht schreiben </li>
             <li class="list-item"> Auf Nachrichten antworten </li>
