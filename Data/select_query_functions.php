@@ -49,6 +49,20 @@ function who_nachrichten($username, $site) {
     return $nachrichten_querry;
 }
 
+function edit_query($nachricht_id) {
+    
+    $nachrichten_user_id_abfrage = "SELECT * FROM user_nachricht "
+            . "LEFT JOIN nachrichten ON nachrichten.id = user_nachricht.nachrichten_id "
+            . "WHERE nachrichten_id = $nachricht_id";
+    //echo $nachrichten_user_id_abfrage;
+    $nachrichten_user_id_ausgabe = mysql_query($nachrichten_user_id_abfrage);
+    $nachrichten_user_id_row = mysql_fetch_object($nachrichten_user_id_ausgabe);
+    if($_SESSION['user_id'] == $nachrichten_user_id_row->user_id) {
+        return $nachrichten_user_id_row;
+    }
+    return 0;
+}
+
 function select_best() {
     $_SESSION['site'] = "folder=Business&page=nachrichten_ausgeben.php&exec=best";
     $select_abfrage = "SELECT SUM(g.how) AS total, n.titel, n.nachricht, n.erstellt_am, un.user_id, u.username, un.nachrichten_id "
@@ -150,7 +164,7 @@ function get_user_id() {
     $user_id_ausgabe = mysql_query($user_id_abfrage);
     while ($user_id_row = mysql_fetch_object($user_id_ausgabe)) {
         $user_id = $user_id_row->id;
-        $_SESSION['id'] = $user_id;
+        $_SESSION['user_id'] = $user_id;
     }
     return $user_id;
 }

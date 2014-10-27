@@ -6,6 +6,8 @@
         <?php echo "<span class='time'>" . $time_ago . "</span>"; ?>
         <div class="daumen">
             <?php
+            require 'Presentation/edit.php';
+            
             require "Presentation/gefaellt_mir.php";
             ?>
         </div>

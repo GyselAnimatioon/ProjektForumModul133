@@ -1,5 +1,5 @@
 
-<form class="pure-form pure-g" method="POST" action="../index.php?folder=Data&page=new_message_auswertung.php">
+<form class="pure-form pure-g" method="POST" action="../index.php?folder=Data&page=new_message_auswertung.php&new=0">
     <div class="pure-u-1">
         <input class="pure-input-1" type="text" name="title" placeholder="Titel">
     </div>

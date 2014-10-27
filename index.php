@@ -18,6 +18,7 @@
         <?php require_once('Presentation/navigation1.php'); ?>
         <div class="content-wrap">
             <?php
+             
             if(isset($_GET['exec'])) { $exec = filter_input(INPUT_GET, "exec"); }
             $page = filter_input(INPUT_GET, "page");
             $folder = filter_input(INPUT_GET, "folder");
@@ -27,6 +28,7 @@
             } else {
                 require_once 'Business/nachrichten.php';
             }
+            
             ?>
         </div>
         <footer>
