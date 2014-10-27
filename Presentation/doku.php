@@ -58,6 +58,10 @@
                 <img class="logo-css3" src="img/doku/css3-logo.png" alt=""/>
                 CSS wird genutzt um den Style eines HTML-Dokuments festzulegen. Wir benutzen CSS, weil es die einzige Stylesprache die mit HTML kompatibel ist.
             </li>
+            <li class="list-item logo-item">
+-                <img class="logo-js" src="img/doku/js6-logo.png" alt=""/>
+-                JS steht für JavaScript. Es ist eine Skriptsprache, mit der man dynamische Websiten erstellen kann.
+-            </li>
         </ul>
     </div>
     <br>
@@ -173,7 +177,7 @@
             <li class="list-item"> in profil.php sql/php/html getrennt in die 3 Layers </li>
             <li class="list-item"> HTML für Filter Funktion gemacht </li>
             <li class="list-item"> Dokumentation am 27.10.14 aktualisiert </li>
-            <li class="list-item"> Mobile und Laptop Ansicht der Website angefangen </li>
+            <li class="list-item"> Mobile und Laptop Ansicht der Doku gemacht </li>
         </ul>
         <h4 class="headline-sm"> Fabian Gysel: </h4>
         <ul class="list-items">
