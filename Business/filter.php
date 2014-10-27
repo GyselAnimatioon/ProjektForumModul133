@@ -3,17 +3,15 @@
 require_once 'Business/functions.php';
 require_once 'Data/filter_sql.php';
 require_once 'Presentation/filter_site.php';
-/*
-  echo "<pre>";
-  print_r($_POST);
-  echo "</pre>";
- */
+
 $where = "WHERE ";
 foreach ($_POST as $key => $value) {
-    //echo "$key => $value<br>";
     if ($value != "") {
         $where .= "u.$key REGEXP '$value' AND ";
-        $where = str_replace("1 REGEXP 'on'", "facebook IS NOT NULL", $where);
+        $where = str_replace("u.1 REGEXP 'on'", "LENGTH(u.facebook) > 0 ", $where);
+        $where = str_replace("u.2 REGEXP 'on'", "LENGTH(u.youtube) > 0 ", $where);
+        $where = str_replace("u.3 REGEXP 'on'", "LENGTH(u.twitter) > 0 ", $where);
+        $where = str_replace("u.4 REGEXP 'on'", "LENGTH(u.instagram) > 0 ", $where);
     }
 }
 $where .= "true = true ";
