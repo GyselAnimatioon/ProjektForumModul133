@@ -26,7 +26,8 @@
             if (!empty($page)) {
                 require_once $name;
             } else {
-                require_once 'Business/nachrichten.php';
+                $url = "Location: ../index.php?folder=Business&page=nachrichten_ausgeben.php&exec=nachricht";
+                header($url);
             }
             
             ?>
