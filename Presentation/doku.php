@@ -148,7 +148,7 @@
             <li class="list-item">
                 Suche nach Nachrichten
                 <ul>
-                    <li>Beinhaltet: Aufbau und Einrückung der Codes, sinvolle Namen(Variablen, Klassen usw.) und Leserlichkeit. </li>
+                    <li>Der Benutzer kann nach verschiedene Kriterien die Nachrichten von der Website anzeigen </li>
                 </ul>
             </li>
         </ul>
@@ -161,43 +161,38 @@
             <li class="list-item"> Regeln gestylt </li>
             <li class="list-item"> Register.php gestylt </li>
             <li class="list-item"> Navigation.php verbessert </li>
-            <li class="list-item">  </li>
+            <li class="list-item"> Mobile und Laptop Ansicht der Website gestaltet </li>
         </ul>
         <h4 class="headline-sm"> Timothé Laborie: </h4>
         <ul class="list-items">
-            <li class="list-item">  </li>
-            <li class="list-item">  </li>
-            <li class="list-item">  </li>
-            <li class="list-item">  </li>
-            <li class="list-item">  </li>
-            <li class="list-item">  </li>
-            <li class="list-item">  </li>
-            <li class="list-item">  </li>
-            <li class="list-item">  </li>
+            <li class="list-item"> Fehlern in Dokumentation korrigiert</li>
+            <li class="list-item"> Generelle Struktorierung der Website (am 1.10.14)</li>
+            <li class="list-item"> best.php zeit berechnung verbessert</li>
+            <li class="list-item"> nachrichten zeitspeicherung verbessert </li>
+            <li class="list-item"> random.php problem korrigiert </li>
+            <li class="list-item"> in profil.php sql/php/html getrennt in die 3 Layers </li>
+            <li class="list-item"> HTML für Filter Funktion gemacht </li>
+            <li class="list-item"> Dokumentation am 27.10.14 aktualisiert </li>
+            <li class="list-item"> Mobile und Laptop Ansicht der Website angefangen </li>
         </ul>
         <h4 class="headline-sm"> Fabian Gysel: </h4>
         <ul class="list-items">
-            <li class="list-item">  </li>
-            <li class="list-item">  </li>
-            <li class="list-item">  </li>
-            <li class="list-item">  </li>
-            <li class="list-item">  </li>
-            <li class="list-item">  </li>
-            <li class="list-item">  </li>
-            <li class="list-item">  </li>
-            <li class="list-item">  </li>
-        </ul>
-        <h4 class="headline-sm"> Team: </h4>
-        <ul class="list-items">
-            <li class="list-item"> Source Control System bestimmt &#10003;</li>
-            <li class="list-item"> Projekt initialisiert </li>
-            <li class="list-item"> IDE bestimmt &#10003;</li>
-            <li class="list-item"> Regelungen bestimmt </li>
-            <li class="list-item"> Entwicklungs-Software installiert &#10003;</li>
             <li class="list-item"> Datenbank </li>
-            <li class="list-item"> Profilseite </li>
-            <li class="list-item"> Profilseite abspeichern </li>
+            <li class="list-item"> Thumbs up/down </li>
+            <li class="list-item"> sicherheit (password hash / insertion) </li>
+            <li class="list-item"> Code in vielen Dateien strukturiert </li>
+            <li class="list-item"> nachrichten.php code und design gemacht </li>
+            <li class="list-item"> Business, Data und Presentation - Layers Sortieren und aufräumen </li>
+            <li class="list-item"> Code für Filter </li>
+        </ul>
+        <h4 class="headline-sm"> Ganzes Team: </h4>
+        <ul class="list-items">
+            <li class="list-item"> Projekt initialisiert </li>
+            <li class="list-item"> IDE bestimmt</li>
+            <li class="list-item"> Regelungen bestimmt</li>
             <li class="list-item"> Abgabe </li>
+            <li class="list-item"> Dokumentation geschrieben </li>
+            <li class="list-item"> CSS algemein</li>
         </ul>
     </div>
     <div id="proj-ablauf" class="content-block">
