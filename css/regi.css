@@ -19,21 +19,14 @@
     #projektarbeit {
         font-size: 12px;
     }
-    
+
     .pdf-viewer {
         width: 100%;
         height: 700px;
     }
-    
-    .logo-verdecker {
-        z-index: 1000;
-        position: absolute;
-        background-color: white;
-        right: 20%;
-        width: 200px;
-        height: 100px;
-    }
-    
+
+
+
     .content-wrap {
         width: 60%;
         margin: 40px auto;

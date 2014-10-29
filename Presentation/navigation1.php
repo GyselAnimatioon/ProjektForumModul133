@@ -49,10 +49,10 @@
     </ul>
 </nav>
 <div class="mobile">
-    
+    <div class="logo-verdecker">F0rum</div>
     <button id="showLeft"><div class="mobile-nav-icon" style="height: 24px; width: 24px; touch-action: pan-y; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div></button>
 
-    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left mobile" id="cbp-spmenu-s1">
+    <nav class="cbp-spmenu fixed cbp-spmenu-vertical cbp-spmenu-left" id="nano-content">
         <a href="../index.php?folder=Business&page=nachrichten_ausgeben.php&exec=nachricht">Home</a></li>
          <a href="../index.php?folder=Business&page=nachrichten_ausgeben.php&exec=best">Best</a></li>
          <a href="../index.php?folder=Business&page=nachrichten_ausgeben.php&exec=random">Random</a></li>
