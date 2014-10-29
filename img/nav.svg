@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="24px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>hamburger icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Landing-Mobile-9" sketch:type="MSArtboardGroup" transform="translate(-34.000000, -34.000000)" fill="#FFFFFF">
+            <g id="Nav" sketch:type="MSLayerGroup">
+                <path d="
+
+
+M34,
+38 L52,
+38 L52,
+36 L34,
+36 L34,
+38 Z
+
+M34,
+42 L52,
+42 L52,
+40 L34,
+40 L34,
+42 Z
+
+M34,
+46 L52,
+46 L52,
+44 L34,
+44 L34,
+46 Z
+"
+
+
+
+   id="hamburger-icon" sketch:type="MSShapeGroup">
+                </path>
+            </g>
+        </g>
+    </g>
+</svg>

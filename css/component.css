@@ -1,0 +1,46 @@
+/* General styles for all menus */
+.cbp-spmenu {
+    background: #47a3da;
+    position: fixed;
+}
+.cbp-spmenu a {
+    display: block;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+.cbp-spmenu a:hover {
+    background: #258ecd;
+}
+.cbp-spmenu a:active {
+    background: #afdefa;
+    color: #47a3da;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+.cbp-spmenu-vertical {
+    width: 90%;
+    height: 100%;
+    top: 10%;
+    padding-left: 20px;
+    border-radius: 15px;
+    z-index: 1000;
+}
+.cbp-spmenu-vertical a {
+    border-bottom: 1px solid #258ecd;
+    padding: 1em;
+}
+
+/* Vertical menu that slides from the left */
+.cbp-spmenu-left {
+    left: -100%;
+}
+.cbp-spmenu-left.cbp-spmenu-open {
+    left: -10%;
+}
+
+
+/* Transitions */
+.cbp-spmenu {
+    transition: all 0.4s ease;
+}

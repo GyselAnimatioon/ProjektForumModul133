@@ -1,6 +1,6 @@
 
 
-    <h1> Forum-Projekt Analyse </h1>
+<h1> Forum-Projekt Analyse </h1>
 
 <div class="content-inner">
     <div class="content-block">
@@ -59,9 +59,9 @@
                 CSS wird genutzt um den Style eines HTML-Dokuments festzulegen. Wir benutzen CSS, weil es die einzige Stylesprache die mit HTML kompatibel ist.
             </li>
             <li class="list-item logo-item">
--                <img class="logo-js" src="img/doku/js6-logo.png" alt=""/>
--                JS steht für JavaScript. Es ist eine Skriptsprache, mit der man dynamische Websiten erstellen kann.
--            </li>
+                -                <img class="logo-js" src="img/doku/js6-logo.png" alt=""/>
+                -                JS steht für JavaScript. Es ist eine Skriptsprache, mit der man dynamische Websiten erstellen kann.
+                -            </li>
         </ul>
     </div>
     <br>
@@ -274,192 +274,245 @@
             <li class="list-item"> vlt. Fotos </li>
         </ul>
     </div>
-    <h3 class="headline-big">Test-Cases: </h3>
-    <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-</style>
-<table class="tg">
-  <tr>
-    <th class="tg-031e">Case Nr.</th>
-    <th class="tg-031e">CaseName</th>
-    <th class="tg-031e">Erwartetes Resultat</th>
-    <th class="tg-031e">Efektives Resultat</th>
-    <th class="tg-031e">Status</th>
-    <th class="tg-031e">Datum</th>
-    <th class="tg-031e">Unterschrift</th>
-  </tr>
-  <tr>
-    <td class="tg-031e">1</td>
-    <td class="tg-031e">Login</td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e">Login funktioniert</td>
-    <td class="tg-031e">Pass</td>
-    <td class="tg-031e">27.10.14</td>
-    <td class="tg-031e"></td>
-  </tr>
-  <tr>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-  </tr>
-  <tr>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-  </tr>
-  <tr>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-  </tr>
-  <tr>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-  </tr>
-  <tr>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-  </tr>
-  <tr>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-  </tr>
-  <tr>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-  </tr>
-  <tr>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-  </tr>
-  <tr>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-  </tr>
-  <tr>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-  </tr>
-  <tr>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-  </tr>
-  <tr>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-  </tr>
-  <tr>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-  </tr>
-  <tr>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-  </tr>
-  <tr>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-  </tr>
-  <tr>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-  </tr>
-  <tr>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-  </tr>
-  <tr>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-    <td class="tg-031e"></td>
-  </tr>
-</table>
-</div>
+
+    <div id="projektarbeit" class="content-block">
+        <h3 class="headline-big"> Projektarbeit: </h3>
+        <table class="pure-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Beschreibung der geforderten Inhalte im, Dokument</th>
+                    <th>Verantwortlich</th>
+                    <th>Abgabe Datum</th>
+                    <th>Kontrolle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Analyse</td>
+                    <td>Die Analyse Phase beinhaltet Umfang und Funktionalität der Applikation. Hauptfunktionen der Applikation werden umschrieben.</td>
+                    <td>Lernende (LN)</td>
+                    <td>bis 22.09.2014, BSCW</td>
+                    <td></td>
+                </tr>
+                <tr class="pure-table-odd">
+                    <td></td>
+                    <td>Spezielle Anforderungen werden definiert. Infrastruktur und eingesetzte Technologie, sind zu erwähnen.</td>
+                    <td>LN</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Der grobe Projektablauf und die Tätigkeiten der einzelnen Teammitglieder soll in diesem Dokument beschrieben werden. Mögliche Abklärungen (Prototyping) sind zu erwähnen.</td>
+                    <td>LN</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="pure-table-odd">
+                    <td>Review</td>
+                    <td>Das Dokument wird mit den einzelnen Teams besprochen.</td>
+                    <td>Lehrperson(LP)</td>
+                    <td>bis 29.09.2014, BSCW</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Design</td>
+                    <td>In der Design Phasen werden alle Design relevanten Informationen erarbeitet und in diesem Dokument, festgehalten.</td>
+                    <td>LN</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="pure-table-odd">
+                    <td></td>
+                    <td>Genauer Funktionsbeschrieb</td>
+                    <td>LN</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Design Diagramme wie Use-Cases, Aktivitäten Diagramm, Übersicht von Funktionen, API Beschreibung der Funktionen. ERM, ERD Diagramme für die Datenbank</td>
+                    <td>LN</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="pure-table-odd">
+                    <td></td>
+                    <td>Architektur Diagramm der Applikation</td>
+                    <td>LN</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Test Cases und Test Pattern werden definiert</td>
+                    <td>LN</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="pure-table-odd">
+                    <td>Review</td>
+                    <td>Das Dokument wird mit den einzelnen Teams besprochen werden.</td>
+                    <td>LP</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Implementierung</td>
+                    <td>Code wird implementiert gemäss den Design Unterlagen. Notwendige Korrekturen werden im Dokument ständig nachgeführt.</td>
+                    <td>LN</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="pure-table-odd">
+                    <td>Review</td>
+                    <td>Review der Projektarbeit</td>
+                    <td>LN/LP</td>
+                    <td>20.10.2014, TBZ</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Verifikation (Test)</td>
+                    <td>Test der Applikation gemäss definierten Test Cases. Notwendige Korrekturen an der Applikation und Dokumentation vornehmen.</td>
+                    <td>LN</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="pure-table-odd">
+                    <td>Projektabschluss</td>
+                    <td>Abgabe der Dokumentation und Applikation.</td>
+                    <td>LN/LP</td>
+                    <td>03.11.2014</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <div id="test" class="content-block">
+            <h3 class="headline-big"> Test-Cases: </h3>
+            <table class="pure-table">
+                <thead>
+                    <tr>
+                        <th>Case Nr.</th>
+                        <th>CaseName</th>
+                        <th>Erwartetes Resultat</th>
+                        <th>Efektives Resultat</th>
+                        <th>Status</th>
+                        <th>Datum</th>
+                        <th>Unterschrift</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Login</td>
+                        <td>Ich werde eingeloggt</td>
+                        <td>Ich wurde eingeloggt</td>
+                        <td>Pass</td>
+                        <td>29.10.2014</td>
+                        <td>Fabian Gysel</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>2</td>
+                        <td>Logout</td>
+                        <td>Ich werde ausgeloggt</td>
+                        <td>Ich wurde ausgeloggt</td>
+                        <td>Pass</td>
+                        <td>29.10.2014</td>
+                        <td>Fabian Gysel</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Registration</td>
+                        <td>Ich werde registriert</td>
+                        <td>Ich wurde registriert</td>
+                        <td>Pass</td>
+                        <td>29.10.2014</td>
+                        <td>Fabian Gysel</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>4</td>
+                        <td>Neue Nachricht</td>
+                        <td>Die neue Nachricht wird nach dem erstellen auf der Home Seite angezeigt</td>
+                        <td>Die Nachricht wurde angezeigt</td>
+                        <td>Pass</td>
+                        <td>29.10.2014</td>
+                        <td>Fabian Gysel</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Zufällige Nachrichten ansehen</td>
+                        <td>Ich sehe eine Zufällige Nachricht</td>
+                        <td>Ich sah eine Zufällige Nachricht</td>
+                        <td>Pass</td>
+                        <td>29.10.2014</td>
+                        <td>Fabian Gysel</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>6</td>
+                        <td>Beste Nachrichten</td>
+                        <td>Ich sehe die Nachrichten mit den besten Bewertungen</td>
+                        <td>Ich sah die Nachrichten mit den besten Bewertungen</td>
+                        <td>Pass</td>
+                        <td>29.10.2014</td>
+                        <td>Fabian Gysel</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Neue gut Bewertete Nachrichten ansehen</td>
+                        <td>Ich sehe eine neue gut Bewertete Nachricht</td>
+                        <td>Ich sah eine neue gut Bewertete Nachricht</td>
+                        <td>Pass</td>
+                        <td>29.10.2014</td>
+                        <td>Fabian Gysel</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>8</td>
+                        <td>Alle Nachrichten</td>
+                        <td>Ich sehe alle Nachrichten des Erstelldatums nach sortiert</td>
+                        <td>Ich sah alle Nachrichten des Erstelldatums nach sortiert</td>
+                        <td>Pass</td>
+                        <td>29.10.2014</td>
+                        <td>Fabian Gysel</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Positive Bewertung</td>
+                        <td>Ich kann eine Nachricht die mir Gefällt Positiv Bewerten</td>
+                        <td>Falls mir eine Nachricht gut oder gar besonders gut gefällt, dan konnte ich diese Nachricht Positiv Bewerten und es dem Ersteller so mitteilen. Rechts von dem "+" werden die Aktuellen "Likes" angezeigt.</td>
+                        <td>Pass</td>
+                        <td>29.10.2014</td>
+                        <td>Fabian Gysel</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>10</td>
+                        <td>Negative Bewertung</td>
+                        <td>Ich kann eine Nachricht die mir nicht Gefällt Negativ Bewerten</td>
+                        <td>Falls mir eine Nachricht eher nicht gefällt dan konnte ich diese auch Negativ Bewerten. Auch hier werden die aktuellen "Dislikes" angezeigt.</td>
+                        <td>Pass</td>
+                        <td>29.10.2014</td>
+                        <td>Fabian Gysel</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Profil eines anderen User besuchen</td>
+                        <td>Ich kann das Profil von dem anshenen der eine Nachricht geschrieben hat.</td>
+                        <td>Ich konnte, indem ich auf den jeweiligen Namen klickte auf dessen Profil gehen und dort jeweilige Informationen über der User herausfinden. Z.B. den Vor und Nachname oder die EMail. Ich konnte auch ein Facebook Link sehen, dieser musste aber vom jeweiligen User hinzugefügt werden.</td>
+                        <td>Pass</td>
+                        <td>29.10.2014</td>
+                        <td>Fabian Gysel</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>10</td>
+                        <td>Negative Bewertung</td>
+                        <td>Ich kann eine Nachricht die mir nicht Gefällt Negativ Bewerten</td>
+                        <td>Ich konnte eine Nachricht die mir nicht Gefällt Negativ Bewerten</td>
+                        <td>Pass</td>
+                        <td>29.10.2014</td>
+                        <td>Fabian Gysel</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>

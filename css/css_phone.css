@@ -1,6 +1,23 @@
 
 
 @media (max-width:1279px) {
+    .mobile-nav-icon {
+        background: transparent url(../img/nav.svg) center center no-repeat;
+        left:12px;
+        position:absolute;
+    }
+
+    #showLeft {
+        border: none;
+    }
+
+    .mobile {
+
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
 
     article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
         display: block;
@@ -788,6 +805,49 @@
     .pure-paginator .next {
         border-radius: 0 2px 2px 0;
     }
+    
+         /* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid black; 
+		position: relative;
+		padding: 1% 1% 10% 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		/*white-space: nowrap;*/
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Titel"; }
+	td:nth-of-type(2):before { content: "Beschreibung der geforderten Inhalte im Dokument"; }
+	td:nth-of-type(3):before { content: "Verantwortlich"; }
+	td:nth-of-type(4):before { content: "Abgabe Datum"; }
+	td:nth-of-type(5):before { content: "Kontrolle"; }
+    
     @media (max-width:480px) {
         .pure-menu-horizontal {
             width: 100%}
@@ -795,57 +855,10 @@
             display: block;
             border-bottom: 1px solid #000;
         }
-    }.pure-table {
-        border-collapse: collapse;
-        border-spacing: 0;
-        empty-cells: show;
-        border: 1px solid #cbcbcb;
-    }
-    .pure-table caption {
-        color: #000;
-        font: italic 85%/1 arial, sans-serif;
-        padding: 1em 0;
-        text-align: center;
-    }
-    .pure-table td, .pure-table th {
-        border-left: 1px solid #cbcbcb;
-        border-width: 0 0 0 1px;
-        font-size: inherit;
-        margin: 0;
-        overflow: visible;
-        padding: .5em 1em;
-    }
-    .pure-table td:first-child, .pure-table th:first-child {
-        border-left-width: 0;
-    }
-    .pure-table thead {
-        background: #e0e0e0;
-        color: #000;
-        text-align: left;
-        vertical-align: bottom;
-    }
-    .pure-table td {
-        background-color: white;
-    }
-    .pure-table-odd td {
-        background-color: #dedede;
-    }
-    .pure-table-striped tr:nth-child(2n-1) td {
-        background-color: #f2f2f2;
-    }
-    .pure-table-bordered td {
-        border-bottom: 1px solid #cbcbcb;
-    }
-    .pure-table-bordered tbody>tr:last-child td, .pure-table-horizontal tbody>tr:last-child td {
-        border-bottom-width: 0;
-    }
-    .pure-table-horizontal td, .pure-table-horizontal th {
-        border-width: 0 0 1px;
-        border-bottom: 1px solid #cbcbcb;
-    }
-    .pure-table-horizontal tbody>tr:last-child td {
-        border-bottom-width: 0;
-    }
+        
+   
+}
+        
     .onoffswitch {
         position: relative; width: 90px;
         margin: 1%;
@@ -912,10 +925,10 @@
     .content-wrap {
         background: whitesmoke;
         width: 100%;
-
+        margin-top: 15%;
+        padding-top: 1%;
 
     }
-
 
 
 
@@ -991,7 +1004,7 @@
         text-decoration: none;
     }
 
-    
+
     .body_box {
         border: 1px solid black;
         padding: 1%;
@@ -1064,8 +1077,8 @@
         height: 5%;
         width: 5%;
     }
-    
-    
+
+
 
 }
 
