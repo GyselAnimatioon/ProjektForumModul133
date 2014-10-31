@@ -12,8 +12,10 @@
             <li class="list-item"><a class="index" href="#einz-aufgaben">Aufgaben</a></li>
             <li class="list-item"><a class="index" href="#zustaendig">Zuständig</a></li>
             <li class="list-item"><a class="index" href="#proj-ablauf">Projekt-Ablauf</a></li>
-            <li class="list-item"><a class="index" href="#erm">ERM</a></li>
+            <li class="list-item"><a class="index" href="#erm">ERM - Tabellen angabe</a></li>
             <li class="list-item"><a class="index" href="#funktionen">Funktion der Website</a></li>
+            <li class="list-item"><a class="index" href="#projektarbeit">Projektarbeit</a></li>
+            <li class="list-item"><a class="index" href="#test">Test-Cases</a></li>
         </ul>
     </div>
     <div id="team" class="content-block">
@@ -59,9 +61,9 @@
                 CSS wird genutzt um den Style eines HTML-Dokuments festzulegen. Wir benutzen CSS, weil es die einzige Stylesprache die mit HTML kompatibel ist.
             </li>
             <li class="list-item logo-item">
-                -                <img class="logo-js" src="img/doku/js6-logo.png" alt=""/>
-                -                JS steht für JavaScript. Es ist eine Skriptsprache, mit der man dynamische Websiten erstellen kann.
-                -            </li>
+                <img class="logo-js" src="img/doku/js6-logo.png" alt=""/>
+                JS steht für JavaScript. Es ist eine Skriptsprache, mit der man dynamische Websiten erstellen kann.
+            </li>
         </ul>
     </div>
     <br>
@@ -163,31 +165,42 @@
         <ul class="list-items">
             <li class="list-item"> Stylen der Dokumentation (css/html/schriftarten) </li>
             <li class="list-item"> Regeln gestylt </li>
+            <li class="list-item"> CSS Pure hinzugeholt </li>
+            <li class="list-item"> Filter Buttons verbessert </li>
             <li class="list-item"> Register.php gestylt </li>
             <li class="list-item"> Navigation.php verbessert </li>
-            <li class="list-item"> Mobile und Laptop Ansicht der Website gestaltet </li>
+            <li class="list-item"> Mobile und Laptop Ansicht der Website von Timothe weiter geführt </li>
         </ul>
         <h4 class="headline-sm"> Timothé Laborie: </h4>
         <ul class="list-items">
             <li class="list-item"> Fehlern in Dokumentation korrigiert</li>
-            <li class="list-item"> Generelle Struktorierung der Website (am 1.10.14)</li>
-            <li class="list-item"> best.php zeit berechnung verbessert</li>
-            <li class="list-item"> nachrichten zeitspeicherung verbessert </li>
+            <li class="list-item"> kleinere Struktorierung der Website (am 1.10.14)</li>
+            <li class="list-item"> Zeitspeicherung verbessert </li>
             <li class="list-item"> random.php problem korrigiert </li>
-            <li class="list-item"> in profil.php sql/php/html getrennt in die 3 Layers </li>
-            <li class="list-item"> HTML für Filter Funktion gemacht </li>
-            <li class="list-item"> Dokumentation am 27.10.14 aktualisiert </li>
-            <li class="list-item"> Mobile und Laptop Ansicht der Doku gemacht </li>
+            <li class="list-item"> in profil.php sql/php/html getrennt in die 3 Layers zu 1/5 abgeschlossen </li>
+            <li class="list-item"> Dokumentation am 27.10.14 etwas akualisiert  </li>
+            <li class="list-item"> Mobile und Laptop Ansicht der Doku angefangen </li>
         </ul>
         <h4 class="headline-sm"> Fabian Gysel: </h4>
         <ul class="list-items">
             <li class="list-item"> Datenbank </li>
-            <li class="list-item"> Thumbs up/down </li>
-            <li class="list-item"> sicherheit (password hash / insertion) </li>
+            <li class="list-item"> Gefällt mir System </li>
+            <li class="list-item"> Sicherheit (password hash / insertion) </li>
             <li class="list-item"> Code in vielen Dateien strukturiert </li>
             <li class="list-item"> nachrichten.php code und design gemacht </li>
             <li class="list-item"> Business, Data und Presentation - Layers Sortieren und aufräumen </li>
             <li class="list-item"> Code für Filter </li>
+            <li class="list-item"> Code für Zeitangabe wie lange es her ist seit des erstellen der Nachricht </li>
+            <li class="list-item"> CSS für Mobiles Layout (Hamburger-Menu Animation) </li>
+            <li class="list-item"> Doku am 31.10.14 mit Test-Cases 1-12 erweitert + Projektarbeit + Zuständigkeiten erweitert </li>
+            <li class="list-item"> Regeln entfernt </li>
+            <li class="list-item"> Code für editierbare Nachrichten </li>
+            <li class="list-item"> 3 Tier Layers von Timothe vollständig abgeschlossen </li>
+            <li class="list-item"> trends.php / best.php / random.php / nachrichten.php in 1 dokument zusammengefasst und sql in externe sql_query_functions.php gelegt </li>
+            <li class="list-item"> Viele weitere kleine Bug Fixes </li>
+            <li class="list-item"> Viele weitere kleine Funktionen </li>
+            <li class="list-item"> kleinere Optionen verbessert </li>
+            <li class="list-item"> Timothes Code mit mehr Volumen gefüllt </li>
         </ul>
         <h4 class="headline-sm"> Ganzes Team: </h4>
         <ul class="list-items">
@@ -212,7 +225,7 @@
         </ol>
     </div>
     <div id="erm" class="content-block">
-        <h3 class="headline-big"> ERM: </h3>
+        <h3 class="headline-big"> ERM - Tabellen angabe: </h3>
         <dl>
             <dd>
                 In der Tabelle <strong>user</strong>
@@ -242,7 +255,23 @@
                 In der Tabelle <strong>user_nachrichten</strong> 
                 wird jede Nachricht einem Nutzer zugewiesen, 
                 damit später alle Nachrichten von einem bestimmten
-                Nutzer herausgesucht werden können.
+                Nutzer herausgesucht werden können. Dabei werden
+                die ID des Users und die ID der erstellten Nachricht
+                miteinander in einem Datensatz abgespeichert.
+            </dd>
+            <br>
+            <dd>
+                In der Tabelle <strong>gefaellt_mir</strong> 
+                werden die Gefällt mir angaben gespeichert
+                um diese danach wider bei jeder Nachricht
+                auszugeben und so zu merken welche Nachricht
+                nun besser bei den leuten ankommt weder andere.
+                Die Tabelle speichert zum einen die ID des Users
+                und zum anderen die ID der Nachricht welche der
+                User gelikt hat. Es wird noch ein 3ter Wert
+                gespeichert, dieser heisst "<code>how</code>"
+                und wird bei einem Dilike mit 0 und bei einem
+                Like mit 1 gefüllt.
             </dd>
         </dl>
     </div>
@@ -409,7 +438,7 @@
                         <td>1</td>
                         <td>Login</td>
                         <td>Ich werde eingeloggt</td>
-                        <td>Ich wurde eingeloggt</td>
+                        <td>Ich wurde eingeloggt und kann mich nun einem sicheren Bereich umhernavigieren.</td>
                         <td>Pass</td>
                         <td>29.10.2014</td>
                         <td>Fabian Gysel</td>
@@ -418,7 +447,7 @@
                         <td>2</td>
                         <td>Logout</td>
                         <td>Ich werde ausgeloggt</td>
-                        <td>Ich wurde ausgeloggt</td>
+                        <td>Ich wurde ausgeloggt und müsste mich jetzt neu einloggen oder registrieren um wieder eingellogt zu sein.</td>
                         <td>Pass</td>
                         <td>29.10.2014</td>
                         <td>Fabian Gysel</td>
@@ -427,7 +456,7 @@
                         <td>3</td>
                         <td>Registration</td>
                         <td>Ich werde registriert</td>
-                        <td>Ich wurde registriert</td>
+                        <td>Ich wurde registriert mit meinen Daten (Username, Vorname, Nachname, Email, Passwort) und kann jetzt mich aus und ein loggen.</td>
                         <td>Pass</td>
                         <td>29.10.2014</td>
                         <td>Fabian Gysel</td>
@@ -436,7 +465,7 @@
                         <td>4</td>
                         <td>Neue Nachricht</td>
                         <td>Die neue Nachricht wird nach dem erstellen auf der Home Seite angezeigt</td>
-                        <td>Die Nachricht wurde angezeigt</td>
+                        <td>Die Nachricht wurde erstellt und diese wird jetzt in der Home seite zu oberst angezeigt.</td>
                         <td>Pass</td>
                         <td>29.10.2014</td>
                         <td>Fabian Gysel</td>
@@ -445,7 +474,7 @@
                         <td>5</td>
                         <td>Zufällige Nachrichten ansehen</td>
                         <td>Ich sehe eine Zufällige Nachricht</td>
-                        <td>Ich sah eine Zufällige Nachricht</td>
+                        <td>Ich sah eine Zufällige Nachricht und kann dur reloaden der seite oder durch erneutes klicken auf Random eine neue Zufällige Nachricht sehen.</td>
                         <td>Pass</td>
                         <td>29.10.2014</td>
                         <td>Fabian Gysel</td>
@@ -454,7 +483,7 @@
                         <td>6</td>
                         <td>Beste Nachrichten</td>
                         <td>Ich sehe die Nachrichten mit den besten Bewertungen</td>
-                        <td>Ich sah die Nachrichten mit den besten Bewertungen</td>
+                        <td>Ich sah die Nachrichten mit den besten Bewertungen. Die Nachrichten werden auf einer seperaten Seite angezeigt und nur diese, die auch eine Bewertung haben.</td>
                         <td>Pass</td>
                         <td>29.10.2014</td>
                         <td>Fabian Gysel</td>
@@ -463,7 +492,7 @@
                         <td>7</td>
                         <td>Neue gut Bewertete Nachrichten ansehen</td>
                         <td>Ich sehe eine neue gut Bewertete Nachricht</td>
-                        <td>Ich sah eine neue gut Bewertete Nachricht</td>
+                        <td>Ich sah Nachrichten die momentan Gute bewertungen bekommen und momentan Trendig sind, damit werden mir die Best bewertetsten Nachrichten des Letzten Monates angezeigt</td>
                         <td>Pass</td>
                         <td>29.10.2014</td>
                         <td>Fabian Gysel</td>
@@ -472,7 +501,7 @@
                         <td>8</td>
                         <td>Alle Nachrichten</td>
                         <td>Ich sehe alle Nachrichten des Erstelldatums nach sortiert</td>
-                        <td>Ich sah alle Nachrichten des Erstelldatums nach sortiert</td>
+                        <td>Ich sah alle Nachrichten schön nach Erstelldatum sortiert. Dies kann man ganz einfach auf der startseite antreffen.</td>
                         <td>Pass</td>
                         <td>29.10.2014</td>
                         <td>Fabian Gysel</td>
@@ -505,10 +534,10 @@
                         <td>Fabian Gysel</td>
                     </tr>
                     <tr class="pure-table-odd">
-                        <td>10</td>
-                        <td>Negative Bewertung</td>
-                        <td>Ich kann eine Nachricht die mir nicht Gefällt Negativ Bewerten</td>
-                        <td>Ich konnte eine Nachricht die mir nicht Gefällt Negativ Bewerten</td>
+                        <td>12</td>
+                        <td>Mobile Ansicht</td>
+                        <td>Das Layout wird abgeändert bei kleineren Displays und mit einem Seiten Menü, dass ein und ausgeblednet werden kann.(Hamburger-Menu)</td>
+                        <td>Nachdem ich die Website auf meinem Handy geöffnet habe, kamm eine sehr schöne Startseite mit einem passenden modernen Layout. Bei klicken auf die drei striche übereinander(Hamburger-Menu) wird die seite von einem von links kommenden menu auf die rechte seite hinausgeschoben.</td>
                         <td>Pass</td>
                         <td>29.10.2014</td>
                         <td>Fabian Gysel</td>
