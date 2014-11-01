@@ -5,19 +5,29 @@
 <div class="content-inner">
     <div class="content-block">
         <h3 class="headline-big"> Inhaltsverzeichnis: </h3>
-        <ul class="list-items">
-            <li class="list-item"><a class="index" href="#team">Team</a></li>
-            <li class="list-item"><a class="index" href="#beschreibung">Projektbeschreibung</a></li>
-            <li class="list-item"><a class="index" href="#technologien">Einzusetzende Technologien</a></li>
-            <li class="list-item"><a class="index" href="#einz-aufgaben">Aufgaben</a></li>
-            <li class="list-item"><a class="index" href="#zustaendig">Zuständig</a></li>
-            <li class="list-item"><a class="index" href="#proj-ablauf">Projekt-Ablauf</a></li>
-            <li class="list-item"><a class="index" href="#erm">ERM - Tabellen angabe</a></li>
-            <li class="list-item"><a class="index" href="#funktionen">Funktion der Website</a></li>
-            <li class="list-item"><a class="index" href="#projektarbeit">Projektarbeit</a></li>
-            <li class="list-item"><a class="index" href="#test">Test-Cases</a></li>
-        </ul>
+        <div class="content-nav">
+            <ul class="list-items pure-g">
+                
+                    <li class="list-item pure-u-1"><a class="nav" href="#team">Team</a></li>
+                    <li class="list-item pure-u-1"><a class="nav" href="#beschreibung">Projektbeschreibung</a></li>
+                
+                
+                    <li class="list-item pure-u-1"><a class="nav" href="#technologien">Einzusetzende Technologien</a></li>
+                    <li class="list-item pure-u-1"><a class="nav" href="#einz-aufgaben">Aufgaben</a></li>
+                
+                    <li class="list-item pure-u-1"><a class="nav" href="#zustaendig">Zuständig</a></li>
+                    <li class="list-item pure-u-1"><a class="nav" href="#proj-ablauf">Projekt-Ablauf</a></li>
+                
+                    <li class="list-item pure-u-1"><a class="nav" href="#erm">ERM - Tabellen angabe</a></li>
+                    <li class="list-item pure-u-1"><a class="nav" href="#funktionen">Funktion der Website</a></li>
+                
+                    <li class="list-item pure-u-1"><a class="nav" href="#projektarbeit">Projektarbeit</a></li>
+                    <li class="list-item pure-u-1"><a class="nav" href="#test">Test-Cases</a></li>
+                
+            </ul>
+        </div>
     </div>
+
     <div id="team" class="content-block">
         <h3 class="headline-big"> Team: </h3>
         <ul class="list-items">

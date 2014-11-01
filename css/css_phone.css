@@ -1,4 +1,7 @@
 @media (max-width:1023px) {
+    *{
+        transition: padding 0.2s ease-in-out; 
+    }
     .mobile-nav-icon {
         background: transparent url(../img/nav.svg) center center no-repeat;
         left:12px;
@@ -855,7 +858,7 @@
         }
 
     }
-    
+
     .onoffswitch {
         position: relative; width: 97px; margin-right: 60px;
         -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
@@ -968,13 +971,33 @@
         width: 80px;
     }
 
-    .index {
-
-        color: rgba(0,0,0,0.7);
+    .content-nav  {
+        width: 320px;
+        margin-left: 20px
     }
 
-    .index:hover {
-        color: rgba(0,0,0,1);
+    .content-nav .list-items .list-item {
+        list-style-type: none;
+        margin-bottom: 20px;
+    }
+
+    .content-nav .list-items .list-item:last-child {
+        margin-bottom: 0px;
+    }    
+
+    .nav {
+        background: #3cb0fd;
+        border-radius: 5px;
+        padding: 5px 20px;
+        text-decoration: none;
+        color: rgba(255,255,255,0.8);
+    }
+
+    .nav:hover {
+        background: #0078e7;
+        color: rgba(255,255,255,1.0);
+        transition: background 0.4s  linear,
+            color 0.3s ease; 
     }
 
     .like_button {
@@ -1000,7 +1023,7 @@
         padding: 0 7px;
         text-decoration: none;
     }
-    
+
     .like_button_down,
     .like_button_up {
         background-color: white;
