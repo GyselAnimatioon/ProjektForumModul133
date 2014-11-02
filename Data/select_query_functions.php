@@ -57,7 +57,12 @@ function edit_query($nachricht_id) {
     //echo $nachrichten_user_id_abfrage;
     $nachrichten_user_id_ausgabe = mysql_query($nachrichten_user_id_abfrage);
     $nachrichten_user_id_row = mysql_fetch_object($nachrichten_user_id_ausgabe);
+    $_SESSION['user_id'] = get_user_id()  ;    
+        
+    
+    print_r($_SESSION);
     if($_SESSION['user_id'] == $nachrichten_user_id_row->user_id) {
+        
         return $nachrichten_user_id_row;
     }
     return 0;
