@@ -190,6 +190,8 @@
             <li class="list-item"> in profil.php sql/php/html getrennt in die 3 Layers zu 1/5 abgeschlossen </li>
             <li class="list-item"> Dokumentation am 27.10.14 etwas akualisiert  </li>
             <li class="list-item"> Mobile und Laptop Ansicht der Doku angefangen </li>
+            <li class="list-item"> Architektur Diagramm der Applikation </li>
+            <li class="list-item"> Logo der Website gemacht </li>
         </ul>
         <h4 class="headline-sm"> Fabian Gysel: </h4>
         <ul class="list-items">
