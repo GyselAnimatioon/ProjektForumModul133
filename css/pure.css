@@ -1,4 +1,4 @@
-@media (min-width:1023px) {
+@media (min-width:1261px) {
 
     .mobile {
         display: none;
@@ -512,7 +512,7 @@
         color: #666;
         font-size: .875em;
     }
-    @media only screen and (max-width :480px) {
+    @media only screen and (max-width :1260px) {
         .pure-form button[type=submit] {
             margin: .7em 0 0;
         }
@@ -740,7 +740,7 @@
     .pure-paginator .next {
         border-radius: 0 2px 2px 0;
     }
-    @media (max-width:480px) {
+    @media (max-width:1260px) {
         .pure-menu-horizontal {
             width: 100%}
         .pure-menu-children li {

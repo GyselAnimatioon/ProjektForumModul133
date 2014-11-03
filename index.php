@@ -24,7 +24,7 @@
     <body>
         <?php require_once ('Data/DBConnection.php'); ?>
         <?php require_once('Presentation/navigation1.php'); ?>
-        <div id="hauptteil" class="content-wrap">
+        <div id="hauptteil" class="content-wrap" style="padding-bottom: 10px;">
             <?php
             if (isset($_GET['exec'])) {
                 $exec = filter_input(INPUT_GET, "exec");

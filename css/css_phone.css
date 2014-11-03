@@ -1,4 +1,4 @@
-@media (max-width:1022px) {
+@media (max-width:1260px) {
     *{
         transition: padding 0.2s ease-in-out; 
     }
@@ -593,7 +593,7 @@
         color: #666;
         font-size: .875em;
     }
-    @media only screen and (max-width :480px) {
+    @media only screen and (max-width :1260px) {
         .pure-form button[type=submit] {
             margin: .7em 0 0;
         }
@@ -617,7 +617,8 @@
             font-size: .75em;
             padding: .2em 0 .8em;
         }
-    }.pure-menu ul {
+    }
+     .pure-menu ul {
         position: absolute;
         visibility: hidden;
     }
@@ -839,7 +840,7 @@
         position: relative;
         padding: 1% 1% 10% 50%; 
     }
-    
+
     #profil td,
     #profile td { 
         /* Behave  like a "row" */
@@ -848,7 +849,7 @@
         position: relative;
         padding: 1% 1% 15% 50%; 
     }
-    
+
     #profil input,
     #profile input,
     #profil select,
@@ -880,15 +881,6 @@
     #projektarbeit  td:nth-of-type(4):before { content: "Abgabe Datum"; }
     #projektarbeit   td:nth-of-type(5):before { content: "Kontrolle"; }
 
-    @media (max-width:480px) {
-        .pure-menu-horizontal {
-            width: 100%}
-        .pure-menu-children li {
-            display: block;
-            border-bottom: 1px solid #000;
-        }
-
-    }
     #test td:before { 
         /* Now like a table header */
         position: absolute;
@@ -915,15 +907,6 @@
     #test td:nth-of-type(6):before { content: "Datum"; }
     #test td:nth-of-type(7):before { content: "Unterschrift"; }
 
-    @media (max-width:480px) {
-        .pure-menu-horizontal {
-            width: 100%}
-        .pure-menu-children li {
-            display: block;
-            border-bottom: 1px solid #000;
-        }
-
-    }  
     #profile td:before { 
         /* Now like a table header */
         position: absolute;
@@ -943,17 +926,7 @@
     Label the data
     */
     #profile td:nth-of-type(1):before { content: "Profil"; }
-    #profile td:nth-of-type(2):before { content: "Gespeicherte Daten:"; }
-
-    @media (max-width:480px) {
-        .pure-menu-horizontal {
-            width: 100%}
-        .pure-menu-children li {
-            display: block;
-            border-bottom: 1px solid #000;
-        }
-
-    }   
+    #profile td:nth-of-type(2):before { content: "Gespeicherte Daten:"; } 
     #profil td:before { 
         /* Now like a table header */
         position: absolute;
@@ -976,7 +949,7 @@
     #profil td:nth-of-type(2):before { content: "Gespeicherte Daten:"; }
     #profil td:nth-of-type(3):before { content: "Neue Daten:"; }
 
-    @media (max-width:480px) {
+    @media (max-width:1260px) {
         .pure-menu-horizontal {
             width: 100%}
         .pure-menu-children li {
@@ -987,7 +960,7 @@
     }
 
     .onoffswitch {
-        position: relative; width: 97px; margin-right: 60px;
+        position: relative; width: 97px; margin-right: 8%;
         -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
     }
     .onoffswitch-checkbox {
@@ -1046,6 +1019,7 @@
     .content-wrap {
         background: whitesmoke;
         width: 90%;
+
         margin-top: 50px;
         padding: 1% 5% 0 5%;
     }
@@ -1053,6 +1027,10 @@
     .content-wrap-fixed {
         background: whitesmoke;
         width: 100%;
+
+        padding-bottom: 10px;
+
+
         margin-top: 50px;
         padding-top: 1%;
         position: fixed;
@@ -1234,7 +1212,7 @@
     }
 }
 
-@media (max-width:880px) {
+@media (max-width:1260px) {
     .pure-menu-horizontal input {
         display: inline-block;
         *display: inline;
