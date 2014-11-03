@@ -7,23 +7,19 @@
         <h3 class="headline-big"> Inhaltsverzeichnis: </h3>
         <div class="content-nav">
             <ul class="list-items pure-g">
-                
-                    <li class="list-item pure-u-1"><a class="nav" href="#team">Team</a></li>
-                    <li class="list-item pure-u-1"><a class="nav" href="#beschreibung">Projektbeschreibung</a></li>
-                
-                
-                    <li class="list-item pure-u-1"><a class="nav" href="#technologien">Einzusetzende Technologien</a></li>
-                    <li class="list-item pure-u-1"><a class="nav" href="#einz-aufgaben">Aufgaben</a></li>
-                
-                    <li class="list-item pure-u-1"><a class="nav" href="#zustaendig">Zuständig</a></li>
-                    <li class="list-item pure-u-1"><a class="nav" href="#proj-ablauf">Projekt-Ablauf</a></li>
-                
-                    <li class="list-item pure-u-1"><a class="nav" href="#erm">ERM - Tabellen angabe</a></li>
-                    <li class="list-item pure-u-1"><a class="nav" href="#funktionen">Funktion der Website</a></li>
-                
-                    <li class="list-item pure-u-1"><a class="nav" href="#projektarbeit">Projektarbeit</a></li>
-                    <li class="list-item pure-u-1"><a class="nav" href="#test">Test-Cases</a></li>
-                
+
+                <li class="list-item pure-u-1"><a class="nav" href="#team">Team</a></li>
+                <li class="list-item pure-u-1"><a class="nav" href="#beschreibung">Projektbeschreibung</a></li>
+                <li class="list-item pure-u-1"><a class="nav" href="#technologien">Einzusetzende Technologien</a></li>
+                <li class="list-item pure-u-1"><a class="nav" href="#funktion-beschreib">Funktionsbeschreibung</a></li>
+                <li class="list-item pure-u-1"><a class="nav" href="#einz-aufgaben">Aufgaben</a></li>
+                <li class="list-item pure-u-1"><a class="nav" href="#zustaendig">Zuständig</a></li>
+                <li class="list-item pure-u-1"><a class="nav" href="#proj-ablauf">Projekt-Ablauf</a></li>
+                <li class="list-item pure-u-1"><a class="nav" href="#erm">ERM - Tabellen angabe</a></li>
+                <li class="list-item pure-u-1"><a class="nav" href="#funktionen">Funktion der Website</a></li>
+                <li class="list-item pure-u-1"><a class="nav" href="#projektarbeit">Projektarbeit</a></li>
+                <li class="list-item pure-u-1"><a class="nav" href="#test">Test-Cases</a></li>
+
             </ul>
         </div>
     </div>
@@ -79,6 +75,34 @@
     <br>
     <br>
     <br>
+    <div id="funktion-beschreib" class="content-block">
+        <h3 class="headline-big"> Funktionsbeschreibung: </h3>
+        <ul class="list-items">
+            <li>
+                <p>Der Nutzer kann sich mit der <b>Anmeldung</b> in einen Sicheren Ort anmelden. Die Anmeldung nimmt dabei ein Username und
+                    ein Passwort entgegen und überprüft diese dan in der Datenbank <b>user</b> nach überinstimmungen. Fals dies der fall ist wird <code>$_SESSION['login']</code>
+                    auf 1 gesetzt und in der Navigation wird "Eingeloggt als ..." angezeigt. </p>
+            </li>
+            <li>
+                <p>Falls der Nutzer sich aus der Website <b>Abmelden</b> will, so wird die laufende SESSION beendet mit <code>session_destroy();</code>.</p>
+            </li>
+            <li>
+                <p>Falls der Nutzer noch nicht auf der Website <b>Registriert</b> ist, so kann er sich Registrieren. Er muss dabei einen Username, Vorname, Nachname, EMail und ein Passwort angeben.
+                    Für das Passwort sind 2 eingabefelder vorgegeben um das Passwort auf schreibfehler zu sichern. Fals beide Passwörter die gleichen sind, so wird ein neuer Datensatz in der Tabelle <b>user</b>
+                    angelegt und der User wird direkt eingeloggt. </p>
+            </li>
+            <li>
+                <p>Der User kann <b>Nachrichten schreiben</b> indem er auf <b>New Message</b> klickt. Nachdem er auf Senden geklickt hat, wird ein neuer Datensatz in der Tabelle <b>Nachrichten</b> und <b>User_nachrichten</b>
+                    erstellt. In der Tabelle Nachrichten wird die Nachricht mit dem Titel der Nachricht und einem erstellungs Datum in Sekunden seit 1.1.1970 gespeichert. In der Tabelle User_Nachrichten wird die Verbidung
+                    zwischen dem User, der die Nachricht geschrieben hat und der Nachricht, die er geschrieben hat gespeichert.</p>
+            </li>
+            <li>
+                <p>Falls der User sein <b>Profil bearbeiten</b> will, so kann er dies indem er auf "Eingeloggt als ..." klickt. Er hat nun alle seine Daten, die über ihn gespeichert sind vor sich.
+                    Diese kann der ganz einfach bearbeiten. Weiter unten kann er auch seine Nachrichten sehen und diese auch Bearbeiten. Sobald er alles Fertig hat, kann er auf Speichern klicken und dan wird eine Query erstellt,
+                    die alle neu eingegebenen Daten zurück in die Datenbank speichert. </p>
+            </li>
+        </ul>
+    </div>
     <div id="einz-aufgaben" class="content-block">
         <h3 class="headline-big"> Aufgaben: </h3>
         <ul class="list-items">
