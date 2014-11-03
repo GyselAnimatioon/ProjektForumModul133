@@ -1,4 +1,4 @@
-@media (max-width:1023px) {
+@media (max-width:1022px) {
     *{
         transition: padding 0.2s ease-in-out; 
     }
@@ -44,6 +44,8 @@
     }
     body {
         margin: 0;
+
+
     }
     a:focus {
         outline: thin dotted;
@@ -134,10 +136,10 @@
         margin: 1em 0;
     }
     dd {
-        margin: 0 0 0 40px;
+        margin: 0 0 0 10px;
     }
     menu, ol, ul {
-        padding: 0 0 0 40px;
+        padding: 0 0 0 10px;
     }
     nav ul, nav ol {
         list-style: none;
@@ -807,9 +809,14 @@
         border-radius: 0 2px 2px 0;
     }
 
+
+    table {
+        margin: -5%;
+    }
     /* Force table to not be like tables anymore */
     table, thead, tbody, th, td, tr { 
         display: block; 
+
     }
 
     /* Hide table headers (but not display: none;, for accessibility) */
@@ -819,7 +826,11 @@
         left: -9999px;
     }
 
-    tr { border: 1px solid #ccc; }
+    tr { margin: 15px 0; border-top: 1px solid black; box-shadow: #666 0px 15px;}
+
+    tr:first-child {box-shadow: #666 0px 15px;}
+
+    tr:last-child {box-shadow: #666 0px 0px;}
 
     td { 
         /* Behave  like a "row" */
@@ -828,26 +839,142 @@
         position: relative;
         padding: 1% 1% 10% 50%; 
     }
+    
+    #profil td,
+    #profile td { 
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid black; 
+        position: relative;
+        padding: 1% 1% 15% 50%; 
+    }
+    
+    #profil input,
+    #profile input,
+    #profil select,
+    #profile select {
+        width: 80%;
+    }
 
-    td:before { 
+    #projektarbeit td:before { 
         /* Now like a table header */
         position: absolute;
         /* Top/left values mimic padding */
         top: 6px;
         left: 6px;
+        height: 70%;
         width: 45%; 
-        padding-right: 10px; 
+        display: block;
+        padding-right: 3px; 
+        border-right: 1px solid black;
+        //background: red;
         /*white-space: nowrap;*/
     }
 
     /*
     Label the data
     */
-    td:nth-of-type(1):before { content: "Titel"; }
-    td:nth-of-type(2):before { content: "Beschreibung der geforderten Inhalte im Dokument"; }
-    td:nth-of-type(3):before { content: "Verantwortlich"; }
-    td:nth-of-type(4):before { content: "Abgabe Datum"; }
-    td:nth-of-type(5):before { content: "Kontrolle"; }
+    #projektarbeit td:nth-of-type(1):before { content: "Titel"; }
+    #projektarbeit td:nth-of-type(2):before { content: "Beschreibung der geforderten Inhalte im Dokument"; }
+    #projektarbeit td:nth-of-type(3):before { content: "Verantwortlich"; }
+    #projektarbeit  td:nth-of-type(4):before { content: "Abgabe Datum"; }
+    #projektarbeit   td:nth-of-type(5):before { content: "Kontrolle"; }
+
+    @media (max-width:480px) {
+        .pure-menu-horizontal {
+            width: 100%}
+        .pure-menu-children li {
+            display: block;
+            border-bottom: 1px solid #000;
+        }
+
+    }
+    #test td:before { 
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        height: 70%;
+        width: 45%; 
+        display: block;
+        padding-right: 3px; 
+        border-right: 1px solid black;
+        //background: red;
+        /*white-space: nowrap;*/
+    }
+
+    /*
+    Label the data
+    */
+    #test td:nth-of-type(1):before { content: "Case Nr."; }
+    #test td:nth-of-type(2):before { content: "Case Name"; }
+    #test td:nth-of-type(3):before { content: "Erwartetes Resulutat"; }
+    #test td:nth-of-type(4):before { content: "Effektives Resulutat"; }
+    #test td:nth-of-type(5):before { content: "Status"; }
+    #test td:nth-of-type(6):before { content: "Datum"; }
+    #test td:nth-of-type(7):before { content: "Unterschrift"; }
+
+    @media (max-width:480px) {
+        .pure-menu-horizontal {
+            width: 100%}
+        .pure-menu-children li {
+            display: block;
+            border-bottom: 1px solid #000;
+        }
+
+    }  
+    #profile td:before { 
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        height: 70%;
+        width: 45%; 
+        display: block;
+        padding-right: 3px; 
+        border-right: 1px solid black;
+        //background: red;
+        /*white-space: nowrap;*/
+    }
+
+    /*
+    Label the data
+    */
+    #profile td:nth-of-type(1):before { content: "Profil"; }
+    #profile td:nth-of-type(2):before { content: "Gespeicherte Daten:"; }
+
+    @media (max-width:480px) {
+        .pure-menu-horizontal {
+            width: 100%}
+        .pure-menu-children li {
+            display: block;
+            border-bottom: 1px solid #000;
+        }
+
+    }   
+    #profil td:before { 
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        height: 70%;
+        width: 45%; 
+        display: block;
+        padding-right: 3px; 
+        border-right: 1px solid black;
+        //background: red;
+        /*white-space: nowrap;*/
+    }
+
+    /*
+    Label the data
+    */
+    #profil td:nth-of-type(1):before { content: "Profil"; }
+    #profil td:nth-of-type(2):before { content: "Gespeicherte Daten:"; }
+    #profil td:nth-of-type(3):before { content: "Neue Daten:"; }
 
     @media (max-width:480px) {
         .pure-menu-horizontal {
@@ -918,9 +1045,9 @@
 
     .content-wrap {
         background: whitesmoke;
-        width: 100%;
+        width: 90%;
         margin-top: 50px;
-        padding-top: 1%;
+        padding: 1% 5% 0 5%;
     }
 
     .content-wrap-fixed {
@@ -972,8 +1099,8 @@
     }
 
     .content-nav  {
-        width: 320px;
-        margin-left: 20px
+        width: 100%;
+        margin-left: 2px
     }
 
     .content-nav .list-items .list-item {

@@ -5,7 +5,7 @@ require_once 'Data/select_query_functions.php';
 $linie = query_profil();
 ?>
 <form method="POST" action="../index.php?folder=Data&page=profil_auswerten.php">
-    <table class="pure-table">
+    <table id="profil" class="pure-table">
         <thead>
             <tr>
                 <th>Profil</th>
@@ -141,23 +141,23 @@ $linie = query_profil();
             </tr>
             <tr class="pure-table-odd">
                 <td>Facebook</td>
-                <td><a href="http://www.facebook.com/<?php echo $linie->facebook; ?>" >www.facebook.com/<?php echo $linie->facebook; ?></a></td>
-                <td>www.facebook.com/<input type="text" name="facebook2" value="<?php echo $linie->facebook; ?>" placeholder="Facebook Link"></td>
+                <td><a href="http://www.facebook.com/<?php echo $linie->facebook; ?>" >Facebook<?php echo $linie->facebook; ?></a></td>
+                <td><input type="text" name="facebook2" value="<?php echo $linie->facebook; ?>" placeholder="Facebook Link"></td>
             </tr>
             <tr>
                 <td>YouTube</td>
-                <td><a href="http://www.youtube.com/user/<?php echo $linie->youtube; ?>" >www.youtube.com/<?php echo $linie->youtube; ?></a></td>
-                <td>www.youtube.com/user/<input type="text" name="youtube2" value="<?php echo $linie->youtube; ?>" placeholder="YouTube Link"></td>
+                <td><a href="http://www.youtube.com/user/<?php echo $linie->youtube; ?>" >YouTube<?php echo $linie->youtube; ?></a></td>
+                <td><input type="text" name="youtube2" value="<?php echo $linie->youtube; ?>" placeholder="YouTube Link"></td>
             </tr>
             <tr class="pure-table-odd">
                 <td>Twitter</td>
-                <td><a href="http://www.twitter.com/<?php echo $linie->twitter; ?>" >www.twitter.com/<?php echo $linie->twitter; ?></a></td>
-                <td>www.twitter.com/<input type="text" name="twitter2" value="<?php echo $linie->twitter; ?>" placeholder="Twitter Link"></td>
+                <td><a href="http://www.twitter.com/<?php echo $linie->twitter; ?>" >Twitter<?php echo $linie->twitter; ?></a></td>
+                <td><input type="text" name="twitter2" value="<?php echo $linie->twitter; ?>" placeholder="Twitter Link"></td>
             </tr>
             <tr>
                 <td>Instagram</td>
-                <td><a href="http://www.instagram.com/<?php echo $linie->instagram; ?>" >www.instagram.com/<?php echo $linie->instagram; ?></a></td>
-                <td>www.instagram.com/<input type="text" name="instagram2" value="<?php echo $linie->instagram; ?>" placeholder="Instagram Link"></td>
+                <td><a href="http://www.instagram.com/<?php echo $linie->instagram; ?>" >Instagram<?php echo $linie->instagram; ?></a></td>
+                <td><input type="text" name="instagram2" value="<?php echo $linie->instagram; ?>" placeholder="Instagram Link"></td>
             </tr>
             <tr class="pure-table-odd">
                 <td>Sprache</td>

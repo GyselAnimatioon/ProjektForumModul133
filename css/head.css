@@ -4,9 +4,7 @@
         /*Standart Margin und Passing entfertnen*/
         margin: 0;
         padding: 0;
-        /*Hintergrundfarbe ein sehr helles grau*/
-        background-color: #eee;
-        font-family: 'Varela Round', cursive;
+        background: #356aa0;
     }
 
 
@@ -40,6 +38,10 @@
         margin: 1% 3%;
         text-align: center;
         font-family: 'Nixie One', cursive;
+    }
+
+    #drawer-toggle {
+        display: none;
     }
 
     footer {

@@ -6,7 +6,7 @@ $nachrichten_id = filter_input(INPUT_GET, 'id');
 $user_id_abfrage = "SELECT * FROM user WHERE username LIKE '$user_name'";
 $user_id_ausgabe = mysql_query($user_id_abfrage);
 while ($user_id_row = mysql_fetch_object($user_id_ausgabe)) {
-    $user_id = $user_id_row->id;
+    $user_id = $user_id_row->u_id;
 }
 if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
     $sql = "select count(*) as count from gefaellt_mir where user_id = $user_id and nachrichten_id = $nachrichten_id";

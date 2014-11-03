@@ -13,7 +13,7 @@ if (isset($_SESSION["login"])) {
     if ($edit == 0) {
         $nachricht_einfuegen = "INSERT INTO nachrichten VALUES(null,'$title','$text',$date_db)";
     } elseif($edit == 1) {
-        $nachricht_einfuegen = "UPDATE nachrichten SET titel='$title', nachricht='$text' WHERE id = $n_id";
+        $nachricht_einfuegen = "UPDATE nachrichten SET titel='$title', nachricht='$text' WHERE n_id = $n_id";
         //echo $nachricht_einfuegen;
     }
     mysql_query($nachricht_einfuegen);
@@ -21,13 +21,13 @@ if (isset($_SESSION["login"])) {
     $user_id_abfrage = "SELECT * FROM user WHERE username LIKE '$user_name'";
     $user_id_ausgabe = mysql_query($user_id_abfrage);
     while ($user_id_row = mysql_fetch_object($user_id_ausgabe)) {
-        $user_id = $user_id_row->id;
+        $user_id = $user_id_row->u_id;
     }
     //Nachrichten ID Abfragen
     $nachricht_id_abfrage = "SELECT * FROM nachrichten WHERE erstellt_am = $date_db";
     $nachricht_id_ausgabe = mysql_query($nachricht_id_abfrage);
     while ($nachricht_id_row = mysql_fetch_object($nachricht_id_ausgabe)) {
-        $nachricht_id = $nachricht_id_row->id;
+        $nachricht_id = $nachricht_id_row->n_id;
     }
     //User Nachricht Beziehung erstellen
     if ($edit == 0) {

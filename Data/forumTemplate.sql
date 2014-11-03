@@ -19,11 +19,11 @@ USE `mydb` ;
 -- Table `mydb`.`nachrichten`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`nachrichten` (
-  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `n_id` INT(11) NOT NULL AUTO_INCREMENT,
   `titel` VARCHAR(150) NOT NULL,
   `nachricht` MEDIUMTEXT NOT NULL,
   `erstellt_am` int(8) NOT NULL,
-  PRIMARY KEY (`id`))
+  PRIMARY KEY (`n_id`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 77
 DEFAULT CHARACTER SET = utf8;
@@ -33,7 +33,7 @@ DEFAULT CHARACTER SET = utf8;
 -- Table `mydb`.`user`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`user` (
-  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `u_id` INT(11) NOT NULL AUTO_INCREMENT,
   `username` VARCHAR(50) NOT NULL,
   `vorname` VARCHAR(80) NOT NULL,
   `nachname` VARCHAR(80) NOT NULL,
@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`user` (
   `twitter` VARCHAR(255) NULL DEFAULT 'Not_Set',
   `instagram` VARCHAR(255) NULL DEFAULT 'Not_Set',
   `lang` VARCHAR(45) NULL DEFAULT 'DE',
-  PRIMARY KEY (`id`))
+  PRIMARY KEY (`u_id`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 29
 DEFAULT CHARACTER SET = utf8;
@@ -68,12 +68,12 @@ CREATE TABLE IF NOT EXISTS `mydb`.`gefaellt_mir` (
   INDEX `fk_like_nachrichten1_idx` (`nachrichten_id` ASC),
   CONSTRAINT `fk_like_nachrichten1`
     FOREIGN KEY (`nachrichten_id`)
-    REFERENCES `mydb`.`nachrichten` (`id`)
+    REFERENCES `mydb`.`nachrichten` (`n_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_like_user1`
     FOREIGN KEY (`user_id`)
-    REFERENCES `mydb`.`user` (`id`)
+    REFERENCES `mydb`.`user` (`u_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
@@ -90,12 +90,12 @@ CREATE TABLE IF NOT EXISTS `mydb`.`user_nachricht` (
   INDEX `fk_user_nachricht_nachrichten1_idx` (`nachrichten_id` ASC),
   CONSTRAINT `fk_user_nachricht_nachrichten1`
     FOREIGN KEY (`nachrichten_id`)
-    REFERENCES `mydb`.`nachrichten` (`id`)
+    REFERENCES `mydb`.`nachrichten` (`n_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_user_nachricht_user`
     FOREIGN KEY (`user_id`)
-    REFERENCES `mydb`.`user` (`id`)
+    REFERENCES `mydb`.`user` (`u_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB

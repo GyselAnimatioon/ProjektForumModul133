@@ -1,6 +1,6 @@
 <?php
 
-        const SALT = "oaidfsuocf23jla9oasöcè!?";
+const SALT = "oaidfsuocf23jla9oasöcè!?";
 $lang = array('EN' => 'Englisch', 'FR' => 'Franzoesisch', 'DE' => 'Deutsch');
 
 function encrypt_password($password) {

@@ -288,7 +288,7 @@
         </dl>
     </div>
     <div id="funktionen" class="content-block">
-        <h3 class="headline-big"> Funktionen der Website: </h3>
+        <h3 class="headline-big"> Funktionen und Ideen der Website: </h3>
         <ul class="list-items">
             <li class="list-item"> Profil verwalten &#10003;</li>
             <li class="list-item"> Anmelden &#10003;</li>
@@ -301,18 +301,18 @@
             <li class="list-item"> Neuste Nachrichten ansehen &#10003;</li>
             <li class="list-item"> Zeitspanne seit Erstellung einer Nachricht &#10003;</li>
             <li class="list-item"> Zufall Nachricht ansehen &#10003;</li>
-            <li class="list-item"> Trendige Nachrichten ansehen </li>
-            <li class="list-item"> Weiter gefilterte Nachrichten ansehen </li>
+            <li class="list-item"> Trendige Nachrichten ansehen &#10003;</li>
+            <li class="list-item"> Weiter gefilterte Nachrichten ansehen &#10003;</li>
             <li class="list-item"> Dokumentation ansehen &#10003; </li>
-            <li class="list-item"> Regeln ansehen &#10003; </li>
             <li class="list-item"> Website für Händys und Tablets optimiert &#10003;</li>
-            <li class="list-item"> Seine Nachrichten löschen </li>
-            <li class="list-item"> Anderen Nutzern Privatnachricht schreiben </li>
-            <li class="list-item"> Auf Nachrichten antworten </li>
-            <li class="list-item"> Auf Nachricht beantwortete Nachrichten bewerten </li>
-            <li class="list-item"> Nachrichten öffenlich an jemanden schreiben </li>
-            <li class="list-item"> Nachrichten bearbeiten </li>
-            <li class="list-item"> vlt. Fotos </li>
+            <li class="list-item"> Seine Nachrichten bearbeiten &#10003;</li>
+            <li class="list-item"> Anderen Nutzern Privatnachricht schreiben <b>&#9747;</b></li>
+            <li class="list-item"> Auf Nachrichten antworten <b>&#9747;</b></li>
+            <li class="list-item"> Auf Nachricht beantwortete Nachrichten bewerten <b>&#9747;</b></li>
+            <li class="list-item"> Nachrichten öffenlich an jemanden schreiben <b>&#9747;</b></li>
+            <li class="list-item"> Website auf mobilen Geräten betrachten mit einem angemessenen Layout &#10003;</li>
+            <li class="list-item"> vlt. Fotos <b>&#9747;</b></li>
+            <li class="list-item"> Twitter-, Facebook-, Instagram- und YouTube- Konten verlinken &#10003;</li>
         </ul>
     </div>
 
@@ -366,7 +366,7 @@
                 </tr>
                 <tr class="pure-table-odd">
                     <td></td>
-                    <td>Genauer Funktionsbeschrieb</td>
+                    <td>Genauer Funktionsbeschrieb von der gesammten Website</td>
                     <td>LN</td>
                     <td></td>
                     <td></td>
@@ -408,7 +408,7 @@
                 </tr>
                 <tr class="pure-table-odd">
                     <td>Review</td>
-                    <td>Review der Projektarbeit</td>
+                    <td>Review der Projektarbeit (Gesammte Website, die während des Modules erstellt wurde)</td>
                     <td>LN/LP</td>
                     <td>20.10.2014, TBZ</td>
                     <td></td>
@@ -549,7 +549,7 @@
                         <td>12</td>
                         <td>Mobile Ansicht</td>
                         <td>Das Layout wird abgeändert bei kleineren Displays und mit einem Seiten Menü, dass ein und ausgeblednet werden kann.(Hamburger-Menu)</td>
-                        <td>Nachdem ich die Website auf meinem Handy geöffnet habe, kamm eine sehr schöne Startseite mit einem passenden modernen Layout. Bei klicken auf die drei striche übereinander(Hamburger-Menu) wird die seite von einem von links kommenden menu auf die rechte seite hinausgeschoben.</td>
+                        <td>Nachdem ich die Website auf meinem Handy geöffnet habe, kamm eine sehr schöne Startseite mit einem passenden modernen Layout. Bei klicken auf die drei striche übereinander (Hamburger-Menu) wird die seite von einem von links kommenden menu auf die rechte seite hinausgeschoben.</td>
                         <td>Pass</td>
                         <td>29.10.2014</td>
                         <td>Fabian Gysel</td>
